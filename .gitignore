@@ -1,0 +1,22 @@
+# Dashboard-BOTS — Gitignore
+# Backend files (no subir al repo público)
+*.db
+*.db-journal
+post_ratings.json
+li_contactados.json
+seguimiento_li.json
+.env
+token.json
+bot.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Screenshots (pesados)
+screenshots/
+*.png
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,51 @@
+{
+  "open_positions": 6,
+  "positions": [
+    {
+      "symbol": "NEARUSDT",
+      "buy_price": 1.9859999999999998,
+      "invested": 13.72,
+      "buy_time": "2026-06-12T16:53",
+      "trade_type": "SWING"
+    },
+    {
+      "symbol": "FETUSDT",
+      "buy_price": 0.1863,
+      "invested": 12.83,
+      "buy_time": "2026-06-12T22:35",
+      "trade_type": "SWING"
+    },
+    {
+      "symbol": "ICPUSDT",
+      "buy_price": 2.4,
+      "invested": 12.97,
+      "buy_time": "2026-06-14T01:16",
+      "trade_type": "SWING"
+    },
+    {
+      "symbol": "FILUSDT",
+      "buy_price": 0.756,
+      "invested": 13.42,
+      "buy_time": "2026-06-14T10:44",
+      "trade_type": "SWING"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "buy_price": 0.0821,
+      "invested": 13.46,
+      "buy_time": "2026-06-14T15:06",
+      "trade_type": "SWING"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "buy_price": 263.69999999999993,
+      "invested": 14.62,
+      "buy_time": "2026-06-15T17:49",
+      "trade_type": "SWING"
+    }
+  ],
+  "total_profit": -7.5025,
+  "total_trades": 129,
+  "winning_trades": 77,
+  "win_rate": 59.7
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "autor": "Sebastian Sanabria Chioino",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 0.8,
+    "fecha": "2026-05-28 11:51"
+  },
+  {
+    "autor": "Altia",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 04:52"
+  },
+  {
+    "autor": "Matías Hidalgo Hidalgo",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-19 12:01"
+  },
+  {
+    "autor": "Matías Cornejo",
+    "correos": "mjsanchez@mbobrasymontajes.cl, mcornejo@mbobrasymontajes.cl",
+    "region": "Libertador Gral. Bernardo O’Higgins, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 09:03"
+  },
+  {
+    "autor": "Carlos Peña López",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-19 12:10"
+  },
+  {
+    "autor": "Carlos Peña López",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-26 12:27"
+  },
+  {
+    "autor": "Carlos Peña López",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-19 12:56"
+  },
+  {
+    "autor": "Jorge Villagra Torres",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 19:29"
+  },
+  {
+    "autor": "ECAT EMPRESAS",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-26 13:48"
+  },
+  {
+    "autor": "Luis Antonio Leiva olea",
+    "correos": "",
+    "region": "Los Lagos, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 12:52"
+  },
+  {
+    "autor": "Karín Bustamante Caroca",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 0.8,
+    "fecha": "2026-05-26 14:16"
+  },
+  {
+    "autor": "Gabriela Neira Jaque",
+    "correos": "",
+    "region": "Coquimbo, Maule",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-31 14:16"
+  },
+  {
+    "autor": "Con+Formas",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 0.8,
+    "fecha": "2026-05-30 14:28"
+  },
+  {
+    "autor": "Laura Muñoz Masson",
+    "correos": "",
+    "region": "Los Ríos",
+    "rol": "",
+    "empresa": "",
+    "score": 0.8,
+    "fecha": "2026-05-26 14:39"
+  },
+  {
+    "autor": "Ing. Juan Emmanuel García Paula, M.Sc.",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-31 15:39"
+  },
+  {
+    "autor": "José Reyes",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-30 16:18"
+  },
+  {
+    "autor": "Marina Melina Vásquez Rueda",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-30 16:18"
+  },
+  {
+    "autor": "STEMFOR",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-28 16:21"
+  },
+  {
+    "autor": "Paulo Oróstegui Torvisco",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 09:21"
+  },
+  {
+    "autor": "Diego Andrés Osorio Bravo",
+    "correos": "",
+    "region": "Valparaíso",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-19 16:23"
+  },
+  {
+    "autor": "Diego Andrés Osorio Bravo",
+    "correos": "",
+    "region": "Magallanes y de la Antártica Chilena, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 10:24"
+  },
+  {
+    "autor": "Rodrigo Cabrera Venegas",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-31 18:20"
+  },
+  {
+    "autor": "Domingo Boscan - Sup. Estructuras - Ing. Civil Mecanico - Universidad de Chile",
+    "correos": "apaillal@cydingenieria.com, mcabanas@cydingenieria.com, gvilches@cydingenieria.com, reclutamiento.gin5@cydingenieria.com",
+    "region": "Maule, Libertador Gral. Bernardo O’Higgins, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 10:22"
+  },
+  {
+    "autor": "Johnny Francisco Zúñiga Pacheco",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 18:24"
+  },
+  {
+    "autor": "Oscar Villegas paredes",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-26 18:24"
+  },
+  {
+    "autor": "Juan Carlos Martinez Moncada",
+    "correos": "",
+    "region": "Magallanes y de la Antártica Chilena",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 13:25"
+  },
+  {
+    "autor": "Álvaro Mateo Sánchez",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 0.6,
+    "fecha": "2026-06-01 18:25"
+  },
+  {
+    "autor": "Williams Arredondo Chávez",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 09:55"
+  },
+  {
+    "autor": "Francisco Javier Rojas Muñoz",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 19:28"
+  },
+  {
+    "autor": "Pamela Sanhueza H",
+    "correos": "",
+    "region": "Magallanes y de la Antártica Chilena",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 14:29"
+  },
+  {
+    "autor": "Desconocido",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 19:48"
+  },
+  {
+    "autor": "Angela Sanzana Parra",
+    "correos": "asanzana@rfa.cl, seleccion@rfa.cl",
+    "region": "Libertador Gral. Bernardo O’Higgins, Araucanía",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 21:03"
+  },
+  {
+    "autor": "Pedro Véliz Bórquez",
+    "correos": "",
+    "region": "Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-26 21:04"
+  },
+  {
+    "autor": "César Poblete Mellado",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 21:04"
+  },
+  {
+    "autor": "JORGE MURRAY",
+    "correos": "",
+    "region": "Atacama, Coquimbo, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 21:10"
+  },
+  {
+    "autor": "Jhoan Sebastian Nuñez Duran",
+    "correos": "bolsadetrabajo@flesan.com.pe",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 19:27"
+  },
+  {
+    "autor": "Matías González Garay",
+    "correos": "",
+    "region": "Libertador Gral. Bernardo O’Higgins, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 21:28"
+  },
+  {
+    "autor": "Desconocido",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 19:34"
+  },
+  {
+    "autor": "Bárbara Quezada Gajardo",
+    "correos": "apaillal@cydingenieria.com, mcabanas@cydingenieria.com, gvilches@cydingenieria.com, reclutamiento.gin5@cydingenieria.com",
+    "region": "Maule, Libertador Gral. Bernardo O’Higgins, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 11:02"
+  },
+  {
+    "autor": "Desconocido",
+    "correos": "",
+    "region": "Los Lagos",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 20:02"
+  },
+  {
+    "autor": "Shannon Uribe",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 22:10"
+  },
+  {
+    "autor": "Luis Antonio Leiva olea",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-19 22:20"
+  },
+  {
+    "autor": "Ing. Harlin L. Recio Lara 🇩🇴",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-01 22:25"
+  },
+  {
+    "autor": "Milton Mamani Roque",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "No detectado"
+  },
+  {
+    "autor": "Jean Piere Bardales",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 18:48"
+  },
+  {
+    "autor": "Carlos Peña López",
+    "correos": "mvd@icuatro.cl",
+    "region": "Valparaíso, Metropolitana de Santiago",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-19 22:55"
+  },
+  {
+    "autor": "David Cordoba Contreras",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-05-29 22:55"
+  },
+  {
+    "autor": "Desconocido",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 20:02"
+  },
+  {
+    "autor": "MIDEE#3_  Master Internacional en Diseño Estructural de Edificios #3",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "No detectado"
+  },
+  {
+    "autor": "Desconocido",
+    "correos": "",
+    "region": "",
+    "rol": "",
+    "empresa": "",
+    "score": 1.0,
+    "fecha": "2026-06-02 19:18"
+  }
+]

@@ -1,0 +1,238 @@
+{
+  "feedback_total": 68,
+  "ofertas_confirmadas": 4,
+  "ruido_confirmado": 10,
+  "disputados": 0,
+  "total_votos": 14,
+  "bot_accuracy": 20.6,
+  "keywords_efectivas": [
+    {
+      "kw": "profesional",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
+      "kw": "buscamos",
+      "precision": 100.0,
+      "ofertas": 3,
+      "ruido": 0
+    },
+    {
+      "kw": "civil",
+      "precision": 100.0,
+      "ofertas": 3,
+      "ruido": 0
+    },
+    {
+      "kw": "profesionales",
+      "precision": 100.0,
+      "ofertas": 3,
+      "ruido": 0
+    },
+    {
+      "kw": "ingeniero",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
+      "kw": "postula",
+      "precision": 100.0,
+      "ofertas": 2,
+      "ruido": 0
+    },
+    {
+      "kw": "años de experiencia",
+      "precision": 100.0,
+      "ofertas": 2,
+      "ruido": 0
+    },
+    {
+      "kw": "técnico",
+      "precision": 100.0,
+      "ofertas": 2,
+      "ruido": 0
+    },
+    {
+      "kw": "estamos buscando",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "bess",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "constructora",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "arquitecto",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "obras civiles",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "cydingenieria",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "fundaciones",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    }
+  ],
+  "keywords_problematicas": [
+    {
+      "kw": "nuevo puesto",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "control de costos",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "vacante",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "estructuras",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "edificación",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "control de calidad",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "diseñador",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    }
+  ],
+  "sugerencias_frases": [
+    {
+      "keyword": "quality control ingeniero",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "con mínimo años",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "mínimo años experiencia",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "manejo primavera project",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "primavera project excel",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "project excel avanzado",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "#haypega gustaría supervisar",
+      "frecuencia": 1
+    },
+    {
+      "keyword": "gustaría supervisar parque",
+      "frecuencia": 1
+    },
+    {
+      "keyword": "supervisar parque solar",
+      "frecuencia": 1
+    },
+    {
+      "keyword": "parque solar baterías",
+      "frecuencia": 1
+    },
+    {
+      "keyword": "solar baterías bess",
+      "frecuencia": 1
+    },
+    {
+      "keyword": "baterías bess que",
+      "frecuencia": 1
+    }
+  ],
+  "sugerencias_palabras": [
+    {
+      "keyword": "experiencia",
+      "frecuencia": 6
+    },
+    {
+      "keyword": "control",
+      "frecuencia": 5
+    },
+    {
+      "keyword": "vicuña",
+      "frecuencia": 3
+    },
+    {
+      "keyword": "técnica",
+      "frecuencia": 3
+    },
+    {
+      "keyword": "eléctrico",
+      "frecuencia": 3
+    },
+    {
+      "keyword": "manejo",
+      "frecuencia": 3
+    },
+    {
+      "keyword": "coquimbo",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "estamos",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "nuestro",
+      "frecuencia": 2
+    },
+    {
+      "keyword": "equipo",
+      "frecuencia": 2
+    }
+  ],
+  "total_keywords_positivas": 229,
+  "total_keywords_negativas": 82
+}

@@ -1,0 +1,2945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="120">
+  <title>BOT Dashboard — Monitor de Proyectos</title>
+  <meta name="description" content="Panel de monitoreo centralizado para todos los bots y proyectos automatizados: LinkedIn-AG, MercadoPublico-AG y más." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-primary: #080c14;
+      --bg-card: #0d1421;
+      --bg-card-hover: #111927;
+      --bg-glass: rgba(13, 20, 33, 0.8);
+      --border: rgba(255,255,255,0.06);
+      --border-glow: rgba(99, 179, 237, 0.25);
+      --text-primary: #e8eaf0;
+      --text-secondary: #7a8a9e;
+      --text-muted: #4a5568;
+      --accent-blue: #3b82f6;
+      --accent-cyan: #06b6d4;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-red: #ef4444;
+      --accent-purple: #8b5cf6;
+      --accent-orange: #f97316;
+      --glow-blue: rgba(59, 130, 246, 0.15);
+      --glow-green: rgba(16, 185, 129, 0.15);
+      --glow-red: rgba(239, 68, 68, 0.15);
+      --glow-amber: rgba(245, 158, 11, 0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 20%, rgba(59,130,246,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(139,92,246,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 50% 50%, rgba(6,182,212,0.03) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 12, 20, 0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+
+    .logo-text { font-size: 17px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px; }
+    .logo-sub { font-size: 11px; color: var(--text-muted); font-weight: 400; }
+
+    #conn-badge {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    #last-update {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .header-right { display: flex; align-items: center; gap: 20px; }
+
+    .clock {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    #refresh-btn {
+      display: flex; align-items: center; gap: 6px;
+      padding: 7px 16px;
+      background: rgba(59,130,246,0.12);
+      border: 1px solid rgba(59,130,246,0.3);
+      border-radius: 8px;
+      color: var(--accent-blue);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+
+    #refresh-btn:hover {
+      background: rgba(59,130,246,0.2);
+      border-color: rgba(59,130,246,0.5);
+    }
+
+    #refresh-btn.spinning svg { animation: spin 1s linear infinite; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── LAYOUT ── */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    /* ── SUMMARY STRIP ── */
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .summary-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .summary-card:hover { border-color: rgba(255,255,255,0.12); }
+
+    .summary-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .summary-icon.green { background: var(--glow-green); }
+    .summary-icon.amber { background: var(--glow-amber); }
+    .summary-icon.red   { background: var(--glow-red); }
+    .summary-icon.blue  { background: var(--glow-blue); }
+
+    .summary-label { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-bottom: 4px; }
+    .summary-value { font-size: 28px; font-weight: 700; line-height: 1; }
+    .summary-value.green { color: var(--accent-green); }
+    .summary-value.amber { color: var(--accent-amber); }
+    .summary-value.red   { color: var(--accent-red); }
+    .summary-value.blue  { color: var(--accent-blue); }
+
+    /* ── SECTION TITLE ── */
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .section-title:hover { color: var(--text-secondary); }
+    .section-title .toggle-icon { font-size: 11px; transition: transform 0.2s; display: inline-block; }
+    .section-title.collapsed .toggle-icon { transform: rotate(-90deg); }
+    .section-collapsible { margin-bottom: 28px; }
+    .section-body { transition: max-height 0.3s ease; overflow: hidden; }
+    .section-body.hidden { max-height: 0 !important; margin: 0; padding: 0; }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── NAV STRIP ── */
+    .nav-strip {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      background: var(--bg-glass);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 12px;
+      backdrop-filter: blur(4px);
+    }
+    .nav-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 5px 14px;
+      border-radius: 8px;
+      font-size: 11px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .nav-btn:hover { border-color: var(--accent-cyan); color: var(--text-primary); }
+    .nav-btn.active { background: rgba(6,182,212,0.1); border-color: var(--accent-cyan); color: var(--accent-cyan); }
+
+    /* ── BOT GRID ── */
+    .bots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .bot-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .bot-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    .bot-card.status-ok     { border-top: 2px solid var(--accent-green); }
+    .bot-card.status-warn   { border-top: 2px solid var(--accent-amber); }
+    .bot-card.status-error  { border-top: 2px solid var(--accent-red); }
+    .bot-card.status-unknown{ border-top: 2px solid var(--text-muted); }
+
+    .bot-header {
+      padding: 20px 24px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bot-avatar {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .bot-info { flex: 1; min-width: 0; }
+    .bot-name { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
+    .bot-desc { font-size: 12px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .status-badge {
+      display: flex; align-items: center; gap: 5px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .status-badge.ok      { background: rgba(16,185,129,0.12); color: var(--accent-green); }
+    .status-badge.warn    { background: rgba(245,158,11,0.12);  color: var(--accent-amber); }
+    .status-badge.error   { background: rgba(239,68,68,0.12);   color: var(--accent-red); }
+    .status-badge.unknown { background: rgba(74,85,104,0.2);    color: var(--text-muted); }
+
+    .status-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+    }
+
+    .status-dot.ok    { background: var(--accent-green); box-shadow: 0 0 6px var(--accent-green); animation: pulse-green 2s infinite; }
+    .status-dot.warn  { background: var(--accent-amber); box-shadow: 0 0 6px var(--accent-amber); animation: pulse-amber 2s infinite; }
+    .status-dot.error { background: var(--accent-red);   box-shadow: 0 0 6px var(--accent-red);   animation: pulse-red 2s infinite; }
+    .status-dot.unknown { background: var(--text-muted); }
+
+    @keyframes pulse-green { 0%,100%{opacity:1}50%{opacity:0.4} }
+    @keyframes pulse-amber { 0%,100%{opacity:1}50%{opacity:0.4} }
+    @keyframes pulse-red   { 0%,100%{opacity:1}50%{opacity:0.4} }
+
+    /* Bot body */
+    .bot-body { padding: 16px 24px; }
+
+    .meta-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .meta-tag {
+      display: flex; align-items: center; gap: 4px;
+      padding: 3px 9px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .meta-tag.highlight { color: var(--accent-cyan); border-color: rgba(6,182,212,0.2); }
+
+    /* Stats */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .stat-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat-val { font-size: 20px; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+    .stat-lbl { font-size: 10px; color: var(--text-muted); font-weight: 500; }
+
+    /* Log section */
+    .log-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .log-title { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; }
+
+    .log-box {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      max-height: 160px;
+      overflow-y: auto;
+      line-height: 1.7;
+    }
+
+    .log-box::-webkit-scrollbar { width: 4px; }
+    .log-box::-webkit-scrollbar-track { background: transparent; }
+    .log-box::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+
+    .log-line { display: flex; gap: 8px; }
+    .log-time { color: var(--text-muted); flex-shrink: 0; }
+    .log-msg.ok    { color: #34d399; }
+    .log-msg.warn  { color: #fbbf24; }
+    .log-msg.error { color: #f87171; }
+    .log-msg.info  { color: var(--text-secondary); }
+    .log-msg.dim   { color: var(--text-muted); }
+
+    /* Actions */
+    .bot-actions {
+      display: flex;
+      gap: 8px;
+      padding: 14px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .btn {
+      display: flex; align-items: center; gap: 5px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+      font-family: 'Inter', sans-serif;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: rgba(59,130,246,0.12);
+      border-color: rgba(59,130,246,0.25);
+      color: var(--accent-blue);
+    }
+    .btn-primary:hover { background: rgba(59,130,246,0.22); border-color: rgba(59,130,246,0.4); }
+
+    .btn-success {
+      background: rgba(16,185,129,0.1);
+      border-color: rgba(16,185,129,0.25);
+      color: var(--accent-green);
+    }
+    .btn-success:hover { background: rgba(16,185,129,0.2); }
+
+    .btn-ghost {
+      background: rgba(255,255,255,0.04);
+      border-color: var(--border);
+      color: var(--text-secondary);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); color: var(--text-primary); }
+
+    /* Screenshot section */
+    .screenshot-section {
+      margin-bottom: 32px;
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+
+    .screenshot-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .screenshot-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.1);
+    }
+
+    .screenshot-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    .screenshot-preview {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #0d1421 0%, #111927 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 12px;
+      color: var(--text-muted);
+      font-size: 13px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screenshot-preview img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+
+    .screenshot-preview .placeholder-icon { font-size: 40px; opacity: 0.4; }
+
+    .screenshot-info {
+      padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .screenshot-ts { font-size: 11px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
+
+    /* Database Panel */
+    .db-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+    .db-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px;
+        text-align: center;
+    }
+    .db-card .db-icon { font-size: 22px; margin-bottom: 4px; }
+    .db-card .db-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .db-card .db-value { font-size: 1.4rem; font-weight: 700; color: var(--text-primary); margin: 4px 0; }
+    .db-card .db-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 4px; }
+    .db-card:hover { border-color: var(--accent-primary); transform: translateY(-1px); }
+
+    /* GitHub Panel */
+    .github-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .github-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .github-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.1);
+    }
+
+    .gh-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    .gh-icon { font-size: 20px; }
+    .gh-repo { font-size: 14px; font-weight: 600; }
+    .gh-branch { font-size: 11px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
+
+    .gh-status-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+
+    .gh-badge {
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .gh-badge.ahead    { background: rgba(16,185,129,0.15); color: var(--accent-green); }
+    .gh-badge.behind   { background: rgba(245,158,11,0.15);  color: var(--accent-amber); }
+    .gh-badge.uptodate { background: rgba(59,130,246,0.12);  color: var(--accent-blue); }
+    .gh-badge.dirty    { background: rgba(239,68,68,0.12);   color: var(--accent-red); }
+    .gh-badge.clean    { background: rgba(16,185,129,0.1);   color: var(--accent-green); }
+
+    .commit-list { display: flex; flex-direction: column; gap: 8px; }
+
+    .commit-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 10px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .commit-hash {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--accent-cyan);
+      flex-shrink: 0;
+      padding-top: 1px;
+    }
+
+    .commit-msg {
+      font-size: 12px;
+      color: var(--text-secondary);
+      flex: 1;
+      line-height: 1.4;
+    }
+
+    .commit-date {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      background: rgba(13,20,33,0.95);
+      border: 1px solid var(--border-glow);
+      border-radius: 12px;
+      padding: 12px 20px;
+      font-size: 13px;
+      color: var(--text-primary);
+      backdrop-filter: blur(20px);
+      z-index: 999;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+
+    #toast.show { transform: translateY(0); opacity: 1; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      main { padding: 16px; }
+      .summary-strip { grid-template-columns: repeat(2, 1fr); }
+      .bots-grid { grid-template-columns: 1fr; }
+      .github-grid { grid-template-columns: 1fr; }
+      .screenshot-grid { grid-template-columns: 1fr; }
+      .li-panel-row { grid-template-columns: 1fr; }
+      .li-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ─── LinkedIn Data Section ─── */
+    .li-data-section {
+      background: var(--bg-glass);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      backdrop-filter: blur(8px);
+    }
+    .li-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .li-stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+    .li-stat-card:hover { border-color: var(--accent-cyan); }
+    .li-stat-icon { font-size: 22px; margin-bottom: 4px; }
+    .li-stat-val { font-size: 20px; font-weight: 700; color: var(--accent-cyan); }
+    .li-stat-lbl { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+    .li-panel-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+    .li-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .li-panel-title {
+      padding: 10px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .li-panel-body {
+      padding: 8px;
+      max-height: 350px;
+      overflow-y: auto;
+    }
+    .li-panel-body::-webkit-scrollbar { width: 4px; }
+    .li-panel-body::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 4px; }
+    .li-loading {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+    .li-post-item, .li-oferta-item, .li-contacto-item {
+      padding: 8px 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .li-post-item:last-child, .li-oferta-item:last-child, .li-contacto-item:last-child {
+      border-bottom: none;
+    }
+    .li-post-item:hover, .li-oferta-item:hover, .li-contacto-item:hover {
+      background: rgba(255,255,255,0.03);
+    }
+    .li-post-author { font-weight: 600; color: var(--accent-cyan); font-size: 11px; }
+    .li-post-time { color: var(--text-muted); font-size: 10px; float: right; }
+    .li-post-text { color: var(--text-secondary); margin-top: 3px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .li-oferta-autor { font-weight: 600; font-size: 11px; color: var(--accent-amber); }
+    .li-oferta-rol { color: var(--text-secondary); margin-top: 2px; }
+    .li-oferta-correos { color: var(--accent-green); font-size: 10px; margin-top: 2px; word-break: break-all; }
+    .li-oferta-info { color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+    .li-contacto-email { color: var(--accent-green); font-weight: 500; font-size: 11px; }
+    .li-contacto-autor { color: var(--text-secondary); margin-left: 4px; }
+    .li-contacto-empresa { color: var(--text-muted); font-size: 10px; }
+    .li-badge-estructural { display: inline-block; background: rgba(6,182,212,0.15); color: #22d3ee; font-size: 9px; padding: 1px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px; }
+
+    /* ─── Estructurales Section ─── */
+    .est-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .est-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      transition: border-color 0.2s, opacity 0.3s;
+    }
+    .est-card:hover { border-color: rgba(6,182,212,0.4); }
+    .est-card.contactado { opacity: 0.55; border-color: var(--accent-green); }
+    .est-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+    .est-card-autor { font-weight: 600; font-size: 13px; color: var(--accent-cyan); }
+    .est-card-rol { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+    .est-card-badges {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .est-badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    .est-badge.score { background: rgba(16,185,129,0.15); color: #34d399; }
+    .est-badge.region { background: rgba(59,130,246,0.12); color: #60a5fa; }
+    .est-badge.email { background: rgba(245,158,11,0.12); color: #fbbf24; }
+    .est-card-correos {
+      margin: 8px 0;
+      font-size: 12px;
+      word-break: break-all;
+      color: var(--accent-green);
+      background: rgba(16,185,129,0.06);
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(16,185,129,0.1);
+    }
+    .est-card-texto {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .est-card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .est-btn-contactado {
+      background: rgba(16,185,129,0.1);
+      border: 1px solid rgba(16,185,129,0.25);
+      color: #34d399;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .est-btn-contactado:hover { background: rgba(16,185,129,0.2); }
+    .est-btn-contactado.activo {
+      background: rgba(16,185,129,0.2);
+      border-color: var(--accent-green);
+    }
+    .est-filters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .est-filter-select {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+    }
+    .est-filter-select:focus { outline: none; border-color: var(--accent-cyan); }
+    .est-filter-check {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+    .est-filter-check input { accent-color: var(--accent-cyan); }
+    .est-card-empresa { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+    .est-total-strip {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .est-total-item { display: flex; align-items: center; gap: 4px; }
+    .est-total-val { font-weight: 600; color: var(--text-secondary); }
+
+    /* ─── CRM Section ─── */
+    .crm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .crm-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      transition: border-color 0.2s;
+      cursor: pointer;
+    }
+    .crm-card:hover { border-color: var(--accent-cyan); }
+    .crm-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+    .crm-card-nombre { font-weight: 600; font-size: 13px; color: var(--text-primary); }
+    .crm-card-email { font-size: 11px; color: var(--accent-green); word-break: break-all; }
+    .crm-card-info { font-size: 11px; color: var(--text-muted); margin-top: 4px; line-height: 1.4; }
+    .crm-status-badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 5px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .crm-status-pendiente { background: rgba(245,158,11,0.12); color: #fbbf24; }
+    .crm-status-contactado { background: rgba(59,130,246,0.12); color: #60a5fa; }
+    .crm-status-en_seguimiento { background: rgba(139,92,246,0.12); color: #a78bfa; }
+    .crm-status-responded { background: rgba(16,185,129,0.12); color: #34d399; }
+    .crm-status-cerrado { background: rgba(74,85,104,0.12); color: #9ca3af; }
+    .crm-card-score { font-size: 10px; color: var(--text-muted); }
+    .crm-card-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .crm-btn-sm {
+      padding: 3px 10px;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: 600;
+      border: 1px solid;
+      cursor: pointer;
+      background: transparent;
+      transition: all 0.2s;
+    }
+    .crm-btn-sm:hover { opacity: 0.8; }
+    .crm-btn-contactar { border-color: rgba(59,130,246,0.3); color: #60a5fa; }
+    .crm-btn-contactar:hover { background: rgba(59,130,246,0.1); }
+    .crm-btn-nota { border-color: rgba(139,92,246,0.3); color: #a78bfa; }
+    .crm-btn-nota:hover { background: rgba(139,92,246,0.1); }
+    .crm-btn-email { border-color: rgba(16,185,129,0.3); color: #34d399; }
+    .crm-btn-email:hover { background: rgba(16,185,129,0.1); }
+    .crm-btn-cerrar { border-color: rgba(239,68,68,0.3); color: #f87171; }
+    .crm-btn-cerrar:hover { background: rgba(239,68,68,0.1); }
+
+    /* CRM Modal */
+    .crm-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .crm-modal-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      width: 90%;
+      max-width: 520px;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .crm-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .crm-modal-body { padding: 20px; }
+    .crm-modal-field { margin-bottom: 14px; }
+    .crm-modal-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .crm-modal-value { font-size: 13px; color: var(--text-primary); }
+    .crm-modal-input {
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      padding: 8px 12px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+    }
+    .crm-modal-input:focus { outline: none; border-color: var(--accent-cyan); }
+    .crm-modal-textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      padding: 8px 12px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      min-height: 80px;
+      resize: vertical;
+    }
+    .crm-modal-textarea:focus { outline: none; border-color: var(--accent-cyan); }
+    .crm-select-estado {
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      padding: 8px 12px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+    }
+    .crm-interaccion-item {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .crm-interaccion-item:last-child { border-bottom: none; }
+    .crm-interaccion-tipo { font-weight: 600; color: var(--accent-cyan); }
+    .crm-interaccion-fecha { color: var(--text-muted); font-size: 10px; margin-left: 6px; }
+    .crm-interaccion-contenido { color: var(--text-secondary); margin-top: 2px; }
+
+    /* ─── Star Rating ⭐ ─── */
+    .star-rating { display: inline-flex; gap: 2px; cursor: pointer; user-select: none; vertical-align: middle; }
+    .star-rating .star { font-size: 14px; color: #4a5568; transition: color 0.15s, transform 0.15s; }
+    .star-rating .star.active { color: #f59e0b; text-shadow: 0 0 6px rgba(245,158,11,0.5); }
+    .star-rating:hover .star { color: #f59e0b; }
+    .star-rating .star:hover ~ .star { color: #4a5568 !important; }
+    .star-rating.readonly { cursor: default; }
+    .star-rating.readonly:hover .star { color: #4a5568; }
+    .star-rating.readonly .star.active { color: #f59e0b; }
+    .star-count { font-size: 10px; color: var(--text-muted); margin-left: 4px; font-family: 'JetBrains Mono', monospace; }
+
+    /* ─── Suggestions Panel 🧠 ─── */
+    .suggestions-panel {
+      background: linear-gradient(135deg, rgba(139,92,246,0.06) 0%, rgba(6,182,212,0.04) 100%);
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 28px;
+    }
+    .suggestions-panel h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+    .suggestions-panel .sug-subtitle { font-size: 11px; color: var(--text-muted); margin-bottom: 16px; }
+    .sug-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+    .sug-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .sug-card h4 { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+    .sug-kw-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 5px 0;
+      font-size: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .sug-kw-item .kw { color: var(--accent-purple); font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+    .sug-kw-item .stat { color: var(--text-secondary); font-size: 10px; }
+    .sug-kw-item.good .kw { color: var(--accent-green); }
+    .sug-kw-item.bad .kw { color: var(--accent-red); }
+    .sug-new-badge { 
+      background: rgba(16,185,129,0.15); color: var(--accent-green);
+      font-size: 9px; padding: 1px 6px; border-radius: 10px; font-weight: 600;
+    }
+    .sug-metric {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 10px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+      font-size: 12px; font-weight: 600;
+    }
+    .sug-metrics { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">🤖</div>
+      <div>
+        <div class="logo-text">BOT Dashboard</div>
+        <div class="logo-sub">Monitor Central de Proyectos</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <span id="last-update">—</span>
+      <span id="conn-badge" style="color:var(--text-muted)">⬤ Conectando...</span>
+      <div class="clock" id="clock">--:--:--</div>
+      <button id="refresh-btn" onclick="refreshAll()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+        Actualizar
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Summary strip -->
+  <div class="summary-strip">
+    <div class="summary-card">
+      <div class="summary-icon green">✅</div>
+      <div>
+        <div class="summary-label">Bots Activos</div>
+        <div class="summary-value green" id="stat-active">—</div>
+      </div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon amber">⚠️</div>
+      <div>
+        <div class="summary-label">Con Advertencias</div>
+        <div class="summary-value amber" id="stat-warn">—</div>
+      </div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon red">❌</div>
+      <div>
+        <div class="summary-label">Con Errores</div>
+        <div class="summary-value red" id="stat-error">—</div>
+      </div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon blue">📋</div>
+      <div>
+        <div class="summary-label">Total Proyectos</div>
+        <div class="summary-value blue" id="stat-total">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV STRIP -->
+  <nav class="nav-strip" id="nav-strip">
+    <!-- JS-generated -->
+  </nav>
+
+  <!-- BOTS SECTION -->
+  <div class="section-title">🤖 &nbsp;Estado de Bots</div>
+
+  <div class="bots-grid" id="bots-grid">
+    <!-- Rendered by JS -->
+  </div>
+
+  <!-- SCREENSHOTS SECTION -->
+  <div class="section-title">📸 &nbsp;Screenshots de APIs (IP Restringida)</div>
+
+  <div class="screenshot-section">
+    <div class="screenshot-grid" id="screenshots-grid">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- DATABASE SECTION -->
+  <div class="section-title">🗄️ &nbsp;Base de Datos Unificada</div>
+
+  <div class="db-grid" id="db-grid">
+      <!-- Rendered by JS -->
+    </div>
+
+  <!-- LINKEDIN DATA SECTION -->
+  <div class="section-title">🔵 &nbsp;LinkedIn — Posts y Ofertas</div>
+
+  <div class="li-data-section">
+    <div class="li-stats-grid" id="li-stats-grid">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="li-panel-row">
+      <div class="li-panel">
+        <div class="li-panel-title">📰 Últimos Posts</div>
+        <div class="li-panel-body" id="li-posts-list">
+          <div class="li-loading">Cargando posts...</div>
+        </div>
+      </div>
+      <div class="li-panel">
+        <div class="li-panel-title">
+          💼 Ofertas Recientes
+          <span style="font-size:11px;color:var(--text-muted);margin-left:8px">
+            (<a href="#" onclick="switchOfertasTab('todas');return false" id="li-ofertas-tab-todas" style="color:var(--accent-cyan);font-weight:600">Todas</a>
+            · <a href="#" onclick="switchOfertasTab('estructurales');return false" id="li-ofertas-tab-estructurales" style="color:var(--text-muted)">Estructurales</a>)
+          </span>
+        </div>
+        <div class="li-panel-body" id="li-ofertas-list">
+          <div class="li-loading">Cargando ofertas...</div>
+        </div>
+      </div>
+      <div class="li-panel">
+        <div class="li-panel-title">📧 Contactos con Email</div>
+        <div class="li-panel-body" id="li-contactos-list">
+          <div class="li-loading">Cargando contactos...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESTRUCTURALES SECTION -->
+  <div class="section-title">🏗️ &nbsp;Estructurales LinkedIn</div>
+
+  <div class="li-data-section">
+    <div class="est-total-strip" id="est-total-strip"></div>
+    <div class="est-filters" id="est-filters">
+      <select class="est-filter-select" id="est-region-filter" onchange="renderEstructurales()">
+        <option value="">🌎 Todas las regiones</option>
+      </select>
+      <label class="est-filter-check">
+        <input type="checkbox" id="est-email-only" onchange="renderEstructurales()" />
+        📧 Solo con email
+      </label>
+      <label class="est-filter-check">
+        <input type="checkbox" id="est-hide-contacted" onchange="renderEstructurales()" checked />
+        🙈 Ocultar contactados
+      </label>
+      <span style="font-size:11px;color:var(--text-muted);margin-left:auto">
+        <span id="est-result-count">0</span> resultados
+      </span>
+    </div>
+    <div class="est-grid" id="est-grid">
+      <div class="li-loading">Cargando ofertas estructurales...</div>
+    </div>
+  </div>
+
+  <!-- CRM SECTION -->
+  <div class="section-title">📋 &nbsp;CRM Contactos</div>
+
+  <div class="li-data-section" id="crm-section">
+    <div class="est-total-strip" id="crm-total-strip"></div>
+    <div class="est-filters" id="crm-filters">
+      <select class="est-filter-select" id="crm-estado-filter" onchange="renderCRM()">
+        <option value="">📋 Todos los estados</option>
+        <option value="pendiente">⏳ Pendiente</option>
+        <option value="contactado">📞 Contactado</option>
+        <option value="en_seguimiento">🔄 En seguimiento</option>
+        <option value="responded">💬 Respondió</option>
+        <option value="cerrado">✅ Cerrado</option>
+      </select>
+      <input type="text" class="est-filter-select" id="crm-search" placeholder="🔍 Buscar nombre, email, empresa..."
+             onkeyup="if(event.key==='Enter')renderCRM()" style="min-width:200px" />
+      <button class="btn btn-success" onclick="initCRM()" style="font-size:11px;padding:5px 12px">📥 Importar</button>
+      <span style="font-size:11px;color:var(--text-muted);margin-left:auto">
+        <span id="crm-result-count">0</span> contactos
+      </span>
+    </div>
+    <div class="crm-grid" id="crm-grid">
+      <div class="li-loading">💡 Haz clic en "Importar" para cargar contactos desde ofertas estructurales</div>
+    </div>
+  </div>
+
+  <!-- CRM Modal -->
+  <div id="crm-modal" class="crm-modal" style="display:none">
+    <div class="crm-modal-content">
+      <div class="crm-modal-header">
+        <span id="crm-modal-title">Contacto</span>
+        <button onclick="closeCrmModal()" style="background:none;border:none;color:var(--text-secondary);font-size:20px;cursor:pointer">✕</button>
+      </div>
+      <div class="crm-modal-body" id="crm-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- SEGUIMIENTO SECTION -->
+  <div class="section-title">🔎 &nbsp;Seguimiento Postulaciones</div>
+
+  <div class="li-data-section" id="seg-section">
+    <div class="est-filters" style="margin-bottom:8px">
+      <span class="est-total-item" id="seg-count-strip">📋 0 en seguimiento</span>
+      <button class="btn btn-ghost" style="font-size:10px;padding:3px 10px;margin-left:auto" onclick="renderSeguimiento()">🔄 Refrescar</button>
+    </div>
+    <div class="est-grid" id="seg-grid">
+      <div class="li-loading">Sin items en seguimiento. Marca posts u ofertas para darles seguimiento.</div>
+    </div>
+  </div>
+
+  <!-- Post Detail Modal -->
+  <div id="post-detail-modal" class="crm-modal" style="display:none">
+    <div class="crm-modal-content">
+      <div class="crm-modal-header">
+        <span id="post-detail-title">👤 Post</span>
+        <button onclick="closePostDetail()" style="background:none;border:none;color:var(--text-secondary);font-size:20px;cursor:pointer">✕</button>
+      </div>
+      <div class="crm-modal-body" id="post-detail-body"></div>
+    </div>
+  </div>
+
+  <!-- 🧠 SUGERENCIAS IA SECTION -->
+  <div class="section-title">🧠 &nbsp;Sugerencias IA — Mejora del Detector</div>
+
+  <div class="suggestions-panel" id="sug-panel">
+    <h3>🧠 Análisis inteligente de feedback</h3>
+    <div class="sug-subtitle">El bot aprende de tus votos. Mientras más votes, más preciso será detectando ofertas reales.</div>
+    <div class="sug-metrics" id="sug-metrics">
+      <span class="li-loading">Cargando análisis...</span>
+    </div>
+    <div class="sug-grid" id="sug-grid"></div>
+    <div style="margin-top:10px">
+      <button class="btn btn-ghost" style="font-size:10px" onclick="loadSuggestions()">🔄 Re-analizar</button>
+    </div>
+  </div>
+
+  <!-- GITHUB SECTION -->
+  <div class="section-title">🐙 &nbsp;Estado GitHub</div>
+
+  <div class="github-grid" id="github-grid">
+    <!-- Rendered by JS -->
+  </div>
+
+</main>
+
+<div id="toast"></div>
+
+<script>
+// ─────────────────────────────────────────────────────────
+// LIVE STATUS POLLING
+// ─────────────────────────────────────────────────────────
+
+const API_URL = '/api/status';
+let lastStatus = null;
+let pollInterval = null;
+
+async function fetchStatus() {
+  try {
+    const res = await fetch(API_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    lastStatus = await res.json();
+    updateFromStatus(lastStatus);
+    setConnectionBadge(true);
+  } catch (e) {
+    setConnectionBadge(false);
+    console.warn('API no disponible:', e.message);
+  }
+}
+
+function setConnectionBadge(ok) {
+  const el = document.getElementById('conn-badge');
+  if (!el) return;
+  el.textContent = ok ? '🟢 En vivo' : '🔴 Sin API';
+  el.style.color  = ok ? 'var(--accent-green)' : 'var(--accent-red)';
+}
+
+function updateFromStatus(data) {
+  const li = data.bots.linkedin;
+  const mp = data.bots.mercadopublico;
+  const tr = data.bots.trading;
+
+  // ── LinkedIn ──
+  updateBotCard('linkedin-ag', {
+    status:      li.status,
+    statusText:  li.status_text,
+    extraInfo:   li.scraper_open
+      ? `🖥️ ${li.script} corriendo — PID: ${li.pid}`
+      : li.session_ok
+        ? '💾 Sesión guardada lista — app inactiva'
+        : '⚠️ Sin linkedin_state.json — ejecutar login manual',
+    extraType:   li.scraper_open ? 'running' : li.session_ok ? 'ok' : 'warn',
+    logLines:    li.log_tail,
+    git:         li.git,
+  });
+
+  // ── MercadoPublico ──
+  let mpExtraInfo = mp.node_running
+    ? `🔄 Node corriendo (PIDs: ${mp.node_pids.join(', ')})`
+    : mp.errors_429 > 0
+      ? `⚠️ ${mp.errors_429} errores HTTP 429 en el último log`
+      : `✅ Último snapshot: ${mp.last_items ?? '?'} licitaciones`;
+
+  if (mp.sync_status && mp.sync_status.messages && mp.sync_status.messages.length > 0) {
+    mpExtraInfo += ` | Sync: ${mp.sync_status.messages.join(' · ')}`;
+  }
+
+  updateBotCard('mercadopublico-ag', {
+    status:      mp.status,
+    statusText:  mp.status_text,
+    extraInfo:   mpExtraInfo,
+    extraType:   mp.sync_status?.status === 'error' ? 'error' : mp.sync_status?.status === 'warn' ? 'warn' : mp.node_running ? 'running' : mp.errors_429 > 0 ? 'warn' : 'ok',
+    logLines:    mp.log_tail,
+    git:         mp.git,
+  });
+
+  // ── Trading Bot ──
+  if (tr) {
+    const profitColor = tr.total_profit >= 0 ? '#34d399' : '#f87171';
+    const profitSign  = tr.total_profit >= 0 ? '+' : '';
+    const posStr = tr.positions_list.length > 0
+      ? tr.positions_list.map(p => `${p.symbol} ($${p.invested})`).join(' · ')
+      : 'Sin posiciones abiertas';
+
+    updateBotCard('spot2', {
+      status:    tr.status,
+      statusText: tr.status_text,
+      extraInfo: tr.bot_active
+        ? `🟢 Ciclo activo: ${tr.last_cycle ?? '?'} | Último check: ${tr.last_check ?? '?'}`
+        : tr.open_positions > 0
+          ? `⏸ ${tr.open_positions} pos. abiertas: ${posStr}`
+          : `⬜ Última actividad: ${tr.last_cycle ?? 'desconocida'}`,
+      extraType:  tr.bot_active ? 'running' : tr.open_positions > 0 ? 'warn' : 'ok',
+      logLines:   tr.log_tail,
+      git:        tr.git,
+    });
+
+    // Actualizar stats del card de trading directamente
+    const card = document.getElementById('bot-spot2');
+    if (card) {
+      const statVals = card.querySelectorAll('.stat-val');
+      if (statVals[0]) { statVals[0].textContent = tr.open_positions; statVals[0].style.color = 'var(--accent-cyan)'; }
+      if (statVals[1]) {
+        statVals[1].textContent = `${profitSign}$${Math.abs(tr.total_profit).toFixed(2)}`;
+        statVals[1].style.color = profitColor;
+        statVals[1].style.fontSize = '16px';
+      }
+      if (statVals[2]) { statVals[2].textContent = `${tr.win_rate}%`; statVals[2].style.color = tr.win_rate >= 55 ? '#34d399' : '#fbbf24'; }
+    }
+  }
+
+  // Timestamp
+  const ts = document.getElementById('last-update');
+  if (ts) ts.textContent = `Actualizado: ${data.timestamp.replace('T',' ')}`;
+
+  renderStats();
+  renderLinkedIn();
+  renderEstructurales();
+  renderCRM();
+  renderSeguimiento();
+}
+
+function updateBotCard(id, { status, statusText, extraInfo, extraType, logLines, git }) {
+  const card = document.getElementById(`bot-${id}`);
+  if (!card) return;
+
+  // Status class
+  card.className = `bot-card status-${status === 'running' ? 'ok' : status}`;
+
+  // Badge
+  const badge = card.querySelector('.status-badge');
+  if (badge) {
+    badge.className = `status-badge ${status === 'running' ? 'ok' : status}`;
+    badge.innerHTML = `<div class="status-dot ${status === 'running' ? 'ok' : status}"></div>${statusText}`;
+  }
+
+  // Extra info box
+  const extraBox = card.querySelector('.extra-info-box');
+  if (extraBox && extraInfo) {
+    const colors = {
+      running: { bg: 'rgba(59,130,246,0.08)', border: 'rgba(59,130,246,0.25)', text: '#60a5fa' },
+      ok:      { bg: 'rgba(16,185,129,0.08)', border: 'rgba(16,185,129,0.2)',  text: '#34d399' },
+      warn:    { bg: 'rgba(245,158,11,0.08)', border: 'rgba(245,158,11,0.2)', text: '#fbbf24' },
+    };
+    const c = colors[extraType] || colors.warn;
+    extraBox.style.background   = c.bg;
+    extraBox.style.borderColor  = c.border;
+    extraBox.style.color        = c.text;
+    extraBox.textContent        = extraInfo;
+    extraBox.style.display      = 'block';
+  }
+
+  // Logs
+  const logBox = card.querySelector('.log-box');
+  if (logBox && logLines && logLines.length > 0) {
+    logBox.innerHTML = logLines.map(line => {
+      const isOk    = line.includes('✅') || line.includes('Finalizado (codigo 0)');
+      const isWarn  = line.includes('⚠️') || line.includes('429') || line.includes('Aviso');
+      const isErr   = line.includes('❌') || line.includes('Error');
+      const cls     = isErr ? 'error' : isWarn ? 'warn' : isOk ? 'ok' : 'info';
+      const escaped = line.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      return `<div class="log-line"><span class="log-msg ${cls}">${escaped}</span></div>`;
+    }).join('');
+    logBox.scrollTop = logBox.scrollHeight;
+  }
+}
+
+// ─────────────────────────────────────────────────────────
+// DATA DEFINITIONS
+// ─────────────────────────────────────────────────────────
+
+const PROJECTS = [
+  {
+    id: 'linkedin-ag',
+    name: 'LinkedIn-AG',
+    desc: 'Scraper de feed y ofertas laborales de LinkedIn',
+    avatar: '🔵',
+    avatarBg: 'linear-gradient(135deg,#0077b5,#0a66c2)',
+    type: 'Scraper / Playwright',
+    language: 'Python',
+    localPath: 'Linkedin-AG',
+    github: 'https://github.com/bRUNS123/Linkedin-AG',
+    repoName: 'bRUNS123/Linkedin-AG',
+    branch: 'master',
+    gitStatus: {
+      local: 'behind',         // 5 commits atrás
+      dirty: false,
+      behindBy: 5,
+      aheadBy: 0,
+      uncommitted: ['Ofertas_Estructurales.csv', 'Todas_Ofertas.csv'],
+    },
+    lastCommits: [
+      { hash: '28e9408', msg: 'Hacer dinamica la pestana Ofertas y agregar seguimiento de postulaciones', date: '2026-06-12' },
+      { hash: 'fbac6d0', msg: 'Add region detection and a bot training tab', date: '2026-06-12' },
+      { hash: 'e254738', msg: 'Show full post description expanded in Ofertas tab', date: '2026-06-12' },
+      { hash: 'c8ff44d', msg: 'Actualizar Contactos_Emails.csv desde la app', date: '2026-06-12' },
+      { hash: '1bad625', msg: 'Actualizar training_data.json desde la app', date: '2026-06-12' },
+    ],
+    mainScript: 'scrap.py',
+    scheduleType: 'Manual',
+    scheduleNote: 'Ejecución manual con Playwright',
+    requiresChileIP: false,
+    stats: {
+      postsScraped: '14,771',
+      postsUnit: 'posts',
+      lastRun: '2026-06-12',
+      sessionFile: 'linkedin_state.json ✓',
+    },
+    logLines: [
+      { time: '23:01', type: 'ok',   msg: '✅ Sesión activa detectada (storage_state OK)' },
+      { time: '23:00', type: 'ok',   msg: '📌 Posts iniciales detectados: 28' },
+      { time: '22:55', type: 'info', msg: '🔄 Ciclo 12: scroll completado' },
+      { time: '22:50', type: 'ok',   msg: '💾 Guardados 43 posts nuevos (Total: 14771)' },
+      { time: '22:45', type: 'warn', msg: '⏳ Sin nuevos posts visuales (4/6)' },
+      { time: '22:40', type: 'ok',   msg: '✅ No aparece más contenido. Fin del scroll.' },
+    ],
+    status: 'ok',
+    statusText: 'Consultando...',
+    extraWarning: null,
+    requiresAutoSchedule: true,
+  },
+  {
+    id: 'mercadopublico-ag',
+    name: 'MercadoPublico-AG',
+    desc: 'API de licitaciones y Compras Ágiles (ChileCompra)',
+    avatar: '🇨🇱',
+    avatarBg: 'linear-gradient(135deg,#c0392b,#d35400)',
+    type: 'API Scraper / Node.js',
+    language: 'JavaScript',
+    localPath: 'MercadoPublico-AG (API)',
+    github: 'https://github.com/bruns123/MercadoPublico-AG',
+    repoName: 'bruns123/MercadoPublico-AG',
+    branch: 'master',
+    gitStatus: {
+      local: 'uptodate',
+      dirty: true,
+      behindBy: 0,
+      aheadBy: 0,
+      uncommitted: ['.env.example', 'package-lock.json', 'scripts/update-compra-agil.cmd'],
+    },
+    lastCommits: [
+      { hash: '7642071', msg: 'feat: snapshot periódico de Compra Ágil para producción', date: '2026-06-12' },
+      { hash: '47c0893', msg: 'feat: agregar sección Seguimiento (estado Interesante/En Estudio/Postulada)', date: '2026-06-12' },
+      { hash: '701962a', msg: 'fix: deduplicar items en _fetchAllPages de Compra Ágil', date: '2026-06-12' },
+      { hash: 'e75e38f', msg: 'fix: diagnosticar() de Compra Ágil usaba tamano_pagina=1, rechazado con 400', date: '2026-06-10' },
+      { hash: '9669062', msg: 'fix: revertir proxy de Cloudflare — Compra Ágil queda solo para uso local', date: '2026-06-10' },
+    ],
+    mainScript: 'scripts/fetch-compra-agil-snapshot.js',
+    scheduleType: 'Automático',
+    scheduleNote: 'Tarea programada Windows (c/2h)',
+    requiresChileIP: true,
+    stats: {
+      postsScraped: '950',
+      postsUnit: 'licitaciones',
+      lastRun: '13-06-2026 20:00',
+      sessionFile: 'VITE_API_TICKET ✓',
+    },
+    logLines: [],  // Se parsearán del log real
+    status: 'warn',
+    statusText: 'Advertencias (429)',
+    extraWarning: 'Se detectaron errores HTTP 429 (rate-limit) en algunas páginas del snapshot.',
+    requiresAutoSchedule: false,
+  },
+
+  {
+    id: 'spot2',
+    name: 'Binance Trading Bot',
+    desc: 'Bot de trading SPOT automático — Binance API (REAL)',
+    avatar: '📈',
+    avatarBg: 'linear-gradient(135deg,#f0a500,#e67e22)',
+    type: 'Trading / Python',
+    language: 'Python',
+    localPath: 'spot2',
+    github: 'https://github.com/bRUNS123/tradingbot',
+    repoName: 'bRUNS123/tradingbot',
+    branch: 'main',
+    gitStatus: {
+      local: 'uptodate',
+      dirty: true,
+      behindBy: 0, aheadBy: 0,
+      uncommitted: ['portfolio.json', 'trades_log.csv', 'bot.py', 'config.py', '+8 más'],
+    },
+    lastCommits: [
+      { hash: 'eb73195', msg: 'Trackear datos de trading en repo privado para sync PC/notebook', date: '2026-05-21' },
+      { hash: '2bb5b83', msg: 'Ajustes menores en config, dashboard, scanner y modulos auxiliares', date: '2026-05-21' },
+      { hash: '81b489e', msg: 'Refactor mayo 2026: sizes profesionales y filtros estrictos', date: '2026-05-21' },
+      { hash: '1b3b869', msg: 'Initial commit: SPOT2 trading bot', date: '2026-05-21' },
+    ],
+    mainScript: 'bot.py',
+    scheduleType: 'Manual',
+    scheduleNote: 'Ejecución manual (start_bot.bat)',
+    requiresChileIP: false,
+    stats: {
+      postsScraped: '3',
+      postsUnit: 'posiciones',
+      lastRun: '2026-06-14 01:16',
+      sessionFile: 'BINANCE_API_KEY ✓',
+    },
+    logLines: [
+      { time: '--:--', type: 'info', msg: 'Cargando desde API...' },
+    ],
+    status: 'warn',
+    statusText: 'Consultando...',
+    extraWarning: null,
+    requiresAutoSchedule: false,
+  }
+];
+
+
+// MercadoPublico log real parseado
+const MP_LOG_ENTRIES = [
+  { time: '13-06 20:02', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 950 oportunidades' },
+  { time: '13-06 20:00', type: 'ok',   msg: '🚀 Iniciando actualizacion de Compra Agil' },
+  { time: '13-06 20:00', type: 'warn', msg: '⚠️ Aviso: falló la página 4 (HTTP 429), se omite.' },
+  { time: '13-06 18:16', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 1000 oportunidades' },
+  { time: '13-06 16:03', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 900 oportunidades' },
+  { time: '13-06 14:02', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 849 oportunidades' },
+  { time: '13-06 12:02', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 899 oportunidades' },
+  { time: '13-06 10:02', type: 'warn', msg: '⚠️ HTTP 429 en páginas 4, 9, 12, 15, 19 — 750 oportunidades' },
+  { time: '13-06  8:02', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 950 oportunidades' },
+  { time: '12-06 23:08', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 950 oportunidades (HTTP 429 pág. 7)' },
+  { time: '12-06 21:33', type: 'ok',   msg: '✅ Finalizado (codigo 0) — 999 oportunidades' },
+];
+
+// Screenshots definitions
+const SCREENSHOTS = [
+  {
+    id: 'mp-api',
+    title: 'MercadoPublico API',
+    subtitle: 'api2.mercadopublico.cl — Compra Ágil',
+    icon: '🇨🇱',
+    note: 'Requiere IP chilena para acceso directo',
+    requiresChileIP: true,
+    imgFile: 'screenshots/mercadopublico_api.png',
+    lastCapture: null,
+  },
+  {
+    id: 'linkedin-feed',
+    title: 'LinkedIn Feed',
+    subtitle: 'linkedin.com/feed — Posts scrapeados',
+    icon: '🔵',
+    note: 'Sesión guardada en linkedin_state.json',
+    requiresChileIP: false,
+    imgFile: 'screenshots/linkedin_feed.png',
+    lastCapture: null,
+  }
+];
+
+// ─────────────────────────────────────────────────────────
+// RENDER
+// ─────────────────────────────────────────────────────────
+
+function renderBots() {
+  const grid = document.getElementById('bots-grid');
+  grid.innerHTML = '';
+
+  PROJECTS.forEach(p => {
+    // Inject MP logs
+    if (p.id === 'mercadopublico-ag') {
+      p.logLines = MP_LOG_ENTRIES;
+    }
+
+    const card = document.createElement('div');
+    card.className = `bot-card status-${p.status}`;
+    card.id = `bot-${p.id}`;
+
+    const logsHtml = p.logLines.map(l => `
+      <div class="log-line">
+        <span class="log-time">${l.time}</span>
+        <span class="log-msg ${l.type}">${l.msg}</span>
+      </div>
+    `).join('');
+
+    const scheduleColor = p.scheduleType === 'Automático' ? 'highlight' : '';
+
+    card.innerHTML = `
+      <div class="bot-header">
+        <div class="bot-avatar" style="background:${p.avatarBg}">${p.avatar}</div>
+        <div class="bot-info">
+          <div class="bot-name">${p.name}</div>
+          <div class="bot-desc">${p.desc}</div>
+        </div>
+        <div class="status-badge ${p.status}">
+          <div class="status-dot ${p.status}"></div>
+          ${p.statusText}
+        </div>
+      </div>
+      <div class="bot-body">
+        <div class="meta-row">
+          <div class="meta-tag">⚙️ ${p.type}</div>
+          <div class="meta-tag">🔤 ${p.language}</div>
+          <div class="meta-tag ${scheduleColor}">🕐 ${p.scheduleNote}</div>
+          ${p.requiresChileIP ? '<div class="meta-tag" style="color:#f97316;border-color:rgba(249,115,22,0.3)">🌐 Requiere IP Chile</div>' : ''}
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-val" style="color:var(--accent-cyan)">${p.stats.postsScraped}</div>
+            <div class="stat-lbl">${p.stats.postsUnit}</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" style="font-size:13px;color:var(--text-secondary);padding-top:3px">${p.stats.lastRun}</div>
+            <div class="stat-lbl">Última ejecución</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" style="font-size:11px;color:var(--accent-green);padding-top:2px">${p.stats.sessionFile}</div>
+            <div class="stat-lbl">Auth / Sesión</div>
+          </div>
+        </div>
+
+        <div class="extra-info-box" style="display:none;border:1px solid;border-radius:8px;padding:10px 12px;font-size:12px;margin-bottom:14px;line-height:1.5"></div>
+        ${p.extraWarning ? `
+          <div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);border-radius:8px;padding:10px 12px;font-size:12px;color:#fbbf24;margin-bottom:14px;line-height:1.5">
+            ⚠️ ${p.extraWarning}
+          </div>
+        ` : ''}
+
+        <div class="log-header">
+          <div class="log-title">📋 Log Reciente</div>
+        </div>
+        <div class="log-box">
+          ${logsHtml || '<div class="log-line"><span class="log-msg dim">Sin logs disponibles</span></div>'}
+        </div>
+      </div>
+
+      <div class="bot-actions">
+        ${p.github ? `<a href="${p.github}" target="_blank" class="btn btn-ghost">🐙 GitHub</a>` : ''}
+        ${p.id === 'linkedin-ag' && p.status !== 'running' ? `<button class="btn btn-success" onclick="startLinkedinBot()">▶ Auto-ejecutar</button>` : ''}
+        ${p.requiresAutoSchedule && p.id !== 'linkedin-ag' ? `<button class="btn btn-success" onclick="showToast('Para automatizar: ver sección de configuración de tarea programada')">▶ Auto-ejecutar</button>` : ''}
+        ${p.id === 'mercadopublico-ag' ? `<a href="https://bruns123.github.io/MercadoPublico-AG/" target="_blank" class="btn btn-primary">🌐 Ver Dashboard</a>` : ''}
+        <button class="btn btn-ghost" onclick="copyPath('${p.localPath}')">📁 Copiar ruta</button>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+function renderScreenshots() {
+  const grid = document.getElementById('screenshots-grid');
+  grid.innerHTML = '';
+
+  SCREENSHOTS.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'screenshot-card';
+    card.id = `ss-${s.id}`;
+
+    card.innerHTML = `
+      <div class="screenshot-header">
+        <span style="font-size:20px">${s.icon}</span>
+        <div>
+          <div style="font-size:14px;font-weight:600">${s.title}</div>
+          <div style="font-size:11px;color:var(--text-muted);font-family:'JetBrains Mono',monospace">${s.subtitle}</div>
+        </div>
+        ${s.requiresChileIP ? '<div style="margin-left:auto;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:6px;padding:3px 8px;font-size:10px;color:#f97316;font-weight:600">🌐 IP CL</div>' : ''}
+      </div>
+      <div class="screenshot-preview" id="preview-${s.id}">
+        <img src="${s.imgFile}" alt="Screenshot de ${s.title}"
+          onerror="this.style.display='none'; document.getElementById('ph-${s.id}').style.display='flex'"
+          onload="document.getElementById('ph-${s.id}').style.display='none'"
+          style="display:block"
+        />
+        <div id="ph-${s.id}" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#0d1421,#111927)">
+          <div class="placeholder-icon">${s.icon}</div>
+          <div style="font-size:12px;text-align:center;padding:0 20px;line-height:1.5">
+            <span style="color:var(--text-secondary)">Screenshot pendiente</span><br>
+            <span style="color:var(--text-muted);font-size:11px">${s.note}</span>
+          </div>
+          <button onclick="requestScreenshot('${s.id}')" class="btn btn-primary" style="font-size:11px;padding:6px 12px">📸 Capturar ahora</button>
+        </div>
+      </div>
+      <div class="screenshot-info">
+        <div class="screenshot-ts" id="ts-${s.id}">Sin captura reciente</div>
+        <button onclick="requestScreenshot('${s.id}')" class="btn btn-ghost" style="font-size:11px;padding:5px 10px">🔄 Actualizar</button>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+
+  // Try to load any existing screenshots
+  SCREENSHOTS.forEach(s => {
+    const img = document.querySelector(`#preview-${s.id} img`);
+    if (img) {
+      // Fire onload / onerror events
+    }
+  });
+}
+
+function renderGitHub() {
+  const grid = document.getElementById('github-grid');
+  grid.innerHTML = '';
+
+  PROJECTS.filter(p => p.repoName).forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'github-card';
+
+    const { local, dirty, behindBy, aheadBy, uncommitted } = p.gitStatus;
+
+    let syncBadge = '';
+    if (local === 'behind')    syncBadge = `<span class="gh-badge behind">⬇ ${behindBy} commits atrás</span>`;
+    else if (local === 'ahead') syncBadge = `<span class="gh-badge ahead">⬆ ${aheadBy} commits adelante</span>`;
+    else syncBadge = `<span class="gh-badge uptodate">✓ Sincronizado</span>`;
+
+    const dirtyBadge = dirty
+      ? `<span class="gh-badge dirty">✏ ${uncommitted.length} sin commit</span>`
+      : `<span class="gh-badge clean">✓ Limpio</span>`;
+
+    const commitsHtml = p.lastCommits.slice(0, 4).map(c => `
+      <div class="commit-row">
+        <span class="commit-hash">${c.hash}</span>
+        <span class="commit-msg">${c.msg}</span>
+        <span class="commit-date">${c.date}</span>
+      </div>
+    `).join('');
+
+    const uncommittedHtml = dirty ? `
+      <div style="margin-top:12px">
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:6px;font-weight:600;text-transform:uppercase;letter-spacing:0.6px">Cambios sin commitear</div>
+        ${uncommitted.map(f => `<div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#f87171;padding:2px 0">  M ${f}</div>`).join('')}
+      </div>
+    ` : '';
+
+    card.innerHTML = `
+      <div class="gh-header">
+        <span class="gh-icon">🐙</span>
+        <div>
+          <div class="gh-repo">${p.repoName}</div>
+          <div class="gh-branch">branch: ${p.branch}</div>
+        </div>
+        <a href="${p.github}" target="_blank" style="margin-left:auto;text-decoration:none" class="btn btn-ghost" style="font-size:11px">↗ Ver</a>
+      </div>
+
+      <div class="gh-status-row">
+        ${syncBadge}
+        ${dirtyBadge}
+      </div>
+
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:0.6px">Últimos commits</div>
+      <div class="commit-list">${commitsHtml}</div>
+      ${uncommittedHtml}
+    `;
+
+    grid.appendChild(card);
+  });
+}
+
+function renderStats() {
+  let active = 0, warn = 0, error = 0;
+  PROJECTS.forEach(p => {
+    if (p.status === 'ok') active++;
+    else if (p.status === 'warn') warn++;
+    else if (p.status === 'error') error++;
+  });
+
+  document.getElementById('stat-active').textContent = active;
+  document.getElementById('stat-warn').textContent = warn;
+  document.getElementById('stat-error').textContent = error;
+  document.getElementById('stat-total').textContent = PROJECTS.length;
+
+  // Also render DB stats
+  renderDB();
+}
+
+// ─── DATABASE PANEL ────────────────────────────────────
+
+const DB_CARDS = [
+  { icon: '👤', label: 'Contactos', key: 'contactos' },
+  { icon: '🏛️', label: 'Organismos', key: 'organismos' },
+  { icon: '📄', label: 'Licitaciones', key: 'licitaciones' },
+  { icon: '⚡', label: 'Compras Ágiles', key: 'compras_agiles' },
+  { icon: '📨', label: 'Campañas', key: 'email_campaigns' },
+  { icon: '🔎', label: 'En Seguimiento', key: 'en_seguimiento' },
+  { icon: '📊', label: 'Snapshots', key: 'bot_history' },
+  { icon: '💾', label: 'Base', key: 'db_size_kb', suffix: ' KB', decimals: 1 },
+];
+
+async function renderDB() {
+  const grid = document.getElementById('db-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch('/api/db/stats', { cache: 'no-store' });
+    if (!res.ok) { grid.innerHTML = '<div style="color:var(--text-muted);text-align:center;padding:20px">⚠️ DB no disponible</div>'; return; }
+    const data = await res.json();
+
+    let html = '';
+    DB_CARDS.forEach(c => {
+      let val = data[c.key] ?? 0;
+      if (c.decimals) val = Number(val).toFixed(c.decimals);
+      html += `<div class="db-card">
+        <div class="db-icon">${c.icon}</div>
+        <div class="db-label">${c.label}</div>
+        <div class="db-value">${val}${c.suffix || ''}</div>
+      </div>`;
+    });
+
+    // Bot status strip
+    if (data.bots) {
+      html += `<div class="db-card" style="grid-column:1/-1;background:var(--bg-tertiary);display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:10px">`;
+      Object.entries(data.bots).forEach(([id, bot]) => {
+        const dot = bot.status === 'ok' ? '🟢' : bot.status === 'running' ? '🟢' : bot.status === 'warn' ? '🟡' : '🔴';
+        html += `<span style="font-size:0.8rem;white-space:nowrap">${dot} <strong>${id}</strong>: ${bot.status_text}</span>`;
+      });
+      html += `<span style="font-size:0.72rem;color:var(--text-muted)">🕐 ${data.ultima_actualizacion}</span>`;
+      html += `</div>`;
+    }
+
+    grid.innerHTML = html;
+  } catch (e) {
+    grid.innerHTML = '<div style="color:var(--text-muted);text-align:center;padding:20px">⚠️ Error al cargar DB</div>';
+  }
+}
+
+// ─── LINKEDIN DATA RENDER ──────────────────────────────
+
+let _liOfertasTab = 'todas'; // 'todas' | 'estructurales'
+
+async function renderLinkedIn() {
+  await Promise.all([
+    renderLiStats(),
+    renderLiPosts(),
+    renderLiOfertas(_liOfertasTab),
+    renderLiContactos(),
+  ]);
+  loadSuggestions();
+}
+
+async function renderLiStats() {
+  const grid = document.getElementById('li-stats-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch('/api/linkedin/stats', { cache: 'no-store' });
+    if (!res.ok) { grid.innerHTML = '<div class="li-loading">⚠️ No disponible</div>'; return; }
+    const s = await res.json();
+    grid.innerHTML = `
+      <div class="li-stat-card">
+        <div class="li-stat-icon">📰</div>
+        <div class="li-stat-val">${(s.total_posts || 0).toLocaleString()}</div>
+        <div class="li-stat-lbl">Posts scrapeados</div>
+      </div>
+      <div class="li-stat-card">
+        <div class="li-stat-icon">✍️</div>
+        <div class="li-stat-val">${(s.autores_unicos || 0).toLocaleString()}</div>
+        <div class="li-stat-lbl">Autores únicos</div>
+      </div>
+      <div class="li-stat-card">
+        <div class="li-stat-icon">💼</div>
+        <div class="li-stat-val">${(s.total_ofertas || 0).toLocaleString()}</div>
+        <div class="li-stat-lbl">Ofertas detectadas</div>
+      </div>
+      <div class="li-stat-card" style="border-color:rgba(6,182,212,0.3)">
+        <div class="li-stat-icon">🏗️</div>
+        <div class="li-stat-val" style="color:#22d3ee">${(s.total_estructurales || 0).toLocaleString()}</div>
+        <div class="li-stat-lbl">Estructurales 🏗️</div>
+      </div>
+      <div class="li-stat-card">
+        <div class="li-stat-icon">📧</div>
+        <div class="li-stat-val">${(s.total_contactos_email || 0).toLocaleString()}</div>
+        <div class="li-stat-lbl">Emails extraídos</div>
+      </div>
+    `;
+    // Also fetch detection stats
+    fetch('/api/linkedin/detection').then(r=>r.json()).then(det => {
+      if (!det.error) {
+        grid.innerHTML += `
+        <div class="li-stat-card" style="border-color:rgba(139,92,246,0.3)">
+          <div class="li-stat-icon">🤖</div>
+          <div class="li-stat-val" style="color:#a78bfa">${det.porcentaje_deteccion || 0}%</div>
+          <div class="li-stat-lbl">Tasa de detección</div>
+        </div>
+        <div class="li-stat-card">
+          <div class="li-stat-icon">🗳️</div>
+          <div class="li-stat-val">${det.training_votes || 0}/${det.training_entries || 0}</div>
+          <div class="li-stat-lbl">Votos feedback</div>
+        </div>
+        <div class="li-stat-card">
+          <div class="li-stat-icon">🔗</div>
+          <div class="li-stat-val">${det.weekly_invites || 0}</div>
+          <div class="li-stat-lbl">Invitaciones/sem.</div>
+        </div>`;
+      }
+    });
+  } catch (e) {
+    grid.innerHTML = '<div class="li-loading">⚠️ Error</div>';
+  }
+}
+
+async function renderLiPosts() {
+  const list = document.getElementById('li-posts-list');
+  if (!list) return;
+  try {
+    const [postsRes, ratingsRes] = await Promise.all([
+      fetch('/api/linkedin/posts?limit=15', { cache: 'no-store' }),
+      fetch('/api/linkedin/ratings', { cache: 'no-store' })
+    ]);
+    if (!postsRes.ok) { list.innerHTML = '<div class="li-loading">⚠️ No disponible</div>'; return; }
+    const data = await postsRes.json();
+    if (!data.posts || data.posts.length === 0) {
+      list.innerHTML = '<div class="li-loading">Sin posts</div>'; return;
+    }
+    let ratings = {};
+    try { ratings = await ratingsRes.json(); } catch(e) {}
+    list.innerHTML = data.posts.map(p => {
+      const key = `${p.author || ''}|${(p.text || '').slice(0, 80)}`;
+      const r = ratings[key];
+      const stars = r ? r.rating : 0;
+      const count = r ? r.count : 0;
+      return `
+      <div class="li-post-item">
+      <div>
+        <span class="li-post-author">${escHtml(p.author || '?')}</span>
+        <span class="li-post-time">${p.time_posted || p.scraped_at?.slice(0,10) || ''}</span>
+        <span style="float:right">${renderStarsHtml(stars, count)}</span>
+      </div>
+      <div class="li-post-text" onclick="openPostDetail('${escHtmlAttr(p.author || '')}', '${escHtmlAttr((p.text || '').slice(0, 100))}')">${escHtml((p.text || '').slice(0, 200))}</div>
+      <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+        <button class="crm-btn-sm crm-btn-nota" onclick="event.stopPropagation();addToSeguimiento('${escHtmlAttr(p.author || '')}','${escHtmlAttr((p.text || '').slice(0, 100))}','','','${escHtmlAttr(p.profile_url || '')}','',${p.score || 0})" style="font-size:9px">🔎 Seguir</button>
+        <button class="crm-btn-sm crm-btn-contactar" onclick="event.stopPropagation();voteFeedback('${escHtmlAttr(p.author || '')}','${escHtmlAttr((p.text || '').slice(0, 100))}',true)" style="font-size:9px">💼 Es oferta</button>
+        <button class="crm-btn-sm crm-btn-cerrar" onclick="event.stopPropagation();voteFeedback('${escHtmlAttr(p.author || '')}','${escHtmlAttr((p.text || '').slice(0, 100))}',false)" style="font-size:9px">✕ No oferta</button>
+      </div>
+      </div>`;
+    }).join('');
+    // Attach star click handlers after render
+    attachStarListeners();
+  } catch (e) {
+    list.innerHTML = '<div class="li-loading">⚠️ Error</div>';
+  }
+}
+
+async function renderLiOfertas(tipo) {
+  _liOfertasTab = tipo;
+  const list = document.getElementById('li-ofertas-list');
+  if (!list) return;
+  // Update tab styles
+  const tabTodas = document.getElementById('li-ofertas-tab-todas');
+  const tabEst = document.getElementById('li-ofertas-tab-estructurales');
+  if (tabTodas && tabEst) {
+    tabTodas.style.color = tipo === 'todas' ? 'var(--accent-cyan)' : 'var(--text-muted)';
+    tabTodas.style.fontWeight = tipo === 'todas' ? '600' : '400';
+    tabEst.style.color = tipo === 'estructurales' ? 'var(--accent-cyan)' : 'var(--text-muted)';
+    tabEst.style.fontWeight = tipo === 'estructurales' ? '600' : '400';
+  }
+  try {
+    const url = tipo === 'estructurales'
+      ? '/api/linkedin/ofertas?limit=20&estructurales=true'
+      : '/api/linkedin/ofertas?limit=20';
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) { list.innerHTML = '<div class="li-loading">⚠️ No disponible</div>'; return; }
+    const data = await res.json();
+    if (!data.ofertas || data.ofertas.length === 0) {
+      list.innerHTML = '<div class="li-loading">Sin ofertas</div>'; return;
+    }
+    list.innerHTML = data.ofertas.map(o => `
+      <div class="li-oferta-item">
+        <div class="li-oferta-autor">${escHtml(o.Autor || '?')}</div>
+        ${o.Rol ? `<div class="li-oferta-rol">${escHtml(o.Rol)}</div>` : ''}
+        ${o.Correos ? `<div class="li-oferta-correos">📧 ${escHtml(o.Correos)}</div>` : ''}
+        <div class="li-oferta-info">
+          ${o.Empresa ? escHtml(o.Empresa) : ''}
+          ${o.Fecha ? `· ${o.Fecha}` : ''}
+          ${o.Score ? `· Score: ${o.Score}` : ''}
+          ${o['IA Validado'] && o['IA Validado'] === 'Sí' ? '· ✅ IA' : ''}
+          ${o.Es_Contacto === 'Sí' || o['Es Contacto'] === 'Sí' ? '· 👤 Contacto' : ''}
+        </div>
+      </div>
+    `).join('');
+  } catch (e) {
+    list.innerHTML = '<div class="li-loading">⚠️ Error</div>';
+  }
+}
+
+async function renderLiContactos() {
+  const list = document.getElementById('li-contactos-list');
+  if (!list) return;
+  try {
+    const res = await fetch('/api/linkedin/contactos?limit=20', { cache: 'no-store' });
+    if (!res.ok) { list.innerHTML = '<div class="li-loading">⚠️ No disponible</div>'; return; }
+    const data = await res.json();
+    if (!data.contactos || data.contactos.length === 0) {
+      list.innerHTML = '<div class="li-loading">Sin contactos</div>'; return;
+    }
+    list.innerHTML = data.contactos.map(c => `
+      <div class="li-contacto-item">
+        <div>
+          <span class="li-contacto-email">📧 ${escHtml(c.Correo)}</span>
+          <span class="li-contacto-autor">${escHtml(c.Autor || '')}</span>
+          ${c['Es Estructural'] === 'Sí' ? '<span class="li-badge-estructural">🏗️</span>' : ''}
+        </div>
+        <div class="li-contacto-empresa">
+          ${c.Empresa ? escHtml(c.Empresa) : ''}
+          ${c.Cargo ? `· ${escHtml(c.Cargo)}` : ''}
+          ${c.Fecha_Post || c['Fecha Post'] ? `· ${c.Fecha_Post || c['Fecha Post']}` : ''}
+        </div>
+      </div>
+    `).join('');
+  } catch (e) {
+    list.innerHTML = '<div class="li-loading">⚠️ Error</div>';
+  }
+}
+
+function switchOfertasTab(tipo) {
+  renderLiOfertas(tipo);
+}
+
+// ─── ESTRUCTURALES ──────────────────────────────────────
+
+async function renderEstructurales() {
+  const grid = document.getElementById('est-grid');
+  const totalStrip = document.getElementById('est-total-strip');
+  const regionSelect = document.getElementById('est-region-filter');
+  const emailOnly = document.getElementById('est-email-only').checked;
+  const hideContacted = document.getElementById('est-hide-contacted').checked;
+  const resultCount = document.getElementById('est-result-count');
+  
+  if (!grid) return;
+
+  try {
+    // Construir URL
+    let url = '/api/linkedin/estructurales?limit=100';
+    if (emailOnly) url += '&email_only=true';
+    
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) { grid.innerHTML = '<div class="li-loading">⚠️ No disponible</div>'; return; }
+    const data = await res.json();
+    
+    if (!data.ofertas || data.ofertas.length === 0) {
+      grid.innerHTML = '<div class="li-loading">Sin ofertas estructurales</div>';
+      return;
+    }
+
+    // Poblar selector de regiones (solo primera vez)
+    if (regionSelect.options.length === 1 && data.regiones) {
+      data.regiones.forEach(r => {
+        const opt = document.createElement('option');
+        opt.value = r;
+        opt.textContent = r;
+        regionSelect.appendChild(opt);
+      });
+    }
+
+    const selectedRegion = regionSelect.value;
+    
+    // Filtrar localmente
+    let filtered = data.ofertas;
+    if (selectedRegion) {
+      filtered = filtered.filter(o => o.region.includes(selectedRegion));
+    }
+    if (hideContacted) {
+      filtered = filtered.filter(o => !o.contactado);
+    }
+
+    // Total strip
+    totalStrip.innerHTML = `
+      <span class="est-total-item">📦 Total: <span class="est-total-val">${data.total}</span></span>
+      <span class="est-total-item">📧 Con email: <span class="est-total-val">${data.ofertas.filter(o => o.correos).length}</span></span>
+      <span class="est-total-item">✅ Contactados: <span class="est-total-val">${data.contactados}</span></span>
+    `;
+
+    resultCount.textContent = filtered.length;
+
+    if (filtered.length === 0) {
+      grid.innerHTML = '<div class="li-loading">Sin resultados con los filtros actuales</div>';
+      return;
+    }
+
+    // Render cards
+    grid.innerHTML = filtered.map(o => `
+      <div class="est-card ${o.contactado ? 'contactado' : ''}" id="est-${escHtml(o.uid.replace(/[^a-zA-Z0-9]/g,'_'))}">
+        <div class="est-card-header">
+          <div>
+            <div class="est-card-autor">${escHtml(o.autor || 'Sin autor')}</div>
+            ${o.rol ? `<div class="est-card-rol">${escHtml(o.rol)}</div>` : ''}
+            ${o.empresa ? `<div class="est-card-empresa">🏢 ${escHtml(o.empresa)}</div>` : ''}
+          </div>
+          <div class="est-card-badges">
+            <span class="est-badge score">⭐ ${o.score}</span>
+            ${o.region ? `<span class="est-badge region">📍 ${o.region.split(',').length > 1 ? o.region.split(',').length + ' regiones' : escHtml(o.region)}</span>` : ''}
+          </div>
+        </div>
+
+        ${o.correos ? `<div class="est-card-correos">📧 ${escHtml(o.correos)}</div>` : '<div class="est-card-correos" style="color:var(--text-muted);font-style:italic">Sin email disponible</div>'}
+
+        <div style="font-size:11px;color:var(--text-muted)">
+          ${o.fecha ? `📅 ${o.fecha}` : ''}
+          ${o.es_contacto === 'Sí' ? '· 👤 En contactos' : ''}
+        </div>
+
+        ${o.texto ? `<div class="est-card-texto">${escHtml(o.texto)}</div>` : ''}
+
+        <div class="est-card-actions">
+          <button class="est-btn-contactado ${o.contactado ? 'activo' : ''}" 
+                  onclick="toggleContactado('${escHtmlAttr(o.uid)}', this)">
+            ${o.contactado ? '✅ Contactado' : '📞 Marcar contactado'}
+          </button>
+          ${o.url_perfil ? `<a href="${escHtmlAttr(o.url_perfil)}" target="_blank" class="btn btn-ghost" style="font-size:10px;padding:4px 8px">🔗 LinkedIn</a>` : ''}
+          <span style="font-size:10px;color:var(--text-muted)">
+            ${o.correos ? 'Click para copiar 📋' : ''}
+          </span>
+        </div>
+      </div>
+    `).join('');
+
+    // Click en correo para copiar
+    grid.querySelectorAll('.est-card-correos').forEach(el => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', function() {
+        const txt = this.textContent.replace('📧 ', '');
+        navigator.clipboard.writeText(txt).then(() => {
+          showToast('📋 Email copiado: ' + txt);
+        }).catch(() => {});
+      });
+    });
+
+  } catch (e) {
+    grid.innerHTML = '<div class="li-loading">⚠️ Error al cargar</div>';
+  }
+}
+
+async function toggleContactado(uid, btn) {
+  try {
+    const res = await fetch(`/api/linkedin/marcar_contactado?uid=${encodeURIComponent(uid)}&action=toggle`, { cache: 'no-store' });
+    const data = await res.json();
+    if (data.success) {
+      btn.textContent = data.contactado ? '✅ Contactado' : '📞 Marcar contactado';
+      btn.classList.toggle('activo', data.contactado);
+      // Actualizar la card
+      const card = btn.closest('.est-card');
+      if (card) {
+        card.classList.toggle('contactado', data.contactado);
+        // Si está ocultando contactados y se marcó como contactado, ocultar
+        const hideChecked = document.getElementById('est-hide-contacted');
+        if (hideChecked && hideChecked.checked && data.contactado) {
+          card.style.display = 'none';
+        }
+      }
+      showToast(data.contactado ? '✅ Marcado como contactado' : '📞 Desmarcado');
+      renderEstructurales(); // Refresh count
+    }
+  } catch (e) {
+    showToast('❌ Error al marcar');
+  }
+}
+
+function escHtmlAttr(s) {
+  return escHtml(s).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+// ─── CRM ────────────────────────────────────────────────
+
+let _crmInitialized = false;
+
+async function initCRM() {
+  try {
+    showToast('📥 Importando contactos desde ofertas estructurales...');
+    const res = await fetch('/api/crm/init', { cache: 'no-store' });
+    const data = await res.json();
+    if (data.imported !== undefined) {
+      _crmInitialized = true;
+      showToast(`✅ Importados ${data.imported} contactos nuevos`);
+      renderCRM();
+    }
+  } catch (e) {
+    showToast('❌ Error al importar');
+  }
+}
+
+async function renderCRM() {
+  const grid = document.getElementById('crm-grid');
+  const totalStrip = document.getElementById('crm-total-strip');
+  const estadoFilter = document.getElementById('crm-estado-filter').value;
+  const search = document.getElementById('crm-search').value;
+  const resultCount = document.getElementById('crm-result-count');
+  if (!grid) return;
+
+  try {
+    // Primero stats
+    const statsRes = await fetch('/api/crm/stats', { cache: 'no-store' });
+    const stats = await statsRes.json();
+    if (totalStrip) {
+      totalStrip.innerHTML = `
+        <span class="est-total-item">📦 Total: <span class="est-total-val">${stats.total}</span></span>
+        <span class="est-total-item">⏳ Pendientes: <span class="est-total-val">${stats.pendientes}</span></span>
+        <span class="est-total-item">📞 Contactados: <span class="est-total-val">${stats.contactados}</span></span>
+        <span class="est-total-item">💬 Respondieron: <span class="est-total-val">${stats.responded}</span></span>
+        <span class="est-total-item">📧 Con email: <span class="est-total-val">${stats.con_email}</span></span>
+      `;
+    }
+
+    if (stats.total === 0) {
+      grid.innerHTML = '<div class="li-loading">💡 Haz clic en "Importar" para cargar contactos desde ofertas estructurales</div>';
+      return;
+    }
+
+    // Lista de contactos
+    let url = `/api/crm/list?limit=100`;
+    if (estadoFilter) url += `&estado=${encodeURIComponent(estadoFilter)}`;
+    if (search) url += `&search=${encodeURIComponent(search)}`;
+
+    const res = await fetch(url, { cache: 'no-store' });
+    const data = await res.json();
+    if (!data.contactos || data.contactos.length === 0) {
+      grid.innerHTML = '<div class="li-loading">Sin contactos con esos filtros</div>';
+      resultCount.textContent = '0';
+      return;
+    }
+
+    resultCount.textContent = data.total;
+
+    grid.innerHTML = data.contactos.map(c => {
+      const estadoClass = `crm-status-${c.estado}`;
+      const estadoIcons = { pendiente: '⏳', contactado: '📞', en_seguimiento: '🔄', responded: '💬', cerrado: '✅' };
+      const estadoIcon = estadoIcons[c.estado] || '📋';
+      return `
+        <div class="crm-card" onclick="openCrmContacto('${escHtmlAttr(c.uid)}')">
+          <div class="crm-card-header">
+            <div>
+              <div class="crm-card-nombre">${escHtml(c.nombre)}</div>
+              ${c.email ? `<div class="crm-card-email">📧 ${escHtml(c.email)}</div>` : ''}
+            </div>
+            <div>
+              <span class="crm-status-badge ${estadoClass}">${estadoIcon} ${c.estado.replace('_',' ')}</span>
+              <div class="crm-card-score">⭐ ${c.score || 0}</div>
+            </div>
+          </div>
+          <div class="crm-card-info">
+            ${c.empresa ? `🏢 ${escHtml(c.empresa)}<br>` : ''}
+            ${c.rol ? `👤 ${escHtml(c.rol)}<br>` : ''}
+            ${c.region ? `📍 ${escHtml(c.region)}` : ''}
+            ${c.fecha_contacto ? `<br>📅 Contactado: ${c.fecha_contacto}` : ''}
+            ${c.num_seguimientos > 0 ? `<br>🔄 ${c.num_seguimientos} seguimientos` : ''}
+          </div>
+          <div class="crm-card-actions" onclick="event.stopPropagation()">
+            ${c.estado === 'pendiente' ? `<button class="crm-btn-sm crm-btn-contactar" onclick="marcarContactado('${escHtmlAttr(c.uid)}')">📞 Contactar</button>` : ''}
+            <button class="crm-btn-sm crm-btn-nota" onclick="abrirNota('${escHtmlAttr(c.uid)}')">📝 Nota</button>
+            ${c.email ? `<button class="crm-btn-sm crm-btn-email" onclick="componerEmail('${escHtmlAttr(c.uid)}', '${escHtmlAttr(c.email)}', '${escHtmlAttr(c.nombre)}')">✉️ Email</button>` : ''}
+            ${c.estado !== 'cerrado' ? `<button class="crm-btn-sm crm-btn-cerrar" onclick="cerrarContacto('${escHtmlAttr(c.uid)}')">✅ Cerrar</button>` : ''}
+          </div>
+        </div>
+      `;
+    }).join('');
+  } catch (e) {
+    grid.innerHTML = '<div class="li-loading">⚠️ Error al cargar CRM</div>';
+  }
+}
+
+async function marcarContactado(uid) {
+  try {
+    await fetch(`/api/crm/update?uid=${encodeURIComponent(uid)}&estado=contactado`, { cache: 'no-store' });
+    await fetch(`/api/crm/log?uid=${encodeURIComponent(uid)}&tipo=nota&contenido=Primer contacto realizado`, { cache: 'no-store' });
+    showToast('✅ Marcado como contactado');
+    renderCRM();
+  } catch (e) {
+    showToast('❌ Error');
+  }
+}
+
+function abrirNota(uid) {
+  const contenido = prompt('📝 Nota sobre este contacto:');
+  if (contenido && contenido.trim()) {
+    fetch(`/api/crm/log?uid=${encodeURIComponent(uid)}&tipo=nota&contenido=${encodeURIComponent(contenido.trim())}`, { cache: 'no-store' })
+      .then(() => { showToast('✅ Nota guardada'); renderCRM(); })
+      .catch(() => showToast('❌ Error'));
+  }
+}
+
+function componerEmail(uid, email, nombre) {
+  const asunto = prompt('📧 Asunto del correo:', 'Contacto profesional - Oportunidad de colaboración');
+  if (!asunto) return;
+  const cuerpo = prompt('📝 Cuerpo del mensaje:', 
+`Hola ${nombre},
+
+Te escribo porque vi tu perfil y me parece que podríamos colaborar en proyectos de ingeniería estructural.
+
+¿Te interesaría conversar?
+
+Saludos,
+Bruno Franco`);
+  if (!cuerpo) return;
+
+  // Registrar interacción
+  fetch(`/api/crm/log?uid=${encodeURIComponent(uid)}&tipo=email_enviado&contenido=${encodeURIComponent('Asunto: ' + asunto + '\\n\\n' + cuerpo)}&estado=pendiente_respuesta`, { cache: 'no-store' })
+    .then(() => {
+      showToast('✅ Interacción registrada. Abriendo cliente de correo...');
+      // Abrir cliente de correo
+      window.open(`mailto:${email}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`, '_blank');
+      renderCRM();
+    })
+    .catch(() => showToast('❌ Error'));
+}
+
+async function cerrarContacto(uid) {
+  if (!confirm('¿Marcar este contacto como cerrado?')) return;
+  try {
+    await fetch(`/api/crm/update?uid=${encodeURIComponent(uid)}&estado=cerrado`, { cache: 'no-store' });
+    showToast('✅ Contacto cerrado');
+    renderCRM();
+  } catch (e) {
+    showToast('❌ Error');
+  }
+}
+
+async function openCrmContacto(uid) {
+  const modal = document.getElementById('crm-modal');
+  const body = document.getElementById('crm-modal-body');
+  const title = document.getElementById('crm-modal-title');
+  if (!modal || !body) return;
+
+  try {
+    // Obtener contacto
+    const res = await fetch(`/api/crm/list?limit=1&search=${encodeURIComponent(uid)}`, { cache: 'no-store' });
+    const data = await res.json();
+    const c = data.contactos && data.contactos[0];
+    if (!c) { showToast('❌ Contacto no encontrado'); return; }
+
+    // Obtener interacciones
+    const intRes = await fetch(`/api/crm/interacciones?uid=${encodeURIComponent(uid)}`, { cache: 'no-store' });
+    const intData = await intRes.json();
+    const interacciones = intData.interacciones || [];
+
+    const estadoIcons = { pendiente: '⏳', contactado: '📞', en_seguimiento: '🔄', responded: '💬', cerrado: '✅' };
+    const intHtml = interacciones.length > 0 
+      ? interacciones.map(i => `
+        <div class="crm-interaccion-item">
+          <span class="crm-interaccion-tipo">${i.tipo.replace('_',' ')}</span>
+          <span class="crm-interaccion-fecha">${i.fecha || ''}</span>
+          <div class="crm-interaccion-contenido">${escHtml(i.contenido)}</div>
+        </div>
+      `).join('')
+      : '<div style="color:var(--text-muted);font-size:12px">Sin interacciones registradas</div>';
+
+    title.textContent = `👤 ${c.nombre}`;
+
+    body.innerHTML = `
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Email</div>
+        <div class="crm-modal-value">${c.email || '—'}</div>
+      </div>
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Empresa / Rol</div>
+        <div class="crm-modal-value">${c.empresa ? '🏢 ' + escHtml(c.empresa) : ''} ${c.rol ? '· 👤 ' + escHtml(c.rol) : ''} ${c.region ? '· 📍 ' + escHtml(c.region) : ''}</div>
+      </div>
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Score</div>
+        <div class="crm-modal-value">⭐ ${c.score || 0}</div>
+      </div>
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Estado</div>
+        <select class="crm-select-estado" id="crm-modal-estado" onchange="cambiarEstadoModal('${escHtmlAttr(c.uid)}')">
+          <option value="pendiente" ${c.estado==='pendiente'?'selected':''}>⏳ Pendiente</option>
+          <option value="contactado" ${c.estado==='contactado'?'selected':''}>📞 Contactado</option>
+          <option value="en_seguimiento" ${c.estado==='en_seguimiento'?'selected':''}>🔄 En seguimiento</option>
+          <option value="responded" ${c.estado==='responded'?'selected':''}>💬 Respondió</option>
+          <option value="cerrado" ${c.estado==='cerrado'?'selected':''}>✅ Cerrado</option>
+        </select>
+      </div>
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Notas / Mensaje rápido</div>
+        <textarea class="crm-modal-textarea" id="crm-modal-notas" placeholder="Agregar nota a este contacto..."></textarea>
+        <button class="btn btn-success" onclick="guardarNotaModal('${escHtmlAttr(c.uid)}')" style="font-size:11px;padding:5px 12px;margin-top:6px">💾 Guardar nota</button>
+      </div>
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Historial de interacciones (${interacciones.length})</div>
+        <div style="max-height:200px;overflow-y:auto">${intHtml}</div>
+      </div>
+      ${c.email ? `
+        <div style="margin-top:12px">
+          <button class="btn btn-primary" onclick="componerEmailDesdeModal('${escHtmlAttr(c.uid)}','${escHtmlAttr(c.email)}','${escHtmlAttr(c.nombre)}')" style="font-size:12px">✉️ Enviar correo</button>
+        </div>
+      ` : ''}
+    `;
+
+    modal.style.display = 'flex';
+  } catch (e) {
+    showToast('❌ Error al cargar detalles');
+  }
+}
+
+function closeCrmModal() {
+  document.getElementById('crm-modal').style.display = 'none';
+}
+
+async function cambiarEstadoModal(uid) {
+  const estado = document.getElementById('crm-modal-estado').value;
+  try {
+    await fetch(`/api/crm/update?uid=${encodeURIComponent(uid)}&estado=${encodeURIComponent(estado)}`, { cache: 'no-store' });
+    if (estado === 'contactado') {
+      await fetch(`/api/crm/log?uid=${encodeURIComponent(uid)}&tipo=nota&contenido=Estado cambiado a contactado`, { cache: 'no-store' });
+    }
+    showToast(`✅ Estado actualizado a ${estado}`);
+    renderCRM();
+  } catch (e) {
+    showToast('❌ Error');
+  }
+}
+
+async function guardarNotaModal(uid) {
+  const notas = document.getElementById('crm-modal-notas').value;
+  if (!notas.trim()) { showToast('⚠️ Escribe algo primero'); return; }
+  try {
+    await fetch(`/api/crm/log?uid=${encodeURIComponent(uid)}&tipo=nota&contenido=${encodeURIComponent(notas.trim())}`, { cache: 'no-store' });
+    document.getElementById('crm-modal-notas').value = '';
+    showToast('✅ Nota guardada');
+    openCrmContacto(uid); // Refresh
+  } catch (e) {
+    showToast('❌ Error');
+  }
+}
+
+function componerEmailDesdeModal(uid, email, nombre) {
+  closeCrmModal();
+  componerEmail(uid, email, nombre);
+}
+
+// ─── Seguimiento + Feedback ─────────────────────────────
+
+async function renderSeguimiento() {
+  const grid = document.getElementById('seg-grid');
+  const strip = document.getElementById('seg-count-strip');
+  if (!grid) return;
+  
+  try {
+    const res = await fetch('/api/seguimiento/list', { cache: 'no-store' });
+    const data = await res.json();
+    if (!data.items || data.items.length === 0) {
+      grid.innerHTML = '<div class="li-loading">Sin items en seguimiento. Marca posts u ofertas para darles seguimiento.</div>';
+      if (strip) strip.textContent = '📋 0 en seguimiento';
+      return;
+    }
+    if (strip) strip.textContent = `📋 ${data.items.length} en seguimiento`;
+    
+    grid.innerHTML = data.items.map(item => {
+      const estadoIcons = { pendiente: '⏳', postulada: '📨', en_estudio: '📋', descartada: '✕' };
+      const icon = estadoIcons[item.estado] || '📋';
+      return `
+        <div class="est-card">
+          <div class="crm-card-header">
+            <div style="font-size:12px;font-weight:600;color:var(--accent-amber)">👤 ${escHtml(item.autor || 'Sin autor')}</div>
+            <span class="crm-status-badge crm-status-${item.estado === 'postulada' ? 'responded' : item.estado === 'descartada' ? 'cerrado' : 'pendiente'}">${icon} ${item.estado}</span>
+          </div>
+          ${item.correos ? `<div class="est-card-correos" style="cursor:pointer;font-size:11px">📧 ${escHtml(item.correos)}</div>` : ''}
+          <div style="font-size:11px;color:var(--text-muted);margin:6px 0">${item.empresa ? '🏢 ' + escHtml(item.empresa) + ' · ' : ''}📍 ${escHtml(item.region || '—')}</div>
+          <div class="est-card-texto">${escHtml((item.text || '').slice(0, 200))}</div>
+          ${item.notas ? `<div style="font-size:11px;color:var(--text-secondary);margin-top:6px;font-style:italic">💬 ${escHtml(item.notas)}</div>` : ''}
+          ${item.added_at ? `<div style="font-size:10px;color:var(--text-muted);margin-top:4px">Agregado: ${item.added_at?.slice(0, 16)}</div>` : ''}
+          <div class="est-card-actions" style="margin-top:8px">
+            <select class="est-filter-select" onchange="updateSegEstado('${escHtmlAttr(item.text || '')}', this.value)" style="font-size:10px;padding:3px 8px">
+              <option value="pendiente" ${item.estado==='pendiente'?'selected':''}>⏳ Pendiente</option>
+              <option value="postulada" ${item.estado==='postulada'?'selected':''}>📨 Postulada</option>
+              <option value="en_estudio" ${item.estado==='en_estudio'?'selected':''}>📋 En estudio</option>
+              <option value="descartada" ${item.estado==='descartada'?'selected':''}>✕ Descartada</option>
+            </select>
+            <button class="crm-btn-sm crm-btn-nota" style="font-size:9px" onclick="addSegNota('${escHtmlAttr(item.text || '')}')">💬 Nota</button>
+            ${item.correos ? `<button class="crm-btn-sm crm-btn-email" style="font-size:9px" onclick="window.open('mailto:${escHtmlAttr(item.correos.split(',')[0].trim())}')">✉️</button>` : ''}
+            ${item.url_perfil ? `<a href="${escHtmlAttr(item.url_perfil)}" target="_blank" style="font-size:9px" class="crm-btn-sm crm-btn-contactar">🔗</a>` : ''}
+            <button class="crm-btn-sm crm-btn-cerrar" style="font-size:9px" onclick="removeFromSeg('${escHtmlAttr(item.text || '')}')">🗑️</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  } catch(e) { grid.innerHTML = '<div class="li-loading">⚠️ Error</div>'; }
+}
+
+async function addToSeguimiento(author, text, empresa, correos, url, region, score) {
+  try {
+    const params = new URLSearchParams({ author, text, empresa, correos, url_perfil: url, region, score });
+    const res = await fetch(`/api/seguimiento/add?${params}`, { cache: 'no-store' });
+    const data = await res.json();
+    if (data.success) { showToast('✅ Agregado a seguimiento'); renderSeguimiento(); }
+    else { showToast('⚠️ ' + (data.error || 'Error')); }
+  } catch(e) { showToast('❌ Error'); }
+}
+
+async function updateSegEstado(text, estado) {
+  try {
+    await fetch(`/api/seguimiento/update?text=${encodeURIComponent(text)}&estado=${encodeURIComponent(estado)}`, { cache: 'no-store' });
+    showToast(`✅ Estado: ${estado}`);
+    renderSeguimiento();
+  } catch(e) { showToast('❌ Error'); }
+}
+
+async function addSegNota(text) {
+  const nota = prompt('💬 Nota:');
+  if (!nota) return;
+  try {
+    await fetch(`/api/seguimiento/update?text=${encodeURIComponent(text)}&notas=${encodeURIComponent(nota)}`, { cache: 'no-store' });
+    showToast('✅ Nota guardada');
+    renderSeguimiento();
+  } catch(e) { showToast('❌ Error'); }
+}
+
+async function removeFromSeg(text) {
+  if (!confirm('¿Eliminar del seguimiento?')) return;
+  try {
+    await fetch(`/api/seguimiento/remove?text=${encodeURIComponent(text)}`, { cache: 'no-store' });
+    showToast('✅ Eliminado');
+    renderSeguimiento();
+  } catch(e) { showToast('❌ Error'); }
+}
+
+async function voteFeedback(author, text, isOffer) {
+  try {
+    const params = new URLSearchParams({ author, text, is_offer: isOffer });
+    await fetch(`/api/feedback/vote?${params}`, { cache: 'no-store' });
+    showToast(`✅ Voto: ${isOffer ? '💼 Oferta' : '✕ No oferta'}`);
+  } catch(e) { showToast('❌ Error'); }
+}
+
+async function openPostDetail(author, textSnippet) {
+  const modal = document.getElementById('post-detail-modal');
+  const body = document.getElementById('post-detail-body');
+  const title = document.getElementById('post-detail-title');
+  if (!modal || !body) return;
+  
+  try {
+    const res = await fetch(`/api/linkedin/posts?limit=50`, { cache: 'no-store' });
+    const data = await res.json();
+    let post = data.posts.length > 0 ? data.posts[0] : null;
+    for (const p of data.posts) {
+      if ((p.author || '') === author && (p.text || '').includes(textSnippet)) {
+        post = p; break;
+      }
+    }
+    if (!post) { showToast('⚠️ Post no encontrado'); return; }
+    
+    title.textContent = `👤 ${post.author || 'Sin autor'}`;
+    body.innerHTML = `
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Fecha</div>
+        <div class="crm-modal-value">${post.time_posted || post.scraped_at?.slice(0, 16) || '—'}</div>
+      </div>
+      ${post.profile_url ? `<div class="crm-modal-field"><a href="${escHtmlAttr(post.profile_url)}" target="_blank" class="btn btn-ghost" style="font-size:11px">🔗 Ver en LinkedIn</a></div>` : ''}
+      <div class="crm-modal-field">
+        <div class="crm-modal-label">Texto completo</div>
+        <div style="background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;font-size:13px;line-height:1.6;color:var(--text-primary);max-height:400px;overflow-y:auto;white-space:pre-wrap">${escHtml(post.text || 'Sin texto')}</div>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px">
+        <button class="btn btn-success" onclick="addToSeguimiento('${escHtmlAttr(post.author)}','${escHtmlAttr((post.text||'').slice(0,100))}','','','${escHtmlAttr(post.profile_url||'')}','',0);closePostDetail()" style="font-size:11px">🔎 Dar seguimiento</button>
+        <button class="crm-btn-sm crm-btn-contactar" onclick="voteFeedback('${escHtmlAttr(post.author)}','${escHtmlAttr((post.text||'').slice(0,100))}',true)">💼 Es oferta</button>
+        <button class="crm-btn-sm crm-btn-cerrar" onclick="voteFeedback('${escHtmlAttr(post.author)}','${escHtmlAttr((post.text||'').slice(0,100))}',false)">✕ No oferta</button>
+      </div>
+    `;
+    modal.style.display = 'flex';
+  } catch(e) { showToast('❌ Error'); }
+}
+
+function closePostDetail() {
+  document.getElementById('post-detail-modal').style.display = 'none';
+}
+
+// ─── STAR RATING ⭐ 1-5 ────────────────────────────────────
+
+function renderStarsHtml(rating, count) {
+  const full = Math.floor(rating);
+  const hasHalf = rating - full >= 0.3;
+  let html = `<span class="star-rating" data-rating="${rating}" title="${rating}/5 · ${count} votos">`;
+  for (let i = 1; i <= 5; i++) {
+    if (i <= full) html += `<span class="star active" data-val="${i}">★</span>`;
+    else if (i === full + 1 && hasHalf) html += `<span class="star active" data-val="${i}" style="opacity:0.6">★</span>`;
+    else html += `<span class="star" data-val="${i}">★</span>`;
+  }
+  html += `</span>`;
+  if (count > 0) html += `<span class="star-count">${count}</span>`;
+  return html;
+}
+
+function attachStarListeners() {
+  document.querySelectorAll('#li-posts-list .star-rating').forEach(sr => {
+    sr.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const star = e.target.closest('.star');
+      if (!star) return;
+      const val = parseInt(star.getAttribute('data-val'));
+      // Find author + text from the post item
+      const item = this.closest('.li-post-item');
+      if (!item) return;
+      const author = item.querySelector('.li-post-author')?.textContent || '';
+      const textEl = item.querySelector('.li-post-text');
+      const text = textEl?.textContent || '';
+      ratePost(author, text, val, this);
+    });
+    sr.addEventListener('mouseleave', function() {
+      // Reset to actual rating on mouse leave
+      const rating = parseFloat(this.getAttribute('data-rating')) || 0;
+      const stars = this.querySelectorAll('.star');
+      stars.forEach((s, i) => {
+        s.classList.toggle('active', i < rating);
+      });
+    });
+  });
+}
+
+async function ratePost(author, text, stars, starEl) {
+  try {
+    const params = new URLSearchParams({ author, text: text.slice(0, 120), stars });
+    const res = await fetch(`/api/linkedin/rate?${params}`, { cache: 'no-store' });
+    const data = await res.json();
+    if (data.success) {
+      // Update display
+      const parent = starEl.parentElement;
+      if (parent) {
+        parent.setAttribute('data-rating', data.rating);
+        const countEl = parent.nextElementSibling;
+        parent.innerHTML = '';
+        for (let i = 1; i <= 5; i++) {
+          const s = document.createElement('span');
+          s.className = 'star' + (i <= data.rating ? ' active' : '');
+          s.setAttribute('data-val', i);
+          s.textContent = '★';
+          parent.appendChild(s);
+        }
+        if (countEl?.classList.contains('star-count')) {
+          countEl.textContent = data.count;
+        }
+      }
+      showToast(`⭐ ${stars}/5 — Promedio: ${data.rating}`);
+    }
+  } catch(e) { showToast('❌ Error al puntuar'); }
+}
+
+// ─── SUGERENCIAS IA 🧠 ───────────────────────────────────
+
+async function loadSuggestions() {
+  const metricsDiv = document.getElementById('sug-metrics');
+  const grid = document.getElementById('sug-grid');
+  if (!metricsDiv || !grid) return;
+  metricsDiv.innerHTML = '<span class="li-loading">🧠 Analizando feedback...</span>';
+  grid.innerHTML = '';
+  try {
+    const res = await fetch('/api/linkedin/suggestions', { cache: 'no-store' });
+    const s = await res.json();
+    if (s.error) { metricsDiv.innerHTML = `<span style="color:var(--accent-red)">❌ ${s.error}</span>`; return; }
+    
+    // Metrics
+    metricsDiv.innerHTML = `
+      <span class="sug-metric" style="color:var(--accent-green)">✅ ${s.ofertas_confirmadas || 0} ofertas conf.</span>
+      <span class="sug-metric" style="color:var(--accent-red)">🚫 ${s.ruido_confirmado || 0} ruido conf.</span>
+      <span class="sug-metric" style="color:var(--accent-amber)">⚡ ${s.disputados || 0} disputados</span>
+      <span class="sug-metric" style="color:var(--accent-purple)">🎯 Precisión bot: ${s.bot_accuracy || 0}%</span>
+      <span class="sug-metric" style="color:var(--text-secondary)">🗳️ ${s.total_votos || 0} votos totales</span>
+    `;
+
+    let html = '';
+
+    // Effective keywords
+    if (s.keywords_efectivas?.length) {
+      html += `<div class="sug-card"><h4>🏆 Keywords más efectivas</h4>`;
+      s.keywords_efectivas.forEach(k => {
+        html += `<div class="sug-kw-item good">
+          <span class="kw">${escHtml(k.kw)}</span>
+          <span class="stat">${k.precision}% · ${k.ofertas}✅</span>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    // Suggested new keywords
+    if (s.sugerencias_frases?.length) {
+      html += `<div class="sug-card"><h4>💡 Sugerencias nuevas (frases)</h4>`;
+      s.sugerencias_frases.forEach(k => {
+        html += `<div class="sug-kw-item">
+          <span class="kw"><span class="sug-new-badge">NUEVA</span> ${escHtml(k.keyword)}</span>
+          <span class="stat">×${k.frecuencia}</span>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    // Suggested words
+    if (s.sugerencias_palabras?.length) {
+      html += `<div class="sug-card"><h4>🔍 Palabras frecuentes en ofertas</h4>`;
+      s.sugerencias_palabras.forEach(k => {
+        html += `<div class="sug-kw-item">
+          <span class="kw">${escHtml(k.keyword)}</span>
+          <span class="stat">×${k.frecuencia}</span>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    // Problematic keywords
+    if (s.keywords_problematicas?.length) {
+      html += `<div class="sug-card"><h4>⚠️ Keywords ruidosas</h4>`;
+      s.keywords_problematicas.forEach(k => {
+        html += `<div class="sug-kw-item bad">
+          <span class="kw">${escHtml(k.kw)}</span>
+          <span class="stat">${k.ruido}🚫 · ${k.precision}%</span>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    if (!html) html = '<div class="sug-card"><span style="color:var(--text-muted)">Vota más posts (💼 / ✕) para generar sugerencias. Mientras más feedback, más inteligente se vuelve el bot.</span></div>';
+    grid.innerHTML = html;
+  } catch(e) {
+    metricsDiv.innerHTML = '<span style="color:var(--accent-red)">❌ Error al analizar</span>';
+  }
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ─────────────────────────────────────────────────────────
+// ACTIONS
+// ─────────────────────────────────────────────────────────
+
+function requestScreenshot(id) {
+  const ts = document.getElementById(`ts-${id}`);
+  const ph = document.getElementById(`ph-${id}`);
+  ts.textContent = '⏳ Captura en proceso...';
+
+  fetch(`/api/capture?id=${id}`)
+    .then(res => res.json())
+    .then(data => {
+      if(data.success) {
+        showToast(`📸 Captura iniciada. El archivo se actualizará en unos 15 segundos.`);
+        setTimeout(() => {
+          const img = document.querySelector(`#preview-${id} img`);
+          if(img) {
+            img.src = img.src.split('?')[0] + '?t=' + new Date().getTime();
+            img.style.display = 'block';
+            if(ph) ph.style.display = 'none';
+          }
+          ts.textContent = 'Actualizado recientemente';
+        }, 15000);
+      } else {
+        showToast(`❌ Error: ${data.error}`);
+        ts.textContent = 'Error al capturar';
+      }
+    })
+    .catch(e => {
+      showToast(`❌ Error de conexión`);
+      ts.textContent = 'Error de red';
+    });
+}
+
+function copyPath(localPath) {
+  const fullPath = `C:\\Users\\Usuario\\Desktop\\Programación\\${localPath}`;
+  navigator.clipboard.writeText(fullPath).then(() => {
+    showToast(`📁 Ruta copiada: ${fullPath}`);
+  }).catch(() => {
+    showToast(`Ruta: ${fullPath}`);
+  });
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 4000);
+}
+
+function refreshAll() {
+  const btn = document.getElementById('refresh-btn');
+  btn.classList.add('spinning');
+  showToast('🔄 Actualizando dashboard...');
+
+  setTimeout(() => {
+    btn.classList.remove('spinning');
+    renderBots();
+    renderScreenshots();
+    renderGitHub();
+    renderStats();
+    renderLinkedIn();
+    renderEstructurales();
+    renderCRM();
+    renderSeguimiento();
+    loadSuggestions();
+    showToast('✅ Dashboard actualizado');
+  }, 1500);
+}
+
+// ─────────────────────────────────────────────────────────
+// CLOCK
+// ─────────────────────────────────────────────────────────
+
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, '0');
+  const m = String(now.getMinutes()).padStart(2, '0');
+  const s = String(now.getSeconds()).padStart(2, '0');
+  document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+}
+
+async function startLinkedinBot() {
+  showToast('Iniciando LinkedIn Bot...', 'info');
+  try {
+    const res = await fetch('http://localhost:9191/api/start_linkedin');
+    const data = await res.json();
+    if (data.success) {
+      showToast('✅ ' + data.msg);
+      refreshAll();
+    } else {
+      showToast('❌ Error al iniciar: ' + data.error, 'error');
+    }
+  } catch (err) {
+    showToast('❌ Error de red al iniciar bot', 'error');
+  }
+}
+
+// ─────────────────────────────────────────────────────────
+// COLLAPSIBLE SECTIONS + NAV
+// ─────────────────────────────────────────────────────────
+
+function initSections() {
+  const titles = document.querySelectorAll('.section-title');
+  const nav = document.getElementById('nav-strip');
+  if (!nav) return;
+  nav.innerHTML = '';
+  
+  titles.forEach((title, i) => {
+    // Wrap body content
+    let body = document.createElement('div');
+    body.className = 'section-body';
+    let sibling = title.nextElementSibling;
+    while (sibling && !sibling.classList.contains('section-title')) {
+      const next = sibling.nextElementSibling;
+      body.appendChild(sibling);
+      sibling = next;
+    }
+    title.insertAdjacentElement('afterend', body);
+    
+    // Add toggle icon
+    const icon = document.createElement('span');
+    icon.className = 'toggle-icon';
+    icon.textContent = '▼';
+    title.insertBefore(icon, title.firstChild);
+    
+    // Collapse all except first by default
+    if (i > 0) {
+      body.classList.add('hidden');
+      title.classList.add('collapsed');
+    }
+    
+    // Click handler
+    title.onclick = function() {
+      body.classList.toggle('hidden');
+      title.classList.toggle('collapsed');
+      updateNav();
+    };
+    
+    // Add to nav
+    const btn = document.createElement('button');
+    btn.className = 'nav-btn' + (i === 0 ? ' active' : '');
+    btn.textContent = title.textContent.replace(/[▼▶]/g, '').replace(/\s+/g, ' ').trim().slice(0, 30);
+    btn.setAttribute('data-index', i);
+    btn.onclick = function(e) {
+      e.stopPropagation();
+      if (body.classList.contains('hidden')) {
+        title.click();
+      }
+      title.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    nav.appendChild(btn);
+  });
+}
+
+function updateNav() {
+  document.querySelectorAll('.nav-btn').forEach(btn => {
+    const idx = parseInt(btn.getAttribute('data-index'));
+    const titles = document.querySelectorAll('.section-title');
+    if (titles[idx]) {
+      const body = titles[idx].nextElementSibling;
+      if (body && !body.classList.contains('hidden')) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    }
+  });
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
+// ─────────────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────────────
+
+initSections();
+renderBots();
+renderScreenshots();
+renderGitHub();
+renderStats();
+renderLinkedIn();
+renderEstructurales();
+renderCRM();
+renderSeguimiento();
+
+// Live polling — fetch /api/status every 15 seconds
+fetchStatus();  // initial call right away
+pollInterval = setInterval(fetchStatus, 15 * 1000);
+
+// Fallback static refresh every 5 min
+setInterval(() => {
+  renderGitHub();
+  renderStats();
+}, 5 * 60 * 1000);
+</script>
+</body>
+</html>
