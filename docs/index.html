@@ -1818,13 +1818,11 @@ const DB_CARDS = [
   { icon: '💾', label: 'Base', key: 'db_size_kb', suffix: ' KB', decimals: 1 },
 ];
 
-async function renderDB() {
+async function renderStats() {
   const grid = document.getElementById('db-grid');
   if (!grid) return;
   try {
-    const res = await fetch('/api/db/stats', { cache: 'no-store' });
-    if (!res.ok) { grid.innerHTML = '<div style="color:var(--text-muted);text-align:center;padding:20px">⚠️ DB no disponible</div>'; return; }
-    const data = await res.json();
+    const data = StaticData.db_stats || {};
 
     let html = '';
     DB_CARDS.forEach(c => {
