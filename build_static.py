@@ -234,14 +234,17 @@ def build_mercadopublico():
                            "mantencion", "mantención", "vial", "paviment", "consultor", "inspecc",
                            "fiscal", "mop", "serviu", "vivienda", "sanitaria", "alcantarillado"]
                 if any(kw in nombre or kw in organismo for kw in keywords):
+                    codigo = item.get("codigo")
                     relevant_ca.append({
-                        "codigo": item.get("codigo"),
+                        "codigo": codigo,
                         "nombre": item.get("nombre"),
                         "organismo": item.get("institucion", {}).get("organismo_comprador"),
                         "region": item.get("institucion", {}).get("nombre_region"),
                         "monto": item.get("montos", {}).get("monto_disponible_clp"),
                         "fecha_cierre": item.get("fechas", {}).get("fecha_cierre"),
                         "estado": item.get("estado", {}).get("glosa"),
+                        "url": f"https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar={codigo}",
+                        "url_directa": f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs={codigo}",
                     })
             result["compras_agiles"] = relevant_ca[:40]
         except Exception as e:
