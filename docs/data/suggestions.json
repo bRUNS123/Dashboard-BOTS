@@ -1,16 +1,28 @@
 {
-  "feedback_total": 68,
+  "feedback_total": 69,
   "ofertas_confirmadas": 4,
-  "ruido_confirmado": 10,
+  "ruido_confirmado": 11,
   "disputados": 0,
-  "total_votos": 14,
-  "bot_accuracy": 20.6,
+  "total_votos": 15,
+  "bot_accuracy": 21.7,
   "keywords_efectivas": [
+    {
+      "kw": "ingeniero",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
     {
       "kw": "profesionales",
       "precision": 100.0,
       "ofertas": 3,
       "ruido": 0
+    },
+    {
+      "kw": "civil",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
     },
     {
       "kw": "profesional",
@@ -19,27 +31,9 @@
       "ruido": 1
     },
     {
-      "kw": "ingeniero",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
-    },
-    {
       "kw": "buscamos",
       "precision": 100.0,
       "ofertas": 3,
-      "ruido": 0
-    },
-    {
-      "kw": "civil",
-      "precision": 100.0,
-      "ofertas": 3,
-      "ruido": 0
-    },
-    {
-      "kw": "postula",
-      "precision": 100.0,
-      "ofertas": 2,
       "ruido": 0
     },
     {
@@ -55,9 +49,9 @@
       "ruido": 0
     },
     {
-      "kw": "constructora",
+      "kw": "postula",
       "precision": 100.0,
-      "ofertas": 1,
+      "ofertas": 2,
       "ruido": 0
     },
     {
@@ -67,19 +61,13 @@
       "ruido": 0
     },
     {
-      "kw": "obras civiles",
+      "kw": "fundaciones",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "estamos buscando",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "inspección técnica",
+      "kw": "cydingenieria",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -91,7 +79,19 @@
       "ruido": 0
     },
     {
-      "kw": "fundaciones",
+      "kw": "primavera p6",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "ingeniero civil",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "arquitecto",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -99,7 +99,7 @@
   ],
   "keywords_problematicas": [
     {
-      "kw": "control de calidad",
+      "kw": "vacante",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -111,7 +111,25 @@
       "ruido": 1
     },
     {
+      "kw": "ingeniería civil",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
       "kw": "control de costos",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "diseñador",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "control de calidad",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -123,19 +141,7 @@
       "ruido": 1
     },
     {
-      "kw": "vacante",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
       "kw": "nuevo puesto",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "diseñador",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
