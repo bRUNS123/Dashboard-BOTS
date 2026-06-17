@@ -101,7 +101,7 @@
   {
     "autor": "Gabriela Neira Jaque",
     "correos": "",
-    "region": "Coquimbo, Maule",
+    "region": "Maule, Coquimbo",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -182,7 +182,7 @@
   {
     "autor": "Diego Andrés Osorio Bravo",
     "correos": "",
-    "region": "Magallanes y de la Antártica Chilena, Metropolitana de Santiago",
+    "region": "Metropolitana de Santiago, Magallanes y de la Antártica Chilena",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -199,7 +199,7 @@
   },
   {
     "autor": "Domingo Boscan - Sup. Estructuras - Ing. Civil Mecanico - Universidad de Chile",
-    "correos": "apaillal@cydingenieria.com, mcabanas@cydingenieria.com, gvilches@cydingenieria.com, reclutamiento.gin5@cydingenieria.com",
+    "correos": "mcabanas@cydingenieria.com, apaillal@cydingenieria.com, reclutamiento.gin5@cydingenieria.com, gvilches@cydingenieria.com",
     "region": "Maule, Libertador Gral. Bernardo O’Higgins, Metropolitana de Santiago",
     "rol": "",
     "empresa": "",
@@ -280,7 +280,7 @@
   },
   {
     "autor": "Angela Sanzana Parra",
-    "correos": "asanzana@rfa.cl, seleccion@rfa.cl",
+    "correos": "seleccion@rfa.cl, asanzana@rfa.cl",
     "region": "Libertador Gral. Bernardo O’Higgins, Araucanía",
     "rol": "",
     "empresa": "",
@@ -308,7 +308,7 @@
   {
     "autor": "JORGE MURRAY",
     "correos": "",
-    "region": "Atacama, Coquimbo, Metropolitana de Santiago",
+    "region": "Metropolitana de Santiago, Coquimbo, Atacama",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -343,7 +343,7 @@
   },
   {
     "autor": "Bárbara Quezada Gajardo",
-    "correos": "apaillal@cydingenieria.com, mcabanas@cydingenieria.com, gvilches@cydingenieria.com, reclutamiento.gin5@cydingenieria.com",
+    "correos": "mcabanas@cydingenieria.com, apaillal@cydingenieria.com, reclutamiento.gin5@cydingenieria.com, gvilches@cydingenieria.com",
     "region": "Maule, Libertador Gral. Bernardo O’Higgins, Metropolitana de Santiago",
     "rol": "",
     "empresa": "",
