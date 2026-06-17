@@ -204,6 +204,10 @@ def build_suggestions():
     except Exception as e:
         return {"error": str(e)}
 
+def build_mp_ratings():
+    """Ratings de MercadoPúblico (1-5 estrellas)"""
+    return load_json(HERE / "mp_ratings.json", {})
+
 
 # ─── MercadoPúblico ──────────────────────────────────────
 
@@ -287,6 +291,7 @@ def main():
         "db_stats.json": build_db_stats(),
         "trading.json": build_trading(),
         "ratings.json": build_ratings(),
+        "mp_ratings.json": build_mp_ratings(),
         "suggestions.json": build_suggestions(),
         "mercadopublico.json": build_mercadopublico(),
         "meta.json": {"built_at": timestamp, "version": "2.0-static"},

@@ -579,6 +579,41 @@ def rate_post(author: str, text: str, stars: int) -> dict:
     except Exception as e:
         return {"error": str(e)}
 
+# ─── Rating MercadoPúblico ⭐ 1-5 estrellas ──────────────────────
+
+MP_RATINGS_FILE = DASHBOARD_DIR / "mp_ratings.json"
+MP_CODIGOS_FILE = DASHBOARD_DIR / "docs" / "data" / "mercadopublico.json"
+
+def get_mp_compras() -> list:
+    """Devuelve la lista de compras ágiles desde el JSON estático"""
+    data = load_json_file(MP_CODIGOS_FILE, default={"compras_agiles": []})
+    return data.get("compras_agiles", [])
+
+def get_mp_ratings() -> dict:
+    """Devuelve puntuaciones MP: { \"codigo\": {\"rating\": 4.2, \"count\": 5} }"""
+    return load_json_file(MP_RATINGS_FILE, default=dict)
+
+def rate_mp(codigo: str, stars: int) -> dict:
+    """Puntúa una compra ágil / licitación de 1 a 5 estrellas"""
+    try:
+        stars = max(1, min(5, int(stars)))
+        ratings = load_json_file(MP_RATINGS_FILE, default=dict)
+        if codigo in ratings:
+            entry = ratings[codigo]
+            total = entry.get("total", 0) + stars
+            count = entry.get("count", 0) + 1
+            entry["total"] = total
+            entry["count"] = count
+            entry["rating"] = round(total / count, 1)
+            entry["last"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        else:
+            ratings[codigo] = {"total": stars, "count": 1, "rating": float(stars),
+                            "last": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+        save_json_file(MP_RATINGS_FILE, ratings)
+        return {"success": True, "codigo": codigo, "rating": ratings[codigo]["rating"], "count": ratings[codigo]["count"]}
+    except Exception as e:
+        return {"error": str(e)}
+
 # ─── Análisis inteligente de feedback ─────────────────────
 
 def analyze_feedback() -> dict:
@@ -1475,6 +1510,29 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 text = qs.get("text",[""])[0]
                 stars = int(qs.get("stars",["3"])[0])
                 result = rate_post(author, text, stars)
+                body = json.dumps(result, ensure_ascii=False).encode("utf-8")
+                self.send_response(200); self.send_header("Content-Type","application/json; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin","*"); self.end_headers()
+                self.wfile.write(body)
+            except Exception as e:
+                self.send_response(500); self.end_headers(); self.wfile.write(str(e).encode())
+        # ─── API: Rating MercadoPúblico ⭐ 1-5 estrellas ──────
+        elif parsed.path == "/api/mercadopublico/ratings":
+            try:
+                ratings = get_mp_ratings()
+                body = json.dumps(ratings, ensure_ascii=False).encode("utf-8")
+                self.send_response(200); self.send_header("Content-Type","application/json; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin","*"); self.end_headers()
+                self.wfile.write(body)
+            except Exception as e:
+                self.send_response(500); self.end_headers(); self.wfile.write(str(e).encode())
+        elif parsed.path == "/api/mercadopublico/rate":
+            try:
+                from urllib.parse import parse_qs
+                qs = parse_qs(parsed.query)
+                codigo = qs.get("codigo",[""])[0]
+                stars = int(qs.get("stars",["3"])[0])
+                result = rate_mp(codigo, stars)
                 body = json.dumps(result, ensure_ascii=False).encode("utf-8")
                 self.send_response(200); self.send_header("Content-Type","application/json; charset=utf-8")
                 self.send_header("Access-Control-Allow-Origin","*"); self.end_headers()
