@@ -7,6 +7,18 @@
   "bot_accuracy": 20.6,
   "keywords_efectivas": [
     {
+      "kw": "profesionales",
+      "precision": 100.0,
+      "ofertas": 3,
+      "ruido": 0
+    },
+    {
+      "kw": "ingeniero",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
       "kw": "civil",
       "precision": 100.0,
       "ofertas": 3,
@@ -19,21 +31,15 @@
       "ruido": 0
     },
     {
-      "kw": "ingeniero",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
-    },
-    {
       "kw": "profesional",
       "precision": 75.0,
       "ofertas": 3,
       "ruido": 1
     },
     {
-      "kw": "profesionales",
+      "kw": "postula",
       "precision": 100.0,
-      "ofertas": 3,
+      "ofertas": 2,
       "ruido": 0
     },
     {
@@ -49,18 +55,6 @@
       "ruido": 0
     },
     {
-      "kw": "postula",
-      "precision": 100.0,
-      "ofertas": 2,
-      "ruido": 0
-    },
-    {
-      "kw": "envía tu cv",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
       "kw": "estamos buscando",
       "precision": 100.0,
       "ofertas": 1,
@@ -73,13 +67,25 @@
       "ruido": 0
     },
     {
-      "kw": "arquitecto",
+      "kw": "ms project",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "cydingenieria",
+      "kw": "primavera p6",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "envía tu cv",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "ingeniero civil",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -89,15 +95,15 @@
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
-    },
-    {
-      "kw": "ms project",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
     }
   ],
   "keywords_problematicas": [
+    {
+      "kw": "vacante",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
     {
       "kw": "edificación",
       "precision": 0.0,
@@ -105,13 +111,7 @@
       "ruido": 1
     },
     {
-      "kw": "control de costos",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "vacante",
+      "kw": "nuevo puesto",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -123,7 +123,7 @@
       "ruido": 1
     },
     {
-      "kw": "estructuras",
+      "kw": "control de costos",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -135,7 +135,7 @@
       "ruido": 1
     },
     {
-      "kw": "nuevo puesto",
+      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1

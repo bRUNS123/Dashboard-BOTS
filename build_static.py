@@ -319,9 +319,11 @@ def main():
 def sync_mp_ratings(here: Path, mp_dir: Path):
     """Copia mp_ratings.json a MercadoPublico-AG e inyecta ratings en compra-agil-publicada.json"""
     mp_data_dir = mp_dir / "dist" / "data"
-    if not mp_data_dir.exists():
+    if not mp_dir.exists():
         print(f"\n⚠️  MercadoPúblico-AG no encontrado en {mp_dir}, saltando sync")
         return
+
+    mp_data_dir.mkdir(parents=True, exist_ok=True)
 
     mp_ratings_src = here / "mp_ratings.json"
     mp_ca_file = mp_dir / "public" / "data" / "compra-agil-publicada.json"
