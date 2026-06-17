@@ -312,6 +312,48 @@ def main():
     print(f"   Abrir: {DOCS / 'index.html'}")
     print(f"   Timestamp: {timestamp}")
 
+    # ─── Sincronizar ratings con MercadoPublico-AG ──────────────────
+    sync_mp_ratings(HERE, MERCADOPUBLICO_DIR)
+
+
+def sync_mp_ratings(here: Path, mp_dir: Path):
+    """Copia mp_ratings.json a MercadoPublico-AG e inyecta ratings en compra-agil-publicada.json"""
+    mp_data_dir = mp_dir / "dist" / "data"
+    if not mp_data_dir.exists():
+        print(f"\n⚠️  MercadoPúblico-AG no encontrado en {mp_dir}, saltando sync")
+        return
+
+    mp_ratings_src = here / "mp_ratings.json"
+    mp_ca_file = mp_dir / "public" / "data" / "compra-agil-publicada.json"
+
+    # 1) Copiar mp_ratings.json a MercadoPublico-AG dist/data/
+    shutil.copy(str(mp_ratings_src), str(mp_data_dir / "mp_ratings.json"))
+    print(f"  🔗 mp_ratings.json → MercadoPublico-AG dist/data/")
+
+    # 2) Enriquecer compra-agil-publicada.json con ratings
+    if mp_ca_file.exists():
+        ratings = load_json(mp_ratings_src, {})
+        ca_data = load_json(mp_ca_file, {})
+        items = ca_data.get("items", [])
+        enriched = 0
+        for item in items:
+            codigo = item.get("codigo", "")
+            if codigo in ratings:
+                r = ratings[codigo]
+                item["rating"] = r.get("rating")
+                item["rating_count"] = r.get("count")
+            else:
+                item["rating"] = None
+                item["rating_count"] = 0
+            enriched += 1
+
+        # Guardar en dist/data/ (para GitHub Pages)
+        dest_ca = mp_data_dir / "compra-agil-publicada.json"
+        save_json(dest_ca, ca_data)
+        print(f"  🔗 {enriched} compras enriquecidas con ratings → MercadoPublico-AG dist/data/")
+    else:
+        print(f"  ⚠️  {mp_ca_file} no encontrado, solo se copió mp_ratings.json")
+
 
 if __name__ == "__main__":
     main()
