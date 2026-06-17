@@ -205,6 +205,68 @@ def build_suggestions():
         return {"error": str(e)}
 
 
+# ─── MercadoPúblico ──────────────────────────────────────
+
+MERCADOPUBLICO_DIR = Path(r"C:\Users\Usuario\Desktop\Programación\MercadoPublico-AG (API)")
+
+def build_mercadopublico():
+    """Compra Ágil + Licitaciones con datos relevantes"""
+    result = {"compras_agiles": [], "licitaciones": [], "total_compras": 0, "total_licitaciones": 0}
+
+    # Compra Ágil
+    ca_path = MERCADOPUBLICO_DIR / "public" / "data" / "compra-agil-publicada.json"
+    if ca_path.exists():
+        try:
+            ca_data = load_json(ca_path, {})
+            items = ca_data.get("items", [])
+            result["total_compras"] = len(items)
+            # Solo las más recientes y con interés estructural
+            relevant_ca = []
+            for item in items:
+                nombre = (item.get("nombre") or "").lower()
+                organismo = (item.get("institucion", {}).get("organismo_comprador") or "").lower()
+                # Filtrar relevancia: construcción, ingeniería, obras
+                keywords = ["construc", "obra", "ingenier", "estructural", "edific", "reparac",
+                           "mantencion", "mantención", "vial", "paviment", "consultor", "inspecc",
+                           "fiscal", "mop", "serviu", "vivienda", "sanitaria", "alcantarillado"]
+                if any(kw in nombre or kw in organismo for kw in keywords):
+                    relevant_ca.append({
+                        "codigo": item.get("codigo"),
+                        "nombre": item.get("nombre"),
+                        "organismo": item.get("institucion", {}).get("organismo_comprador"),
+                        "region": item.get("institucion", {}).get("nombre_region"),
+                        "monto": item.get("montos", {}).get("monto_disponible_clp"),
+                        "fecha_cierre": item.get("fechas", {}).get("fecha_cierre"),
+                        "estado": item.get("estado", {}).get("glosa"),
+                    })
+            result["compras_agiles"] = relevant_ca[:40]
+        except Exception as e:
+            result["error_ca"] = str(e)
+
+    # Licitaciones desde DB
+    try:
+        sys.path.insert(0, str(HERE))
+        import sqlite3
+        db_path = HERE / "database.db"
+        if db_path.exists():
+            conn = sqlite3.connect(str(db_path))
+            conn.row_factory = sqlite3.Row
+            cur = conn.execute(
+                "SELECT codigo_externo, nombre, organismo_nombre, region_nombre, monto_total, "
+                "fecha_cierre, estado_nombre, interes, rating FROM licitaciones "
+                "ORDER BY fecha_cierre ASC LIMIT 50"
+            )
+            licitaciones = [dict(r) for r in cur.fetchall()]
+            result["licitaciones"] = [{k: (str(v)[:19] if 'fecha' in k else v) for k, v in l.items()}
+                                      for l in licitaciones]
+            result["total_licitaciones"] = len(licitaciones)
+            conn.close()
+    except Exception as e:
+        result["error_lic"] = str(e)
+
+    return result
+
+
 # ─── MAIN ───────────────────────────────────────────────
 
 def main():
@@ -226,6 +288,7 @@ def main():
         "trading.json": build_trading(),
         "ratings.json": build_ratings(),
         "suggestions.json": build_suggestions(),
+        "mercadopublico.json": build_mercadopublico(),
         "meta.json": {"built_at": timestamp, "version": "2.0-static"},
     }
 

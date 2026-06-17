@@ -1,0 +1,368 @@
+{
+  "compras_agiles": [
+    {
+      "codigo": "1038-63-COT26",
+      "nombre": "Adquisición Turba para uso en la preparación del sustrato Vivero Sire 735 ",
+      "organismo": "CORP NACIONAL FORESTAL",
+      "region": "Región de Magallanes y de la Antártica",
+      "monto": 1900000,
+      "fecha_cierre": "2026-06-17 15:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1540-832-COT26",
+      "nombre": "REPARACION TRANSDUCTOR ENDOCAVITARIO",
+      "organismo": "SERVICIO DE SALUD MAGALLANES HOSPITAL DE PTO NATALES",
+      "region": "Región de Magallanes y de la Antártica",
+      "monto": 2421650,
+      "fecha_cierre": "2026-06-16 11:15",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2708-385-COT26",
+      "nombre": "TERCIADO ESTRUCTURAL CASOS SOCIALES",
+      "organismo": "MUNICIPALIDAD DE OVALLE",
+      "region": "Región de Coquimbo ",
+      "monto": 180000,
+      "fecha_cierre": "2026-06-16 12:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2294-1137-COT26",
+      "nombre": "REPARACION SISTEMA DE CAMARAS SD MANTENIMIENTO DAEM TALCA FONDOS SUBVENCION REGULAR",
+      "organismo": "I MUNICIPALIDAD DE TALCA",
+      "region": "Región del Maule ",
+      "monto": 250000,
+      "fecha_cierre": "2026-06-16 12:46",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "610-19-COT26",
+      "nombre": "Mantención notebooks de la CNE",
+      "organismo": "Comisión Nacional de Energía",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 4000000,
+      "fecha_cierre": "2026-06-16 16:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1358-4-COT26",
+      "nombre": "“COMPRA DE FERRETERIA  PARA SER UTILIZADAS POR EL PERSONAL DE TERRENO DE LA PROVINCIA DE CHACABUCO”.",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 4755835,
+      "fecha_cierre": "2026-06-17 09:28",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "593649-10-COT26",
+      "nombre": "MANTENCION EXTINTORES",
+      "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
+      "region": "Región de Los Ríos",
+      "monto": 500000,
+      "fecha_cierre": "2026-06-17 07:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "906-78-COT26",
+      "nombre": "9120 PRP Mantención mensual de ascensor oficina SAG Villarrica",
+      "organismo": "SERVICIO AGRICOLA Y GANADERO",
+      "region": "Región de la Araucanía ",
+      "monto": 660000,
+      "fecha_cierre": "2026-06-17 14:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1554-368-COT26",
+      "nombre": "REQUERIMIENTO MOPAS Y BALDES /  BODEGA GENERAL",
+      "organismo": "SERVICIO DE SALUD ATACAMA HOSPITAL COPIA",
+      "region": "Región de Atacama ",
+      "monto": 2000000,
+      "fecha_cierre": "2026-06-17 08:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "643-119-COT26",
+      "nombre": "COTIZACIÓN ELEMENTO DE PROTECCIÓN PERSONAL ",
+      "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION V REGION",
+      "region": "Región de Valparaíso ",
+      "monto": 190000,
+      "fecha_cierre": "2026-06-17 11:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1009566-79-COT26",
+      "nombre": " ADQUISICIÓN DE ELECTRODOMÉSTICOS PARA EDIFICIO CORPORATIVO DIVLOG-DIVMAN",
+      "organismo": "Jefatura Adm. y Log. de la División Logística",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 150000,
+      "fecha_cierre": "2026-06-16 14:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1214102-723-COT26",
+      "nombre": "(DGC) MANTENCION PREVENTIVA EQUIPOS SALA DE ESTERILIZACION ",
+      "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 4500000,
+      "fecha_cierre": "2026-06-16 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "885-501-COT26",
+      "nombre": "Servicio de mantención preventiva correspondiente a los 40.000 kilómetros del vehículo institucional marca Hyundai, modelo Ioniq, patente LYHB-66, perteneciente a la Región Metropolitana",
+      "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 360000,
+      "fecha_cierre": "2026-06-17 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2294-1136-COT26",
+      "nombre": "MANTENCION Y REPARACION VEHICULO DAEM TALCA HIGER H72 26EV PATENTE HHBH-11",
+      "organismo": "I MUNICIPALIDAD DE TALCA",
+      "region": "Región del Maule ",
+      "monto": 4300000,
+      "fecha_cierre": "2026-06-16 12:46",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1208066-248-COT26",
+      "nombre": "SERVICIO DE LIMPIEZA DE PLANTA ELEVADORA DE AGUAS SERVIDAS Y REPARACIÓN DE SISTEMA DE CRIBAS, UNIVERSIDAD DE TALCA.",
+      "organismo": "UNIVERSIDAD DE TALCA",
+      "region": "Región del Maule ",
+      "monto": 6900000,
+      "fecha_cierre": "2026-06-16 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1173407-25-COT26",
+      "nombre": "C.E.T. VILCÚN. “ADQUIERE SERVICIO DE MANTENCION CORRECTIVA PARA MOVIL P02-32 CAMIONETA GREAT WALL MODELO POER PATENTE SZHB16. DEL C.E.T. DE VILCÚN DE GENDARMERIA DE CHILE, REGION DE LA ARAUCANIA”. ",
+      "organismo": "Centro de Educación y Trabajo de Vilcún",
+      "region": "Región de la Araucanía ",
+      "monto": 2680000,
+      "fecha_cierre": "2026-06-16 09:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "3320-282-COT26",
+      "nombre": "013_101104/2026_ ADQ. DE REPUESTOS PARA MANTTO VEHICULO SUBARU LEGACY",
+      "organismo": "Escuadrilla de Abastecimiento del Edificio FF.AA.",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 180300,
+      "fecha_cierre": "2026-06-17 09:15",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "5153-1192-COT26",
+      "nombre": "JDT_MM N°234 SERVICIO MANTENCIÓN PREVENTIVA/REPARACIÓN BALANZAS SECA",
+      "organismo": "UNIVERSIDAD DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 3000000,
+      "fecha_cierre": "2026-06-16 14:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1214102-722-COT26",
+      "nombre": "(DGC) MANTENCION PREVENTIVA SALA DE BOMBAS ",
+      "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 7000000,
+      "fecha_cierre": "2026-06-16 09:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1860-16-COT26",
+      "nombre": "COMPRA DE MATERIALES DE MANTENCION  MN ISLOTE DE PUÑIHUIL  TEMPORADA 2026 CONAF CHILOE",
+      "organismo": "CORP NACIONAL FORESTAL",
+      "region": "Región de los Lagos ",
+      "monto": 301500,
+      "fecha_cierre": "2026-06-18 09:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1491370-49-COT26",
+      "nombre": "Adquisición de Impresora Láser Color Corporativa de Alto Rendimiento Kyocera ECOSYS PA4000cx o equivalente técnico (50535)",
+      "organismo": "Proyecto ING2530001 DECANAT FACULTAD DE INGENIERÍA",
+      "region": "Región de Coquimbo ",
+      "monto": 900000,
+      "fecha_cierre": "2026-06-22 09:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2735-713-COT26",
+      "nombre": "SERVICIO DE MANTENCIÓN CORRECTIVA ASCENSOR",
+      "organismo": "I MUNICIPALIDAD LO BARNECHEA",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 6900000,
+      "fecha_cierre": "2026-06-19 09:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "3888-561-COT26",
+      "nombre": "Herramientas Direccion de obras Municipales ",
+      "organismo": "Ilustre Municipalidad de San Juan de la Costa",
+      "region": "Región de los Lagos ",
+      "monto": 400000,
+      "fecha_cierre": "2026-06-16 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "557639-1283-COT26",
+      "nombre": " Reparación SISTEMA DE Climatización (1021)",
+      "organismo": "CORP MUNICIPAL DE SERVICIOS PUBLICOS TRASPASADOS DE RANCAGUA",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "monto": 800000,
+      "fecha_cierre": "2026-06-16 09:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1860-15-COT26",
+      "nombre": "COMPRA DE MATERIALES DE MANTENCION  PARQUE NACIONAL TEMPORADA 2026 CONAF CHILOE",
+      "organismo": "CORP NACIONAL FORESTAL",
+      "region": "Región de los Lagos ",
+      "monto": 600112,
+      "fecha_cierre": "2026-06-18 09:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "3697-85-COT26",
+      "nombre": "ADQUISICION DE RIPIO REVUELTO CANTO RODADO 1 1/2\" LAVADO, DIRECCION DE OBRAS.-",
+      "organismo": "I MUNICIPALIDAD DE VICTORIA",
+      "region": "Región de la Araucanía ",
+      "monto": 3000000,
+      "fecha_cierre": "2026-06-16 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2380-1329-COT26",
+      "nombre": "ADQUISICIÓN DE MATERIALES PARA REPARACIÓN Y MANTENCIÓN PRETIL - SECPLA - OS 152829 - G.A.C",
+      "organismo": "I MUNICIPALIDAD DE COPIAPO",
+      "region": "Región de Atacama ",
+      "monto": 3000000,
+      "fecha_cierre": "2026-06-16 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2404-367-COT26",
+      "nombre": "ADQ. DE INSUMOS PARA MANTENCION JARDINES Y AREAS VERDES, DE LOS ESTADIOS T.DE CAMP. Y CAVANCHA",
+      "organismo": "I MUNICIPALIDAD DE IQUIQUE",
+      "region": "Región de Tarapacá  ",
+      "monto": 6900000,
+      "fecha_cierre": "2026-06-17 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "4642-125-COT26",
+      "nombre": "CONTRATACIÓN DEL SERVICIO DE REPARACIÓN DE EQUIPO MOTOR COLIBRÍ II MARCA SYNTHES SERIE N°2743, DE CARGO DEL SERVICIO DE SOPORTE QUIRÚRGICO DEL HOSPITAL DE CARABINEROS",
+      "organismo": "FONDO PARA HOSPITALES DE CARABINEROS DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 2092482,
+      "fecha_cierre": "2026-06-17 09:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1057389-1448-COT26",
+      "nombre": "Curso \"Fiscal y Actuarios para el Desarrollo de Procedimientos Administrativos con Enfoque de Genero\" ",
+      "organismo": "SERVICIO SALUD ARAUCANIA NORTE HOSPITAL VICTORIA",
+      "region": "Región de la Araucanía ",
+      "monto": 1600000,
+      "fecha_cierre": "2026-06-16 14:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2298-180-COT26",
+      "nombre": "ADQUISICIÓN DE INSUMOS Y MATERIALES DE CONSTRUCCIÓN",
+      "organismo": "IMunicipalidad de Molina",
+      "region": "Región del Maule ",
+      "monto": 3800000,
+      "fecha_cierre": "2026-06-16 09:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1214102-721-COT26",
+      "nombre": " (DGC) MANTENCION PREVENTIVA PLANTA DE OSMOSIS",
+      "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE PUDAHUEL",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 6000000,
+      "fecha_cierre": "2026-06-16 09:30",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2216-92-COT26",
+      "nombre": "CURSO: EXCEL AVANZADO",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 500000,
+      "fecha_cierre": "2026-06-19 09:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "3320-281-COT26",
+      "nombre": "013_101104/2026_ADQ. DE REPUESTOS PARA MANTTO VEHICULO CAMIONETA NISSAN NP-300 G.G.A.S",
+      "organismo": "Escuadrilla de Abastecimiento del Edificio FF.AA.",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 190000,
+      "fecha_cierre": "2026-06-17 09:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "3949-132-COT26",
+      "nombre": "ADQUISICION DE CONTENEDORES Y SOPORTES PARA REAS PARA LA UNIDAD DE RETIROS DE RESIDUOS CLINICOS ",
+      "organismo": "CONSULTORIO GENERAL URBANO DR ALEJANDRO GUTIERREZ",
+      "region": "Región Aysén del General Carlos Ibáñez del Campo",
+      "monto": 800000,
+      "fecha_cierre": "2026-06-16 12:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1057547-1380-COT26",
+      "nombre": "Reparación Tonómetro",
+      "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL BASE",
+      "region": "Región de Los Ríos",
+      "monto": 350000,
+      "fecha_cierre": "2026-06-17 11:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1069-19-COT26",
+      "nombre": "SOLENOIDE DE PARADA GENERADOR LUYERE",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región de Magallanes y de la Antártica",
+      "monto": 900000,
+      "fecha_cierre": "2026-06-16 10:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "3335-722-COT26",
+      "nombre": "REPARACIÓN DE VEHICULO BUS MERCEDES  BENZ MODELO OF 1218 DAEM PLACA PATENTE DH-GZ-14 ORD. N° 397 SUBV. REGULAR ",
+      "organismo": "I MUNICIPALIDAD DE LA UNION",
+      "region": "Región de Los Ríos",
+      "monto": 1600000,
+      "fecha_cierre": "2026-06-16 11:00",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "1000813-232-COT26",
+      "nombre": "ADQ. DE ELEMENTOS ELECTRICOS PARA REPARACION DE TABLERO DEL CUARTEL DE TROPAS DIVISIONARIAS",
+      "organismo": "Jefatura Adm. y Log. del Campo Militar Austral",
+      "region": "Región de Magallanes y de la Antártica",
+      "monto": 530000,
+      "fecha_cierre": "2026-06-16 09:45",
+      "estado": "Publicada"
+    },
+    {
+      "codigo": "2658-748-COT26",
+      "nombre": "INSUMOS DE CONSTRUCCION Y OTROS",
+      "organismo": "I MUNICIPALIDAD DE ANCUD",
+      "region": "Región de los Lagos ",
+      "monto": 3200000,
+      "fecha_cierre": "2026-06-17 08:00",
+      "estado": "Publicada"
+    }
+  ],
+  "licitaciones": [],
+  "total_compras": 799,
+  "total_licitaciones": 0,
+  "error_lic": "no such table: licitaciones"
+}
