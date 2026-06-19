@@ -13,6 +13,12 @@
       "ruido": 0
     },
     {
+      "kw": "profesional",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
       "kw": "civil",
       "precision": 75.0,
       "ofertas": 3,
@@ -31,10 +37,10 @@
       "ruido": 0
     },
     {
-      "kw": "profesional",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
+      "kw": "años de experiencia",
+      "precision": 100.0,
+      "ofertas": 2,
+      "ruido": 0
     },
     {
       "kw": "postula",
@@ -49,13 +55,31 @@
       "ruido": 0
     },
     {
-      "kw": "años de experiencia",
+      "kw": "ms project",
       "precision": 100.0,
-      "ofertas": 2,
+      "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "montaje industrial",
+      "kw": "oferta laboral",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "primavera p6",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "inspección técnica",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "fundaciones",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -71,35 +95,17 @@
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
-    },
-    {
-      "kw": "fundaciones",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "envía tu cv",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "ms project",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "primavera p6",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
     }
   ],
   "keywords_problematicas": [
     {
-      "kw": "vacante",
+      "kw": "control de calidad",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "nuevo puesto",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -111,13 +117,13 @@
       "ruido": 1
     },
     {
-      "kw": "ingeniería civil",
+      "kw": "vacante",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
-      "kw": "estructuras",
+      "kw": "ingeniería civil",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -135,13 +141,7 @@
       "ruido": 1
     },
     {
-      "kw": "control de calidad",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "nuevo puesto",
+      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
