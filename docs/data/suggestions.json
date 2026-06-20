@@ -7,18 +7,6 @@
   "bot_accuracy": 21.7,
   "keywords_efectivas": [
     {
-      "kw": "profesional",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
-    },
-    {
-      "kw": "ingeniero",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
-    },
-    {
       "kw": "buscamos",
       "precision": 100.0,
       "ofertas": 3,
@@ -31,9 +19,27 @@
       "ruido": 1
     },
     {
+      "kw": "ingeniero",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
       "kw": "profesionales",
       "precision": 100.0,
       "ofertas": 3,
+      "ruido": 0
+    },
+    {
+      "kw": "profesional",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
+      "kw": "postula",
+      "precision": 100.0,
+      "ofertas": 2,
       "ruido": 0
     },
     {
@@ -49,9 +55,21 @@
       "ruido": 0
     },
     {
-      "kw": "postula",
+      "kw": "oferta laboral",
       "precision": 100.0,
-      "ofertas": 2,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "envía tu cv",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "ms project",
+      "precision": 100.0,
+      "ofertas": 1,
       "ruido": 0
     },
     {
@@ -61,7 +79,13 @@
       "ruido": 0
     },
     {
-      "kw": "constructora",
+      "kw": "fundaciones",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "inspección técnica",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -71,39 +95,9 @@
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
-    },
-    {
-      "kw": "oferta laboral",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "montaje industrial",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "obras civiles",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "cydingenieria",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
     }
   ],
   "keywords_problematicas": [
-    {
-      "kw": "edificación",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
     {
       "kw": "nuevo puesto",
       "precision": 0.0,
@@ -111,7 +105,7 @@
       "ruido": 1
     },
     {
-      "kw": "estructuras",
+      "kw": "control de costos",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -129,19 +123,25 @@
       "ruido": 1
     },
     {
-      "kw": "diseñador",
+      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
-      "kw": "control de costos",
+      "kw": "edificación",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
       "kw": "control de calidad",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "diseñador",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
