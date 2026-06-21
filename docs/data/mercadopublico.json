@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "2585-662-COT26",
+      "nombre": "SERVICIO DE PREPARACION Y ENTREGA DE ALIMENTOS Y OTROS, ORD N° 2749,  OF. DE LA JUVENTUD, DIDECO, MZJ",
+      "organismo": "I MUNICIPALIDAD DE ARICA",
+      "region": "Región de Arica y Parinacota",
+      "monto": 3000000,
+      "fecha_cierre": "2026-06-22 13:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2585-662-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2585-662-COT26"
+    },
+    {
       "codigo": "1501513-51-COT26",
       "nombre": "ADQ. DE INSUMOS, DESTINADOS A “OPERATIVO COMUNITARIO DE INVIERNO\", MANTENCIÓN PREVENTIVA AUTO",
       "organismo": "Servicio Local de Educación Pública del Tamarugal",
@@ -54,17 +65,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2734-432-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2734-432-COT26"
-    },
-    {
-      "codigo": "1057503-1726-COT26",
-      "nombre": " OP:MANTENCION CORRECTIVA SISTEMA CCTV DE LOS ASCENSORES DE LA TORRE DE HOSPITALIZACION.",
-      "organismo": "HOSPITAL PADRE ALBERTO HURTADO",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 7021000,
-      "fecha_cierre": "2026-06-21 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1057503-1726-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1057503-1726-COT26"
     },
     {
       "codigo": "657-52-COT26",
