@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "1501513-51-COT26",
+      "nombre": "ADQ. DE INSUMOS, DESTINADOS A “OPERATIVO COMUNITARIO DE INVIERNO\", MANTENCIÓN PREVENTIVA AUTO",
+      "organismo": "Servicio Local de Educación Pública del Tamarugal",
+      "region": "Región de Tarapacá  ",
+      "monto": 900000,
+      "fecha_cierre": "2026-06-22 11:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1501513-51-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1501513-51-COT26"
+    },
+    {
       "codigo": "2591-1262-COT26",
       "nombre": "Mantención de vitrinas y congeladora del área de vacunatorio.",
       "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
@@ -340,17 +351,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=605-116-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=605-116-COT26"
-    },
-    {
-      "codigo": "1173460-21-COT26",
-      "nombre": "INSUMOS Y ACCESORIOS MANTENCION MAQUINARIA MENOR Y COCINA, DEL C.E.T. YUNGAY",
-      "organismo": "Centro de Educación y Trabajo Yungay",
-      "region": "Región del Ñuble",
-      "monto": 1490000,
-      "fecha_cierre": "2026-06-21 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1173460-21-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1173460-21-COT26"
     },
     {
       "codigo": "2575-11-COT26",
