@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "3202-227-COT26",
+      "nombre": "CAPUERTOANC - SERVICIO DE MANTENCIÓN Y REPARACIÓN DE 02 COCINAS A GAS SEGÚN EE.TT.",
+      "organismo": "GOBERNACION MARITIMA DE CASTRO",
+      "region": "Región de los Lagos ",
+      "monto": 360000,
+      "fecha_cierre": "2026-06-22 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3202-227-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3202-227-COT26"
+    },
+    {
       "codigo": "2585-662-COT26",
       "nombre": "SERVICIO DE PREPARACION Y ENTREGA DE ALIMENTOS Y OTROS, ORD N° 2749,  OF. DE LA JUVENTUD, DIDECO, MZJ",
       "organismo": "I MUNICIPALIDAD DE ARICA",
@@ -428,17 +439,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079639-657-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079639-657-COT26"
-    },
-    {
-      "codigo": "1079505-212-COT26",
-      "nombre": "Adquisición del servicio de mano de obra para instalación interior de la Sección Aérea Policial de Carabineros Coquimbo",
-      "organismo": "SECCIÓN COMPRAS IV ZONA",
-      "region": "Región de Coquimbo ",
-      "monto": 6800000,
-      "fecha_cierre": "2026-06-23 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079505-212-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079505-212-COT26"
     }
   ],
   "licitaciones": [],
