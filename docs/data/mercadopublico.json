@@ -34,17 +34,6 @@
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1501513-51-COT26"
     },
     {
-      "codigo": "2591-1262-COT26",
-      "nombre": "Mantención de vitrinas y congeladora del área de vacunatorio.",
-      "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
-      "region": "Región de Tarapacá  ",
-      "monto": 654500,
-      "fecha_cierre": "2026-06-21 20:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2591-1262-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2591-1262-COT26"
-    },
-    {
       "codigo": "1057432-176-COT26",
       "nombre": "PROVISIÓN E INSTALACIÓN DE TARJETA ELECTRÓNICA DE CONTROL QUE COMANDA LA OPERACIÓN DE LA CALDERA N°1 DEL EDIFICIO DE LA DSSC",
       "organismo": "SERVICIO DE SALUD CONCEPCION",
@@ -439,6 +428,17 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079639-657-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079639-657-COT26"
+    },
+    {
+      "codigo": "1079505-212-COT26",
+      "nombre": "Adquisición del servicio de mano de obra para instalación interior de la Sección Aérea Policial de Carabineros Coquimbo",
+      "organismo": "SECCIÓN COMPRAS IV ZONA",
+      "region": "Región de Coquimbo ",
+      "monto": 6800000,
+      "fecha_cierre": "2026-06-23 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079505-212-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079505-212-COT26"
     }
   ],
   "licitaciones": [],
