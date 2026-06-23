@@ -1,6 +1,116 @@
 {
   "compras_agiles": [
     {
+      "codigo": "3047-194-COT26",
+      "nombre": "SERVICIO DE MANTENCIÓN DE EXTINTORES DE INSTALACIÓN DE GRUMETES",
+      "organismo": "Academia Politécnica Naval",
+      "region": "Región de Valparaíso ",
+      "monto": 586170,
+      "fecha_cierre": "2026-06-26 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3047-194-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3047-194-COT26"
+    },
+    {
+      "codigo": "3182-92-COT26",
+      "nombre": "MANTENIMIENTO, REPARACIÓN, RECARGA Y CERTIFICACIÓN DE EXTINTORES.",
+      "organismo": "GOBERNACION MARITIMA DE COQUIMBO",
+      "region": "Región de Coquimbo ",
+      "monto": 374850,
+      "fecha_cierre": "2026-06-25 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3182-92-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3182-92-COT26"
+    },
+    {
+      "codigo": "2293-54-COT26",
+      "nombre": "NP25 OPERATIVO INSUMOS REPARACIONES Y MANTENCION MAQUINARIAS Y VEHICULOS",
+      "organismo": "I MUNICIPALIDAD DE TALCA",
+      "region": "Región del Maule ",
+      "monto": 3500000,
+      "fecha_cierre": "2026-06-24 09:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2293-54-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2293-54-COT26"
+    },
+    {
+      "codigo": "1057503-1734-COT26",
+      "nombre": "op_mantención de tableros eléctricos",
+      "organismo": "HOSPITAL PADRE ALBERTO HURTADO",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 6800000,
+      "fecha_cierre": "2026-06-23 19:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1057503-1734-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1057503-1734-COT26"
+    },
+    {
+      "codigo": "4044-344-COT26",
+      "nombre": "ADQUISICIÓN DE MATERIALES PARA STOCK PARA EQUIPO DE MANTENCIÓN VAI A ORI - MONTO INCLUYE FLETE PUESTO EN ISLA DE PASCUA - SOLICITA OPERACIONES",
+      "organismo": "I MUNICIPALIDAD DE ISLA DE PASCUA",
+      "region": "Región de Valparaíso ",
+      "monto": 7123500,
+      "fecha_cierre": "2026-06-24 06:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4044-344-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4044-344-COT26"
+    },
+    {
+      "codigo": "1738-231-COT26",
+      "nombre": " ADQUISICION DE COMPONENTES ESTRUCTURALES E INSUMOS DE FERRETERIA PARA HABILITACION DE CIERRE PERIMETRAL MULTICANCHA VILLA EL TREN, COMUNA DE VILLA ALEGRE",
+      "organismo": "I MUNICIPALIDAD DE VILLA ALEGRE",
+      "region": "Región del Maule ",
+      "monto": 3723000,
+      "fecha_cierre": "2026-06-23 19:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1738-231-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1738-231-COT26"
+    },
+    {
+      "codigo": "1467-14-COT26",
+      "nombre": "Mantención preventiva y reparación sistema de gases Generador Electrico",
+      "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE CURICÓ",
+      "region": "Región del Maule ",
+      "monto": 980000,
+      "fecha_cierre": "2026-06-25 08:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1467-14-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1467-14-COT26"
+    },
+    {
+      "codigo": "3838-130-COT26",
+      "nombre": "ADQUISICION DE MATERIALES DE CONSTRUCCION POR EMERGENCIA",
+      "organismo": "I MUNICIPALIDAD DE SANTA CRUZ",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "monto": 758050,
+      "fecha_cierre": "2026-06-23 20:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3838-130-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3838-130-COT26"
+    },
+    {
+      "codigo": "1707-31-COT26",
+      "nombre": "Se requiere realizar diseño de construcción de Bocatoma en el pueblo de Socoroma.",
+      "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE PARINACOTA",
+      "region": "Región de Arica y Parinacota",
+      "monto": 6000000,
+      "fecha_cierre": "2026-06-30 09:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1707-31-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1707-31-COT26"
+    },
+    {
+      "codigo": "354-35-COT26",
+      "nombre": "Caso ORASMI N° 23, Adquisición de Gift Card para Materiales de Construcción",
+      "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE CHACABUCO",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 250000,
+      "fecha_cierre": "2026-06-24 08:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=354-35-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=354-35-COT26"
+    },
+    {
       "codigo": "1079866-190-COT26",
       "nombre": "ADQUISICION DE MATERIALES DE CONSTRUCCION PARA EL MURO PERIMETRAL  DE LA 5 COM. CONCHALI DOE. 256693356  C.D.P. 251",
       "organismo": "SECCIÓN COMPRAS ZONA SANTIAGO OESTE",
@@ -329,120 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1623-209-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1623-209-COT26"
-    },
-    {
-      "codigo": "1211839-263-COT26",
-      "nombre": "MANTENCIÓN PREVENTIVA EQUIPO RX OSTEOPULMONAR",
-      "organismo": "CORP MUNIC EDUC SALUD Y ATENCION",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 1200000,
-      "fecha_cierre": "2026-06-24 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1211839-263-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1211839-263-COT26"
-    },
-    {
-      "codigo": "1638-436-COT26",
-      "nombre": "Adquisición artículos de ferretería, Direccion de administración y finanzas, transito y transporte publico, Dpto. transito, Unidad vial. SM N°08189",
-      "organismo": "ILUSTRE MUNICIPALIDAD DE DIEGO DE ALMAGRO",
-      "region": "Región de Atacama ",
-      "monto": 770000,
-      "fecha_cierre": "2026-06-24 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1638-436-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1638-436-COT26"
-    },
-    {
-      "codigo": "557974-254-COT26",
-      "nombre": "Reparación y mantención red húmeda para S-504 pedido 11278",
-      "organismo": "CORPORACION MUNICIPAL DE EDUCACION,SALUD,CULTURA Y ATENCION AL MENOR,",
-      "region": "Región de Valparaíso ",
-      "monto": 80000,
-      "fecha_cierre": "2026-06-24 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=557974-254-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=557974-254-COT26"
-    },
-    {
-      "codigo": "4306-262-COT26",
-      "nombre": " ADQUISICION DE TURBO COMPRESOR Y MANTENCION DE DUCTOS DE CAMION ALJIBE MUNICIPAL",
-      "organismo": "I MUNICIPALIDAD DE ERCILLA",
-      "region": "Región de la Araucanía ",
-      "monto": 3000000,
-      "fecha_cierre": "2026-06-24 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4306-262-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4306-262-COT26"
-    },
-    {
-      "codigo": "1969-360-COT26",
-      "nombre": "Reparación TTA grupo electrógeno, CDP Lebu, COD 26.552",
-      "organismo": "Dirección Regional de Gendarmeria - Concepcion",
-      "region": "Región del Biobío ",
-      "monto": 1164748,
-      "fecha_cierre": "2026-06-23 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1969-360-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1969-360-COT26"
-    },
-    {
-      "codigo": "1068620-27-COT26",
-      "nombre": "Adquisición del servicio de mantención de los 120.000 kilómetros para vehículo institucional de la  dirección regional de JUNAEB, Ñuble",
-      "organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
-      "region": "Región del Ñuble",
-      "monto": 470000,
-      "fecha_cierre": "2026-06-24 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1068620-27-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1068620-27-COT26"
-    },
-    {
-      "codigo": "1171234-57-COT26",
-      "nombre": "Papeles para conservación de obras y archivos",
-      "organismo": "MUSEO NACIONAL DE BELLAS ARTES",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 600000,
-      "fecha_cierre": "2026-06-24 11:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1171234-57-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1171234-57-COT26"
-    },
-    {
-      "codigo": "1298355-664-COT26",
-      "nombre": "MANTENCIÓN PREVENTIVA A REFRIGERADORES CLÍNICOS- CENTROS DE SALUD",
-      "organismo": "DIRECCION DE SALUD",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 3641400,
-      "fecha_cierre": "2026-06-23 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1298355-664-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1298355-664-COT26"
-    },
-    {
-      "codigo": "2436-859-COT26",
-      "nombre": " Adquisicion de botas tacticas, necesarias para Of de Fiscalizacion inspectores de transito",
-      "organismo": "I MUNICIPALIDAD DE CURICO",
-      "region": "Región del Maule ",
-      "monto": 950000,
-      "fecha_cierre": "2026-06-23 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2436-859-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2436-859-COT26"
-    },
-    {
-      "codigo": "501-111-COT26",
-      "nombre": "MATERIALES PARA REPARACIONES ESC. LOS OLIVOS",
-      "organismo": "Ilustre Municipalidad de Ranquil",
-      "region": "Región del Ñuble",
-      "monto": 700000,
-      "fecha_cierre": "2026-06-24 08:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=501-111-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=501-111-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 6817,
+  "total_compras": 6967,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
