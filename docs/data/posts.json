@@ -1,142 +1,142 @@
 [
   {
-    "author": "Gladys Choque Ulloa",
-    "profile_url": "https://www.linkedin.com/in/gladys-choque-ulloa/",
-    "text": "📊 ¿𝗤𝘂𝗲́ 𝘁𝗮𝗻 𝗿𝗲𝗹𝗮𝗰𝗶𝗼𝗻𝗮𝗱𝗮𝘀 𝗲𝘀𝘁𝗮́𝗻 𝘁𝘂𝘀 𝘃𝗮𝗿𝗶𝗮𝗯𝗹𝗲𝘀? ¿𝗟𝗮 𝗰𝗼𝗿𝗿𝗲𝗹𝗮𝗰𝗶𝗼́𝗻 𝗲𝘀 𝗺𝘂𝘆 𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁𝗲 𝗲𝗻 𝘂𝗻 𝗮𝗻𝗮́𝗹𝗶𝘀𝗶𝘀? 📊\n\nCuando realizamos un Análisis Exploratorio de Datos (EDA), una de las primeras preguntas que debemos responder es: ¿existe alguna relación entre las variables de mi conjunto de datos?\n\nLa correlación es una medida estadística que permite cuantificar la fuerza y dirección de la relación entre dos variables. Su valor generalmente oscila entre -1 y 1:\n\n✅ Correlación positiva (+1): ambas variables tienden a aumentar juntas.\n✅ Correlación negativa (-1): cuando una aumenta, la otra tiende a disminuir.\n✅ Correlación cercana a 0: no existe una relación lineal evidente.\n\n¿𝗣𝗼𝗿 𝗾𝘂𝗲́ 𝗲𝘀 𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁𝗲 𝗲𝗻 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲?\n\nLa correlación es una herramienta fundamental porque permite:\n\n🔹 Identificar relaciones entre variables.\n🔹 Detectar variables redundantes o altamente relacionadas.\n🔹 Reducir problemas de multicolinealidad en modelos predictivos.\n🔹 Seleccionar variables relevantes para Machine Learning.\n🔹 Generar hipótesis y obtener insights de negocio.\n🔹 Comprender mejor la estructura de los datos antes de modelar.\n\n𝗖𝗼𝗿𝗿𝗲𝗹𝗮𝗰𝗶𝗼́𝗻 𝗻𝗼 𝗶𝗺𝗽𝗹𝗶𝗰𝗮 𝗰𝗮𝘂𝘀𝗮𝗹𝗶𝗱𝗮𝗱.\n\nUno de los errores más comunes es asumir que una variable causa a la otra simplemente porque están correlacionadas. Dos variables pueden presentar una fuerte correlación sin que exista una relación causal directa entre ellas.\n\nPor ello, la correlación debe interpretarse como una herramienta para explorar patrones, no para demostrar causas.\n\n𝗠𝗲́𝘁𝗼𝗱𝗼𝘀 𝗱𝗲 𝗰𝗼𝗿𝗿𝗲𝗹𝗮𝗰𝗶𝗼́𝗻 𝗺𝗮́𝘀 𝘂𝘁𝗶𝗹𝗶𝘇𝗮𝗱𝗼𝘀:\n\n📌 Pearson: mide relaciones lineales entre variables numéricas.\n📌 Spearman: evalúa relaciones monótonas utilizando rangos.\n📌 Kendall: alternativa robusta basada en concordancia entre observaciones.\n\n𝗘𝗻 𝗹𝗮 𝗽𝗿𝗮́𝗰𝘁𝗶𝗰𝗮 𝗱𝗲𝗹 𝗘𝗗𝗔.\n\nAntes de construir cualquier modelo, es recomendable analizar la matriz de correlación y visualizar las relaciones mediante mapas de calor (heatmaps) o diagramas de dispersión. Este paso puede revelar patrones ocultos, inconsistencias y oportunidades para mejorar la calidad del análisis.\n\nEn Ciencia de Datos, comprender las relaciones entre variables no solo mejora los modelos, sino que también permite tomar decisiones basadas en evidencia y extraer conocimiento valioso a partir de los datos.\n\n✨ Pregunta: ¿Alguna vez encontraste una correlación sorprendente en tus datos que cambió por completo tu análisis o la estrategia de un proyecto?\n.\n.\n#DataScience #EDA #MachineLearning #Analytics #DataAnalytics #Statistics #CienciaDeDatos #DataVisualization #DatosConGladys\n… más",
-    "time_posted": "2026-06-20 19:42",
-    "scraped_at": "2026-06-23T19:42:13.436428"
+    "author": "Erasmo Ramirez Guzman",
+    "profile_url": "https://www.linkedin.com/in/erasmo-ramirez-guzman-7428023a/",
+    "text": "Hoy Diario Financiero dedicó un reportaje a nuestro joint venture con Ingevec para desarrollar nuestro primer proyecto en conjunto. Quiero detenerme en lo que hay detrás del titular. 🚀\n\nQue una compañía abierta en bolsa, con más de 40 años de trayectoria, decida entrar al desarrollo inmobiliario privado en La Serena 𝗱𝗲 𝗹𝗮 𝗺𝗮𝗻𝗼 𝗱𝗲 𝘂𝗻 𝘀𝗼𝗰𝗶𝗼 𝗿𝗲𝗴𝗶𝗼𝗻𝗮𝗹 no es un dato menor. Para nosotros, en Terranostra Inmobiliaria, es el mejor respaldo a más de 20 años desarrollando en esta región: un actor de ese nivel no se asocia con cualquiera. Gracias a Jose Antonio Bustamante Correa y todo el equipo de Ingevec por la confianza. 🤝\n\nY hay algo más grande en juego. Durante años se asumió que los grandes proyectos y la inversión institucional eran cosa de Santiago. Nuestra cartera —que supera 𝟭,𝟳 𝗺𝗶𝗹𝗹𝗼𝗻𝗲𝘀 𝗱𝗲 𝗨𝗙 (unos US$77 millones) con ONE La Serena, TerraSerena, un nuevo edificio boutique de oficinas y Casa Tambo en Tongoy— demuestra que 𝗹𝗮𝘀 𝗿𝗲𝗴𝗶𝗼𝗻𝗲𝘀 𝘀𝗼𝗻 𝗵𝗼𝘆 𝘂𝗻𝗮 𝗼𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝗱𝗮𝗱 𝗿𝗲𝗮𝗹 𝗱𝗲 𝗶𝗻𝘃𝗲𝗿𝘀𝗶ó𝗻. 📈\n\nComo dije a DF: nos gusta La Serena, y creemos que la región tiene un potencial tremendo. Esto recién comienza. 🌆\n\n#TerranostraInmobiliaria #ONELaSerena #LaSerena #Coquimbo #InversiónInmobiliaria\n\n\n📰 Reportaje de Diario Financiero, por Camila Bejarano — edición del 23 de junio de 2026.\n… más",
+    "time_posted": "2026-06-23 14:00",
+    "scraped_at": "2026-06-24T00:00:30.829875"
   },
   {
-    "author": "Jorge Valentino Vásquez Martínez",
-    "profile_url": "https://www.linkedin.com/in/jorge-valentino-v%C3%A1squez-mart%C3%ADnez-75705760/",
-    "text": "tratando de mejorar ..e investigar pero ya la situación no da para más ..\nla búsqueda  de empleo ..ya casi 2 años \nalgo estaré haciendo mal.\nmalas decisiones ...y confiar en gente que no devia ...pasa la factura  \n… más",
-    "time_posted": "2026-06-23 18:42",
-    "scraped_at": "2026-06-23T19:42:03.138721"
-  },
-  {
-    "author": "Universidad de Santiago de Chile",
-    "profile_url": "https://www.linkedin.com/company/universidad-de-santiago-de-chile/posts/",
-    "text": "🐟 Ciencia #USACH lidera la innovación acuícola: Desarrollan aditivo alimenticio que reduce el uso de antibióticos en la salmonicultura\n\n🌊📉Un equipo de la Facultad de Química y Biología, liderado por la Dra. Brenda Modak y el Dr. Mick Parra, desarrolló CuBacti. Se trata de un innovador aditivo alimenticio funcional que combina un complejo de cobre con compuestos vegetales para potenciar y fortalecer la respuesta inmune natural de los peces. 🧬🧪\n\n🔗Sigue la noticia en: https://n9.cl/ckllb2\n… más",
-    "time_posted": "2026-06-23 16:41",
-    "scraped_at": "2026-06-23T19:41:54.993076"
+    "author": "Luis Salvatierra, PMP®",
+    "profile_url": "https://www.linkedin.com/in/luis-salvatierra-pmp%C2%AE-03533a1b0/",
+    "text": "Hay metas que representan mucho más que una certificación.\n\nMe alegra compartir que he obtenido la certificación PMP® (Project Management Professional), un objetivo que me propuse hace bastante tiempo y que requirió estudio, constancia y muchas horas de preparación.\n\nMás allá de la certificación, valoro especialmente todo lo aprendido durante este proceso. Ha sido una oportunidad para fortalecer conocimientos, cuestionar prácticas, incorporar nuevas perspectivas y seguir desarrollando una visión más amplia sobre la gestión de proyectos y el valor que estos generan para las organizaciones.\n\nCreo firmemente que el crecimiento profesional no ocurre de un día para otro, sino que es el resultado de pequeñas mejoras sostenidas en el tiempo. Esta certificación representa precisamente eso: un paso más dentro de un camino de aprendizaje continuo que espero seguir recorriendo durante toda mi carrera.\n\nAgradezco a quienes me han apoyado, compartido experiencias y desafiado a seguir creciendo profesional y personalmente.\n\nAhora toca seguir aprendiendo, seguir construyendo y seguir avanzando.\n#PMP #ProjectManagement\n… más",
+    "time_posted": "2026-06-23 13:00",
+    "scraped_at": "2026-06-24T00:00:29.687101"
   },
   {
     "author": "Jorge Antonio Francovish Montero",
     "profile_url": "https://www.linkedin.com/in/jorge-antonio-francovish-montero-86485515/",
-    "text": "https://lnkd.in/dR3Ze2t4",
-    "time_posted": "2026-06-23 12:41",
-    "scraped_at": "2026-06-23T19:41:54.710928"
+    "text": "https://lnkd.in/dy4wdgKa",
+    "time_posted": "2026-06-23 22:00",
+    "scraped_at": "2026-06-24T00:00:26.349846"
   },
   {
-    "author": "Gloria Aburto Donoso",
-    "profile_url": "https://www.linkedin.com/in/gloria-aburto-donoso/",
-    "text": "En un mercado donde la tecnología se clona en meses y los productos evolucionan a la velocidad de la luz, ¿qué es lo único que tu competencia no puede copiar? \n\nTe invitamos a leer la nueva columna de opinión de Carolina Soto Cabeza, Psicóloga Organizacional, Máster en Capital Humano y experta en cultura y gestión del talento: “La nueva ventaja competitiva: el bienestar psicológico”.\n\nHistóricamente, las empresas han buscado el éxito a través de la eficiencia operativa, la tecnología o la innovación técnica. Sin embargo, en el dinámico escenario laboral de hoy, Carolina nos plantea una verdad contundente: el bienestar psicológico ha dejado de ser un simple beneficio \"deseable\" para transformarse en un factor estratégico de sostenibilidad y competitividad. Las culturas saludables y comprometidas son, en realidad, el activo más difícil de replicar y el verdadero motor para crecer de manera sostenible.\n\nSi lideras un equipo, fundaste una startup o manejas una corporación, esta lectura es obligatoria para entender hacia dónde se mueve el futuro del trabajo y el desarrollo de personas. \n… más",
-    "time_posted": "2026-06-23 12:41",
-    "scraped_at": "2026-06-23T19:41:54.439521"
+    "author": "ACT S.A.",
+    "profile_url": "https://www.linkedin.com/company/act-s.a./posts/",
+    "text": "🚀 ¡Buscamos Ingeniero de Proyectos para la Zona Norte!\n\n¿Te apasiona liderar proyectos tecnológicos e industriales en minería?\n En ACT estamos buscando un Ingeniero de Proyectos para sumarse a nuestro equipo y participar en la ejecución de soluciones de Telecomunicaciones, Fibra Óptica y Automatización Industrial en importantes operaciones mineras de la Región de Antofagasta.\n\n🎯 ¿Qué harás?\n✔ Liderar proyectos desde la planificación hasta la puesta en marcha y cierre técnico.\n✔ Coordinar equipos multidisciplinarios, proveedores y clientes, asegurando el cumplimiento de plazos, calidad y estándares de seguridad.\n✔ Supervisar la ejecución de proyectos de telecomunicaciones, fibra óptica y automatización industrial.\n✔ Gestionar documentación técnica, reportes de avance, cronogramas y entregables.\n✔ Liderar pruebas, comisionamiento y puesta en servicio de equipos y sistemas.\n✔ Identificar riesgos y proponer soluciones que aseguren el éxito de cada proyecto.\n\n🔎 ¿Qué buscamos?\n✅ Ingeniero de Ejecución o carrera afín en Electricidad, Comunicaciones, Automatización, Control Industrial, Informática o disciplinas relacionadas.\n✅ Experiencia de al menos 2 años en cargos similares, idealmente en minería o proyectos industriales.\n✅ Conocimientos en Fibra Óptica, Telecomunicaciones, Automatización Industrial y gestión de proyectos.\n✅ Manejo de software CAD (deseable).\n✅ Licencia de conducir Clase B.\n✅ Salud compatible con trabajo en altura geográfica.\n\n➡️ Te ofrecemos\n🔹 Proyectos tecnológicos de alto impacto en la industria minera.\n🔹 Desarrollo profesional y aprendizaje continuo.\n🔹 Turnos 5x2 o 4x3 según proyecto.\n🔹 Renta acorde a experiencia y mercado.\n\n📍 Ubicación: Zona Norte – Faenas Mineras.\n📩 Postula enviando tu CV a: seleccion.rrhh@actsa.net\n📌 Asunto: Ingeniero de Proyectos – Zona Norte.\n\n🔗 También puedes postular directamente a través de nuestro portal de empleos:\n➡️https://lnkd.in/dBPe39vj\n➡️https://lnkd.in/dkraZ3Pp\n➡️https://lnkd.in/dgkTHhyM\n\n\n🔥 ¿Buscas un desafío donde tu conocimiento técnico marque la diferencia? Este puede ser tu próximo gran paso profesional.\n\n👉 ¿Conoces a alguien que encaje con este desafío? Etiquétalo en los comentarios, comparte esta publicación o envíale esta oportunidad. ¡Ayúdanos a encontrar al próximo talento que se sumará a nuestro equipo!\n\n\n\n#IngenieroDeProyectos #Minería #Telecomunicaciones #FibraÓptica #AutomatizaciónIndustrial #Empleo #Antofagasta #ZonaNorte #ProjectManagement #Ingeniería #TrabajaConNosotros #ACT\n… más",
+    "time_posted": "2026-06-18 00:00",
+    "scraped_at": "2026-06-24T00:00:24.528719"
   },
   {
-    "author": "Jenny Arevalo R.",
-    "profile_url": "https://www.linkedin.com/in/jenny-arevalo-r-7b48b8ba/",
-    "text": "El CV es una consecuencia.\n\nLa señal viene antes.\n\nY las organizaciones que aprenden a leer esas señales suelen llegar primero al talento que las demás ni siquiera saben que existe.\n… más",
-    "time_posted": "2026-06-23 10:41",
-    "scraped_at": "2026-06-23T19:41:54.152967"
-  },
-  {
-    "author": "Opdenergy",
-    "profile_url": "https://www.linkedin.com/company/opdenergy/posts/",
-    "text": "At Opdenergy, we know that our projects are driven by people. Behind every site, every milestone, there are talented professionals whose work supports our continued growth as a company. \n\nToday, on International 𝗪𝗼𝗺𝗲𝗻 𝗶𝗻 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗗𝗮𝘆, we would like to recognise the contribution of all the women who are part of our teams.  \n\nFrom Development and Engineering to Resource Assessment, Quality and many other areas, their talent, expertise and commitment are an essential part of what we do and of the projects we deliver every day. \n\nWe are proud to see more and more women contributing to Opdenergy and taking on leadership roles, alongside diverse teams that are helping build a more sustainable future. We are confident that talent, diversity,\ninclusión and collaboration will continue to strengthen our teams and contribute to the success of our projects.\n\n#EnergizingtheFuture \n… más",
-    "time_posted": "2026-06-23 07:41",
-    "scraped_at": "2026-06-23T19:41:48.834962"
-  },
-  {
-    "author": "Lucas Biagetti",
-    "profile_url": "https://www.linkedin.com/in/lucasbiagettia/",
-    "text": "La ingeniería de loops es la nueva mentira de Linkedin.\n\nAl igual que pedirle a un agente que no alucine, la \"ingeniería\" de loops es es básicamente agrega capas y capas para que lo que tenés abajo, uno o varios LLM no cometa errores.\n\nDespués está el otro que dice que despliega 300 agentes en paralelo, uno para dividir en pasos, otros para hacer los pasos, uno para que no se equivoquen, otro para que guie a los que se equivocan a mejorar...\n\n¿Saben qué pienso de eso? Es una montaña de mierda para que cada vez dependas más de modelos privativos o, en el mejor de los casos, de hardware impagable.\n\nTodas mentiras que no resuelven ningún problema real ni son atractivas científicamente.\n… más",
-    "time_posted": "2026-06-22 19:41",
-    "scraped_at": "2026-06-23T19:41:48.295062"
-  },
-  {
-    "author": "Bernabé Hinojosa Lopera",
-    "profile_url": "https://www.linkedin.com/in/bernabehinojosa/",
-    "text": "🚀🗺️CLAUDE CODE PARA QGIS: 🚀 La guía que algunos preferirían que no vieras. \n\nHe corregido, ampliado y mejorado la guía de Claude Code para QGIS.\n\nLa semana pasada la descargaron más de 700 personas y me llegaron un montón de sugerencias. Además había un pequeño error en un código.\n\nAhora:\n✅ 80 ejemplos reales\n✅ Más automatizaciones\n✅ Más casos de uso GIS\n✅ Algo de teledetección\n✅ Trucos que se me quedaron en el tintero\n\nNada de teoría de IA. Nada de humo.\n\nSi quieres que te la envíe,, 2 cositas solo:\n\n👉 Sígueme\n👉 Cuéntame en comentarios qué parte de QGIS te gustaría automatizar\n\nTengo curiosidad...\n¿Qué es lo que más tiempo te hace perder actualmente en QGIS?\nOs leo 🤘\n\n#QGIS #GIS #GeoAI #ClaudeCode #Automatizacion #PyQGIS #InteligenciaArtificial #Teledeteccion\n… más",
-    "time_posted": "2026-06-21 19:41",
-    "scraped_at": "2026-06-23T19:41:42.360269"
-  },
-  {
-    "author": "Rodrigo López Merino",
-    "profile_url": "https://www.linkedin.com/in/rodrigo-l%C3%B3pez-merino-b0138a1a2/",
-    "text": "Estimados, comparto vacante disponible. Favor comentarme su interés por mensaje!",
-    "time_posted": "2026-06-22 19:41",
-    "scraped_at": "2026-06-23T19:41:34.304844"
-  },
-  {
-    "author": "Fermín Rodríguez Sosa",
-    "profile_url": "https://www.linkedin.com/in/ferm%C3%ADn-rodr%C3%ADguez-sosa-94664973/",
-    "text": "La industria que construye comunidad es la que permanece.\n\nHoy, 10° Aniversario del @ClubdeNiñosyNiñas de #SanLuisPotosí. Una década que transformó 2,817 vidas. Tres clubes. Una comunidad entera detrás.\n\nBMW Group Plant SLP marcó el camino: responsabilidad social no como obligación, sino como inversión en el territorio que te recibe.\n\nAsí se construye el #Bajío que queremos.\n\n#ClubDeNiñosYNiñas #SanLuisPotosí #BMWGroup #ResponsabilidadSocial #Bajío\n\nGenera Softlanding Expo Potosí Industrial Imatch.mx Bajio Talks Daniela Navarro Instituto Potosino de Investigación Científica y Tecnológica - IPICYT Elizabeth Arreguin Vera Paola Félix Klaus von Moltke Fermín Ramírez Foyo Adrián Fermín Rodríguez Valades Uriel Verazzi Alma Acevedo Logistik Industrial Park Guillermo Rico-Leal Ervey A. Gonzalez Gilberto Gonzalez Rosalinda Martínez Reyes Imelda Elizalde Martinez Líder Empresarial Revista Gente San Luis César Ramos Salazar TARIPLUS S.A Carlos Gutiérrez C. Iñaki Arenas Zenteno Griselda Ivett Larrea Castro \n… más",
-    "time_posted": "2026-06-23 16:41",
-    "scraped_at": "2026-06-23T19:41:34.022992"
+    "author": "Julián Segundo Díez",
+    "profile_url": "https://www.linkedin.com/in/juli%C3%A1n-segundo-d%C3%ADez-8b8592170/",
+    "text": "Hola, Tengo mas de 30 años de experiencia en el sector de Telecomunicaciones; estoy buscando trabajo, pero por favor no me llaméis para  sondear el mercado laboral, perder el tiempo en multitud de entrevistas para hacer bulto y finalmente regatear y ofrecerme lo que se ganaba hace 30 años. \nNo he estado de baja por enfermedad nunca en mis 34 años de vida laboral, no me importa trabajar los fines de semanas, festivos o noches (siempre que paguen de acuerdo a la legislación vigente); en definitiva busco y me adapto a los trabajos, esta claro que con un mínimo de tiempo para conocer el proyecto, herramientas,...aunque tengo un defecto: tengo 55 años  (ya llegaras a mi edad y la vida da muchas vueltas, por lo que no me descartes o algún día te acordaras). \nAporto muchas   ganas de trabajar y formar parte de una empresa de la que estar orgulloso con mi trabajo.\n\n💼 Estoy buscando vacantes de Supervisor de TI, Especialista en transmisión, Ingeniera de transmisión, Soporte técnico de transmisión, Técnico de despliegue de fibra óptica y equipos, Jefe de proyecto....\n\n⭐ He trabajado en Ericsson, ONO, Vodafone, Alcatel, Huawei, INECO y ADIF.\n… más",
+    "time_posted": "2026-06-20 00:00",
+    "scraped_at": "2026-06-24T00:00:01.486045"
   },
   {
     "author": "Carolina Erices Garcia",
     "profile_url": "https://www.linkedin.com/in/carolina-erices-garcia-6728ab36/",
-    "text": "Hoy, 23 de junio, se celebra el Día Internacional de la Mujer en la Ingeniería, y en Molymet queremos destacar el talento de algunas de nuestras ingenieras y colaboradoras del equipo corporativo, quienes día a día impulsan el crecimiento de nuestra industria.\n\nEn Molymet estamos comprometidos con potenciar talentos, y agradecemos profundamente a todas las mujeres que, con su dedicación y visión, transforman nuestra operación e inspiran a las próximas generaciones.\n\nGracias Vanessa Devillaine Curotto\nMaría José Z.\nMadeleyn Flores Álvarez\nMaría José Alvarado Pizarro\nCecilia Fernandez\n… más",
-    "time_posted": "2026-06-23 11:41",
-    "scraped_at": "2026-06-23T19:41:25.762952"
+    "text": "#haypegaenconce",
+    "time_posted": "2026-06-23 00:00",
+    "scraped_at": "2026-06-24T00:00:00.003906"
   },
   {
-    "author": "Nicolás Arancibia Gajardo",
-    "profile_url": "https://www.linkedin.com/in/narancibia/",
-    "text": "📢 ¡PRÁCTICAS EN VALPARAÍSO: PROYECTO DS49 \"LOS LAURELES\"!\nEn CGM (Constructora Grupo Mirador) buscamos alumnos comprometidos y prolijos. Si eres estudiante vigente y buscas aprender en un proyecto real de edificación, esta es tu oportunidad.\n\n⚠️ REQUISITOS EXCLUSIVOS (Por favor, leer antes de postular):\n\nCarreras: Ingeniería en Construcción, Civil o afines (Rubro de Construcción).\nEstado: Estudiante con matrícula vigente (con seguro escolar).\nUbicación: Disponibilidad para trabajar en la Región de *Valparaíso*.\n\n¿CÓMO POSTULAR? (Sigue las instrucciones para no ser descartado):\n\nEnvía tu CV actualizado (archivo adjunto) a: narancibia@cgmirador.cl\n\nASUNTO DEL CORREO: Especifica claramente \"Practica - Proyecto Los Laureles\"\n\nIndica tu casa de estudios y nivel de práctica en el cuerpo del correo.\n\nNota: Postulaciones de otras carreras o que no adjunten CV no serán consideradas en este proceso. (Excluyente)\n\n¡Te esperamos para crecer juntos! 🚀\n\nhashtag\n\n#PracticasProfesionales hashtag\n\n#IngenieriaConstruccion hashtag\n\n#ViviendaSocial hashtag\n\n#Valparaiso hashtag\n\n#ConstruccionChile hashtag\n\n#CGMConstructora hashtag\n\n#DS49\n… más",
-    "time_posted": "2026-06-23 15:41",
-    "scraped_at": "2026-06-23T19:41:25.510665"
+    "author": "Rodrigo Patricio Córdova Guerra",
+    "profile_url": "https://www.linkedin.com/in/rodrigo-patricio-c%C3%B3rdova-guerra-b721118b/",
+    "text": "Participacion de HÖHE en feria ExpoNor!!!\n#Exponor2026 #andamios #alzaprimas",
+    "time_posted": "2026-06-23 19:59",
+    "scraped_at": "2026-06-23T23:59:56.724929"
   },
   {
-    "author": "Confidencial",
-    "profile_url": "https://www.linkedin.com/company/money-inc-media/posts/",
-    "text": "Some financial conversations aren't about wealth. They're about what happens after you're gone.\n\nTom and Lisa have a son who will need $4,800 a month for the rest of his life. Not a rounding error. Not an emergency fund. A guaranteed, permanent expense.\n\nHe's 14. They're in their mid-40s. Healthy. Building.\n\nBut the question follows them everywhere.\n\n\"We're not trying to get rich. We can't afford to not solve this. If we're not here - or if we can't work - his care doesn't pause.\"\n\nThey didn't want a trust that depletes. They didn't want a plan that depends on markets cooperating. They wanted a machine. Something that throws the number every month regardless of what happens elsewhere.\n\nNot upside. Not optionality. A specific monthly figure. Durable. Asset-backed. Not correlated to the headlines.\n\nThat's what the Valhalla Fund is built to do. Monthly distributions from short-duration, asset-backed private credit — not from selling anything down, not from hoping the market is up.\n\nTom and Lisa moved a tranche into the Valhalla Fund. The distributions cover the care costs. The rest of the capital keeps working.\n\nThey still have the estate plan. They still have the trust. But the income layer doesn't depend on anyone executing perfectly when they're not around to supervise.\n\nIncome is the plan. Everything else is a backup.\n\nIf you're building around a permanent, non-negotiable monthly need — a child, a parent, a spouse — that's the conversation I want to have. DM me. Accredited investors only.\n\n… más",
-    "time_posted": "2026-06-23 13:41",
-    "scraped_at": "2026-06-23T19:41:20.014279"
+    "author": "Carolina Erices Garcia",
+    "profile_url": "https://www.linkedin.com/in/carolina-erices-garcia-6728ab36/",
+    "text": "📊 El IPoM y la urgencia de volver a pensar en el largo plazo\n\nEl último IPoM del Banco Central no solo entrega proyecciones: reordena la conversación económica. Nos recuerda que, aunque la inflación retrocede y la actividad muestra señales de estabilización, Chile enfrenta desafíos estructurales que no se resuelven administrando la coyuntura.\n\nEl informe es claro en tres puntos críticos:\n1️⃣ Crecimiento tendencial estancado .La economía opera con un potencial limitado. La productividad no repunta y la inversión continúa débil, afectada por incertidumbre regulatoria y menor dinamismo en sectores estratégicos. Esto obliga a mirar más allá del ciclo y preguntarnos cómo recuperar capacidad de expansión sostenible.\n\n2️⃣ Presiones fiscales crecientes. El gasto público sigue tensionado por compromisos permanentes, litigios y mayores demandas sociales. El IPoM refuerza la necesidad de fortalecer la responsabilidad fiscal y avanzar hacia un marco de gasto más predecible y eficiente.\n\n3️⃣ Inversión y confianza como variables clave. El informe insiste en que la recuperación no depende solo de estímulos monetarios. Requiere reglas claras, estabilidad institucional y políticas que reduzcan la incertidumbre para el sector privado.\n👉En síntesis, el IPoM no es un diagnóstico pesimista: es un llamado técnico a reinstalar la mirada estratégica.\nChile necesita políticas que trasciendan el mes a mes y que permitan reconstruir un camino de crecimiento, productividad y sostenibilidad fiscal.\n👉 La pregunta no es qué pasará este trimestre.\nLa pregunta es si estamos dispuestos a construir las condiciones para crecer durante la próxima década.\n🔗 Columna completa: “El IPoM que nos obliga a mirar más allá del corto plazo” https://lnkd.in/d9Ze-YVz\ngracias a #elMartutino\n… más",
+    "time_posted": "2026-06-23 22:59",
+    "scraped_at": "2026-06-23T23:59:17.700699"
   },
   {
-    "author": "Luis Fernando Espinoza Castillo",
-    "profile_url": "https://www.linkedin.com/in/luis-fernando-espinoza-castillo-4a63726b/",
-    "text": "— 𝗠𝗮𝗺á, ¿𝗲𝘀𝘁𝗼 𝗲𝘀 𝘂𝗻 𝗯𝗮𝗿𝗿𝗶𝗼?\n\nLa pregunta me la hizo mi hija hace un par de semanas.\nHabíamos ido a buscar el local de votación de mi mamá en una zona antigua de lima.\n\nMientras caminábamos 𝗮𝗹𝗴𝗼 𝗹𝗲 𝗹𝗹𝗮𝗺ó 𝗹𝗮 𝗮𝘁𝗲𝗻𝗰𝗶ó𝗻.\nP𝗲𝗾𝘂𝗲ñ𝗼𝘀 𝗰𝗼𝗺𝗲𝗿𝗰𝗶𝗼𝘀.\n𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝘀 𝗰𝗮𝗺𝗶𝗻𝗮𝗻𝗱𝗼.\n𝗩𝗲𝗰𝗶𝗻𝗼𝘀 𝗰𝗼𝗻𝘃𝗲𝗿𝘀𝗮𝗻𝗱𝗼 𝗲𝗻 𝗹𝗮𝘀 𝗽𝘂𝗲𝗿𝘁𝗮𝘀 𝗱𝗲 𝘀𝘂𝘀 𝗰𝗮𝘀𝗮𝘀.\n𝗠𝗼𝘃𝗶𝗺𝗶𝗲𝗻𝘁𝗼,v𝗶𝗱𝗮.\n\nY entonces me preguntó:\n\n— 𝗠𝗮𝗺á, ¿𝗲𝘀𝘁𝗼 𝗲𝘀 𝘂𝗻 𝗯𝗮𝗿𝗿𝗶𝗼?\nLe dije que 𝘀í.\n\nY enseguida vino la segunda pregunta:\n\n— ¿𝗡𝗼𝘀𝗼𝘁𝗿𝗼𝘀 𝘃𝗶𝘃𝗶𝗺𝗼𝘀 𝗲𝗻 𝘂𝗻 𝗯𝗮𝗿𝗿𝗶𝗼?\nLe respondí que 𝘃𝗶𝘃𝗶𝗺𝗼𝘀 𝗲𝗻 𝘂𝗻 𝗰𝗼𝗻𝗱𝗼𝗺𝗶𝗻𝗶𝗼.\n\nQue es una especie de 𝗽𝗲𝗾𝘂𝗲ñ𝗼 𝗯𝗮𝗿𝗿𝗶𝗼, 𝗽𝗼𝗿𝗾𝘂𝗲 𝗰𝗼𝗻𝗼𝗰𝗲𝗺𝗼𝘀 𝗮 𝗹𝗼𝘀 𝘃𝗲𝗰𝗶𝗻𝗼𝘀, 𝗹𝗼𝘀 𝗻𝗶ñ𝗼𝘀 𝗷𝘂𝗲𝗴𝗮𝗻 𝗲𝗻 𝗹𝗼𝘀 𝗲𝘀𝗽𝗮𝗰𝗶𝗼𝘀 𝗰𝗼𝗺𝘂𝗻𝗲𝘀 𝘆 𝗲𝗹𝗹𝗮 𝗽𝘂𝗲𝗱𝗲 𝗺𝗼𝘃𝗲𝗿𝘀𝗲 𝗰𝗼𝗻 𝗹𝗶𝗯𝗲𝗿𝘁𝗮𝗱 𝗱𝗲𝗻𝘁𝗿𝗼 𝗱𝗲 𝗲𝗹𝗹𝗼𝘀.\n\nLuego le conté cómo era 𝗲𝗹 𝗯𝗮𝗿𝗿𝗶𝗼 𝗱𝗼𝗻𝗱𝗲 𝗰𝗿𝗲𝗰í.\nLas tardes en bicicleta.\nLos amigos de la cuadra.\nLas conversaciones entre vecinos.\n\nY las interminables tardes de vóley.\nY de cómo tensábamos la net de lado a lado de la calle y, cada vez que aparecía un auto, todos corríamos a levantarla para que pudiera pasar. 🤣 \n\n𝗬 𝗺𝗶𝗲𝗻𝘁𝗿𝗮𝘀 𝗵𝗮𝗯𝗹𝗮𝗯𝗮, 𝗺𝗲 𝗱𝗶 𝗰𝘂𝗲𝗻𝘁𝗮 𝗱𝗲 𝗮𝗹𝗴𝗼.\n𝗠𝗶 𝗵𝗶𝗷𝗮 𝗻𝘂𝗻𝗰𝗮 𝗵𝗮𝗯í𝗮 𝗰𝗼𝗻𝗼𝗰𝗶𝗱𝗼 𝗿𝗲𝗮𝗹𝗺𝗲𝗻𝘁𝗲 𝗲𝘀𝗲 \"𝘁𝗶𝗽𝗼\" 𝗱𝗲 𝗯𝗮𝗿𝗿𝗶𝗼.\n\nNo porque haya desaparecido de toda Lima.\nTodavía existen algunos.\n\nPero en algunas partes de la ciudad,  fueron cediendo espacio a urbanizaciones cerradas, condominios, muros más altos y una vida cada vez más puertas adentro.\n\n𝗣𝗲𝗿𝗼 𝘁𝗮𝗺𝗯𝗶é𝗻 𝗺𝗲 hizo pensan en lo  𝗾𝘂e 𝗵𝗲𝗺𝗼𝘀 𝗽𝗲𝗿𝗱𝗶𝗱𝗼 𝗲𝗻 𝗲𝗹 𝗰𝗮𝗺𝗶𝗻𝗼.\n\nPorque un barrio no era solo un conjunto de viviendas.\nEra el lugar 𝗱𝗼𝗻𝗱𝗲 𝗰𝗼𝗻𝗼𝗰í𝗮𝘀 𝗮 𝘁𝘂𝘀 𝘃𝗲𝗰𝗶𝗻𝗼𝘀.\nDonde 𝗹𝗼𝘀 𝗻𝗶ñ𝗼𝘀 𝗮𝗽𝗿𝗲𝗻𝗱í𝗮𝗻 𝗮 𝗰𝗼𝗻𝘃𝗶𝘃𝗶𝗿.\n𝗗𝗼𝗻𝗱𝗲 𝗹𝗮 𝗰𝗶𝘂𝗱𝗮𝗱 𝘁𝗲𝗻í𝗮 𝗿𝗼𝘀𝘁𝗿𝗼.\n\nY, mientras se lo contaba, 𝗺𝗲 𝗲𝗻𝗰𝗼𝗻𝘁𝗿é 𝗿𝗲𝗰𝗼𝗿𝗱𝗮𝗻𝗱𝗼 l𝗮𝘀 𝗮𝗻é𝗰𝗱𝗼𝘁𝗮𝘀 𝗾𝘂𝗲 𝗵𝗼𝘆, 𝘃𝗮𝗿𝗶𝗮𝘀 𝗱é𝗰𝗮𝗱𝗮𝘀 𝗱𝗲𝘀𝗽𝘂é𝘀, 𝘀𝗶𝗴𝗼 𝗿𝗲𝗰𝗼𝗿𝗱𝗮𝗻𝗱𝗼 𝗰𝗼𝗻 𝘂𝗻𝗮 𝘀𝗼𝗻𝗿𝗶𝘀𝗮. 🙂 \n\nPero, lo que más me sorprendió de esa conversación n𝗼 𝗳𝘂𝗲 𝗾𝘂𝗲 𝗺𝗶 𝗵𝗶𝗷𝗮 𝗺𝗲 𝗽𝗿𝗲𝗴𝘂𝗻𝘁𝗮𝗿𝗮 𝘀𝗶 𝗮𝗾𝘂𝗲𝗹𝗹𝗼 𝗲𝗿𝗮 𝘂𝗻 𝗯𝗮𝗿𝗿𝗶𝗼.\n\n𝗙𝘂𝗲 𝗱𝗮𝗿𝗺𝗲 𝗰𝘂𝗲𝗻𝘁𝗮 𝗱𝗲 𝗾𝘂𝗲, 𝗽𝗮𝗿𝗮 𝗲𝗹𝗹𝗮, 𝘂𝗻 𝗯𝗮𝗿𝗿𝗶𝗼 𝘆𝗮 𝗻𝗼 𝗲𝗿𝗮 𝗮𝗹𝗴𝗼 𝗼𝗯𝘃𝗶𝗼.\n𝗘𝗿𝗮 𝗮𝗹𝗴𝗼 𝗾𝘂𝗲 𝗻𝗲𝗰𝗲𝘀𝗶𝘁𝗮𝗯𝗮 𝘀𝗲𝗿 𝗲𝘅𝗽𝗹𝗶𝗰𝗮𝗱𝗼. 😱 \n\nY quizás ahí hay una señal de cómo ha cambiado Lima durante las últimas décadas.\n\nPorque cuando 𝘂𝗻𝗮 𝗻𝗶ñ𝗮 𝗱𝗲 8 𝗮ñ𝗼𝘀 𝘁𝗶𝗲𝗻𝗲 𝗾𝘂𝗲 𝗽𝗿𝗲𝗴𝘂𝗻𝘁𝗮𝗿 𝗾𝘂é 𝗲𝘀 𝘂𝗻 𝗯𝗮𝗿𝗿𝗶𝗼, 𝗾𝘂𝗶𝘇á𝘀 𝗻𝗼 𝘀𝗼𝗹𝗼 𝗵𝗮𝗻 𝗰𝗮𝗺𝗯𝗶𝗮𝗱𝗼 𝗻𝘂𝗲𝘀𝘁𝗿𝗮𝘀 𝗰𝗶𝘂𝗱𝗮𝗱𝗲𝘀.\n\n𝗤𝘂𝗶𝘇á𝘀 𝘁𝗮𝗺𝗯𝗶é𝗻 𝗵𝗮 𝗰𝗮𝗺𝗯𝗶𝗮𝗱𝗼 𝗻𝘂𝗲𝘀𝘁𝗿𝗮 𝗳𝗼𝗿𝗺𝗮 𝗱𝗲 𝘃𝗶𝘃𝗶𝗿𝗹𝗮𝘀. 😔\n… más",
-    "time_posted": "2026-06-23 15:41",
-    "scraped_at": "2026-06-23T19:41:19.520109"
+    "author": "Pedro Herrera",
+    "profile_url": "https://www.linkedin.com/in/pedro-herrera-palma/",
+    "text": "LITUECHE - Comparto esta oferta laboral con la comunidad por si a alguien le pudiera interesar. 😃",
+    "time_posted": "2026-06-21 23:59",
+    "scraped_at": "2026-06-23T23:59:15.017138"
   },
   {
-    "author": "Sergio Báez",
-    "profile_url": "https://www.linkedin.com/in/sergio-patricio-baez-vargas-b0044299/",
-    "text": "Excited to join Data Center & AI Infrastructure LATAM 2026 in Santiago, Chile on July 9–10, 2026. Looking forward to connecting with industry leaders and discussing the future of Data Centers & AI Infrastructure in Latin America.\n… más",
-    "time_posted": "2026-06-23 11:41",
-    "scraped_at": "2026-06-23T19:41:14.222394"
+    "author": "Gabriela Sánchez Parra",
+    "profile_url": "https://www.linkedin.com/in/gabriela-s%C3%A1nchez-parra/",
+    "text": "\"No siempre gana quien nunca cae. Muchas veces gana quien decide levantarse una vez más.\"\nHay imágenes que nos recuerdan una verdad profunda sobre la vida: caer no es fracasar. Quedarse en el suelo sí puede serlo.\nCuando vemos a una atleta tropezar en plena carrera, sentimos la frustración, el dolor y la incertidumbre de ese instante. Sin embargo, lo que realmente nos inspira no es la caída. Es la decisión de levantarse.\nPorque hay momentos en los que ya no se corre con las piernas. Se corre con el corazón. Con la voluntad. Con las entrañas.\nY eso no ocurre solo en las pistas de atletismo.\nOcurre cuando una persona enfrenta una separación y decide volver a creer en sí misma. Cuando alguien pierde un trabajo y se atreve a comenzar de nuevo. Cuando un proyecto fracasa y, aun así, elegimos intentarlo una vez más.\nLos tropiezos son normales en el camino. Son parte del proceso de crecimiento, aprendizaje y transformación. Lo importante no es evitar cada caída, sino desarrollar la fortaleza interior para volver a ponerse de pie y continuar avanzando.\nPor eso es tan importante tener metas y objetivos claros. Metas diarias que nos mantengan en movimiento. Objetivos semanales y mensuales que nos permitan medir avances. Sueños de mediano y largo plazo que nos inspiren cuando aparezcan las dificultades.\nY junto con ellos, un plan de acción que transforme los deseos en resultados.\nPorque cuando sabemos hacia dónde vamos, encontramos razones para seguir avanzando incluso en los días más difíciles.\n\n✨ Te dejo 3 tips para reconocer si realmente lo estás dando todo:\n✅ Te vuelves a levantar después de cada tropiezo, aunque no tengas ganas.\n✅ Sigues avanzando incluso cuando los resultados tardan en aparecer.\n✅ Mantienes tu compromiso con la meta, ajustando el camino cuando es necesario, sin abandonar el propósito.\n\nRecuerda: la fuerza más poderosa no siempre se ve. Muchas veces está en esa decisión silenciosa de seguir adelante cuando nadie más lo haría.\n\nSi estás buscando claridad para tus próximos pasos, fortalecer tu confianza o construir un plan que te acerque a tus metas personales o profesionales, te invito a trabajar conmigo a través de sesiones de coaching.\n\nY si este mensaje resonó contigo, sígueme para recibir reflexiones, herramientas y estrategias que te ayuden a crecer, liderar tu vida y alcanzar tus objetivos con mayor bienestar y propósito.\n\n#desarrolloprofesional #liderazgo #crecimientopersonal #motivacion #coaching #bienestar #pnl #inteligenciaemocional #coachingejecutivo\n… más",
+    "time_posted": "2026-06-23 12:59",
+    "scraped_at": "2026-06-23T23:59:08.385988"
   },
   {
-    "author": "Gonzalo Vallejos",
-    "profile_url": "https://www.linkedin.com/in/gonzalovallejoscampbell/",
-    "text": "🔍 ¡Vacante de Académica! 📚\n\nEl Departamento de Electrotecnia e Informática, de la Universidad Técnica Federico Santa María, requiere proveer el cargo de Académica, Jornada Completa, quien deberá impartir clases a nivel de pregrado y postgrado en las áreas de Micro Redes, Sistemas de almacenamiento de energía, Electrónica de Potencia, Modelamiento de sistemas eléctricos, Calidad de Energía y Smart Grid.\n \n📍 La vacante es para nuestra Sede José Miguel Carrera en Viña del Mar\n\n📄 Revisa las bases y postula aquí 👉 https://lnkd.in/d5Rqjjkt\n\n¡Postula y forma parte del equipo de la Universidad Técnica Federico Santa María!\n… más",
-    "time_posted": "2026-06-23 15:41",
-    "scraped_at": "2026-06-23T19:41:07.937385"
+    "author": "Soel Garcia A.",
+    "profile_url": "https://www.linkedin.com/in/soel-garcia-a-788111273/",
+    "text": "El expresidente del directorio de Codelco superó en votos a Alejandro Micco, con quien se disputaban el sillón de la Facultad de Economía y Negocios de la Casa de Bello.\n\nhttps://lnkd.in/dcpykhYy\n… más",
+    "time_posted": "2026-06-23 18:58",
+    "scraped_at": "2026-06-23T23:58:26.694527"
   },
   {
-    "author": "Simon Martin",
-    "profile_url": "https://www.linkedin.com/in/simon-martin-44953a1/",
-    "text": "Lo que un ingeniero aprende depurando un sistema en producción a las 3am no está en ningún curso, ninguna certificación y ningún ambiente de desarrollo por perfecto que sea.\n\nEn desarrollo todo es controlado. Los datos son limpios, los casos borde están anticipados, los errores son los que el equipo decidió probar. Es un ambiente diseñado para confirmar que el sistema funciona, no para descubrir cómo falla cuando nadie lo espera.\n\nProducción es otra cosa. Los datos son reales y vienen mal formateados, incompletos o en un orden que nadie anticipó. Las condiciones de red no se comportan como en staging. Los usuarios hacen exactamente lo que el sistema no fue diseñado para manejar. Y todo pasa al mismo tiempo, bajo presión, sin margen para elegir el momento.\n\nEl ingeniero que depura en ese contexto desarrolla algo que los ambientes controlados no enseñan: criterio para leer un sistema completo bajo stress, identificar dónde está fallando realmente y tomar decisiones con información incompleta. Ese criterio no se certifica. Se acumula con cada incidente.\n\nLa industria lleva años invirtiendo en hacer el desarrollo más predecible, más automatizado y más alejado de producción. Todo eso tiene valor. Pero hay una brecha entre el ingeniero que sabe que el sistema funciona en staging y el que sabe cómo se comporta cuando falla en producción. Y esa brecha se cierra de una sola forma.\n\nEl conocimiento que se desarrolla en producción es el más valioso y el más difícil de transferir al resto del equipo.\n¿Cómo logramos que ese conocimiento de producción llegue al proceso de desarrollo? Me gustaría saber tu opinión.\n… más",
-    "time_posted": "2026-06-22 19:40",
-    "scraped_at": "2026-06-23T19:40:59.683873"
+    "author": "Jorge Antonio Francovish Montero",
+    "profile_url": "https://www.linkedin.com/in/jorge-antonio-francovish-montero-86485515/",
+    "text": "https://lnkd.in/d8gJrXmG",
+    "time_posted": "2026-06-23 21:58",
+    "scraped_at": "2026-06-23T23:58:25.068848"
   },
   {
-    "author": "Luis Fernando Espinoza Castillo",
-    "profile_url": "https://www.linkedin.com/in/luis-fernando-espinoza-castillo-4a63726b/",
-    "text": "One thing stood out yesterday as we stood in a room of green building leaders… \n\nThe power of communication. \n\nTo scale green buildings, we must bring everyone with us \n\nHomeowners \nRenters \nCommunities\nBuilders \nPolicymakers \nMaterial manufacturers \nBanks \n\nThe built environment is an intersection of industries. \n\nWhy does that matter? \n\nWe don’t all speak in the same terms and language \n\nWhat resonates with a local community member will not resonate with a cement manufacturer nor a bank\n\nThat puts a lot of pressure and importance on each and every one of us \n\nTo tell the stories\nTo speak in the terms of the listener\nAnd make sure that we don’t end up in an echo chamber \n\nThe World Green Building Council does an incredible job of bringing passionate leaders together. \n\nNow it’s on to all of us to bring the passion to our communities!\n… más",
-    "time_posted": "2026-06-23 04:40",
-    "scraped_at": "2026-06-23T19:40:54.390511"
+    "author": "Carolina Erices Garcia",
+    "profile_url": "https://www.linkedin.com/in/carolina-erices-garcia-6728ab36/",
+    "text": "Me complace compartir la culminación de una etapa muy importante en mi desarrollo profesional hoy puedo decir con orgullo que estoy titulada de \nIngeniería en Comercio Exterior de la sede San Carlos de Apoquindo. ❤️✈️🚢🚛\n\nEste logro es el resultado de años de esfuerzo, perseverancia y aprendizaje constante. Si bien el crecimiento profesional depende en gran medida del compromiso personal, también existen personas que dejan huellas significativas en nuestro camino, potenciando nuestras habilidades y brindándonos orientación en momentos clave.\n\nPor ello, quiero expresar un especial agradecimiento a quienes fueron fundamentales durante este proceso:\n\nDanae Quijon Tobar\nCarolina Erices Garcia\nEstefanía Vergara Sepúlveda\nGerman Carrasco\nCarola Donayre\n\nGracias por desafiarme a salir de mi zona de confort, por cada enseñanza, consejo y conversación que contribuyó a mi formación. Cada uno de ustedes tuvo un impacto importante en la profesional que soy hoy.\n\nComienzo esta nueva etapa con entusiasmo, gratitud y la convicción de seguir aprendiendo y creciendo en el apasionante mundo del comercio exterior.\n\n#IngenieríaEnComercioExterior #ComercioExterior #LogroProfesional #DesarrolloProfesional #Graduación #Comex\n… más",
+    "time_posted": "2026-06-23 13:58",
+    "scraped_at": "2026-06-23T23:58:20.240138"
   },
   {
-    "author": "Cristian Lira Alamo",
-    "profile_url": "https://www.linkedin.com/in/cristian-lira-alamo/",
-    "text": "El marketing en Chile: te piden ser un unicornio y te pagan como peoneta.\n\nHagamos un ejercicio honesto con datos reales.\n\nUna oferta promedio de marketing pide hoy: dominio de Meta Ads y Google Ads, GA4, manejo de redes, diseño en Canva o Adobe, redacción de contenido, email marketing, análisis de KPIs, SEO, manejo de influencers, edición de video y, de paso, \"buena actitud y trabajo bajo presión\".\n\nEs decir: un community manager, un diseñador, un analista de datos, un copywriter y un editor audiovisual. Todo en una sola persona.\n\n¿El sueldo? Veamos los números:\n\n→ El sueldo medio de Marketing en Chile es de $847.024 al mes.\n→ Un Community Manager ronda los $750.000 a $950.000.\n\nAhora comparemos con trabajos que, con todo respeto, no exigen carrera universitaria, ni 5 herramientas, ni \"pensamiento estratégico\":\n\n→ Bodeguero: $497.465 al mes.\n→ Cajero/a: $423.358 al mes.\n\n¿Notan el problema?\n\nLe pediste a alguien que estudió 4 o 5 años, que se especializó, que maneja media docena de plataformas y que es responsable de la imagen y las ventas de tu marca... y le ofreces literalmente $300.000 más que a alguien que repone mercadería.\n\nNo estoy diciendo que bodega o caja valgan poco. Esos trabajos son dignos y necesarios. Lo que digo es lo contrario:\n\nSi un rol que exige 5 especialidades distintas paga apenas un poco más que uno de entrada sin requisitos, el problema no es ese trabajo. Es cuánto estás subvalorando el marketing.\n\nY después las empresas se quejan de que \"el marketing no genera resultados\".\n\nQuizás el resultado que generas es exactamente el que pagaste.\n\n¿Marketeros: cuántas habilidades les pidieron en su última oferta vs. cuánto ofrecían? 👇\n… más",
-    "time_posted": "2026-06-23 11:40",
-    "scraped_at": "2026-06-23T19:40:54.189587"
+    "author": "Bernabé Granero",
+    "profile_url": "https://www.linkedin.com/in/bernabegranero/",
+    "text": "Es increíble el destrato que se recibe por parte de las empresas cuando se está buscando trabajo.\n\n​Hace más de dos semanas realicé entrevistas para distintas oportunidades y, hasta el día de hoy, sigo esperando una respuesta. Ni un sí, ni un no, ni una actualización. Nada.\n\nDecenas de veces apliqué a búsquedas  enviando mi CV y me sobran los dedos de una mano para contar las respuestas que recibí.\n\nA lo que voy, la mayoría de las empresas no es capaz de RESPONDER la postulación con un \"No sos lo que buscamos\". Es tan simple como eso, directo, al grano y listo, a otra cosa.\n\nMe revienta las 🏐🏐 la indiferencia para con el postulante.\n\nSaludos 🤗 \n… más",
+    "time_posted": "2026-06-23 12:58",
+    "scraped_at": "2026-06-23T23:58:09.116509"
+  },
+  {
+    "author": "Edda Hernández",
+    "profile_url": "https://www.linkedin.com/in/edda-hern%C3%A1ndez-b74074347/",
+    "text": "🔎 ¡Únete a Codelco y sé parte de la transformación de los servicios para las personas!\n\nEn Codelco-División Chuquicamata, buscamos talento para un rol clave en la continuidad operacional y la experiencia del cliente interno.\n\n📌 Cargo: Ingeniero/a de Servicios a las Personas\n📍 Ubicación: División Chuquicamata\n\n🎯 Propósito del cargo:\nBuscamos un/a profesional que ejecute, analice y monitoree los servicios asociados a personas, logística, materiales e infraestructura menor, asegurando el cumplimiento de estándares de seguridad, calidad, costos y nivel de servicio, contribuyendo directamente a la operación y al bienestar de nuestros equipos.\n\n🛠️ Principales desafíos:\n-Monitorear y controlar los servicios y la logística de personas, asegurando estándares operacionales.\n-Desarrollar y gestionar indicadores (KPI) para el seguimiento y control de los servicios.\n-Administrar la compra de materiales, gestión de bodega e inventarios para garantizar disponibilidad oportuna.\n-Implementar proyectos de servicios e infraestructura, desde ingeniería de perfil hasta puesta en marcha.\n-Elaborar bases técnicas, presupuestos y documentación para procesos de licitación.\n-Evaluar y controlar el desempeño de proveedores, asegurando el cumplimiento de los servicios comprometidos.\n\n🤝 ¿Qué buscamos?\nUn/a profesional analítico/a, con foco en la mejora continua, gestión de servicios y control operacional, capaz de articular múltiples actores y asegurar el cumplimiento de estándares en entornos exigentes.\n\n💡 Te invitamos a ser parte de una organización que promueve la seguridad, la sostenibilidad, la diversidad y la inclusión.\n\n📩 Postula aquí: https://lnkd.in/dUER_XEy\n\n#Codelco #Chuquicamata #Minería #Servicios #Logística #Ingeniería #Empleos #DiversidadEInclusión\n… más",
+    "time_posted": "2026-06-23 17:57",
+    "scraped_at": "2026-06-23T23:57:56.737038"
+  },
+  {
+    "author": "Francisco Sanhueza-Duran",
+    "profile_url": "https://www.linkedin.com/in/franciscosanhueza-duran/",
+    "text": "Durante esta jornada, junto a estudiantes y académicos de la Escuela de Construcción de la Universidad de Las Américas (CL), tuvimos la oportunidad de realizar una visita académica a la Facultad de Arquitectura, Diseño y Urbanismo de la Universidad de Buenos Aires (FADU-UBA).\n\nComo parte de esta experiencia, visitamos el CIHE - Centro de Investigación Hábitat y Energía, donde sostuvimos una enriquecedora reunión con el profesor e investigador Julián Evans. La instancia permitió intercambiar experiencias y reflexiones sobre diseño bioclimático, desempeño energético de viviendas, certificación y etiquetado energético, además de los desafíos que enfrentan nuestros países en materia de calidad habitacional y sostenibilidad.\n\nMás allá de los contenidos técnicos, este tipo de actividades tienen un valor fundamental para la formación de nuestros estudiantes, ya que les permiten conocer otras realidades académicas, ampliar su visión profesional y comprender la importancia de la colaboración internacional para enfrentar los desafíos futuros de la construcción.\n\nAgradecemos la generosa recepción del equipo del CIHE y de la Universidad de Buenos Aires, así como la disposición para compartir conocimientos y abrir espacios de diálogo que esperamos seguir fortaleciendo en el futuro.\n\nLa construcción de mejores ciudades y viviendas requiere no solo innovación técnica, sino también redes de colaboración entre instituciones, investigadores, docentes y estudiantes.\n\n#Construcción #EducaciónSuperior #Investigación #Sustentabilidad #EficienciaEnergética #Vivienda #DiseñoBioclimático #ConstrucciónSustentable #UniversidadDeLasAméricas #UBA #CIHE\n… más",
+    "time_posted": "2026-06-23 21:57",
+    "scraped_at": "2026-06-23T23:57:55.135719"
+  },
+  {
+    "author": "Rädlinger Primus Line",
+    "profile_url": "https://www.linkedin.com/company/r-dlinger-primus-line-gmbh/posts/",
+    "text": "A 2-mile subsea pipeline. – A continuous rehabilitation approach. – One in-depth offshore case study.\n\nLearn how Primus Line® technology was applied between platforms — including project drivers, constraints, engineering challenges and installation execution.\n\n📅 Thursday, 30 July 2026 | 11:00 PM AM EDT | 8:00 AM PDT\n\nSave your spot!\n\n… más",
+    "time_posted": "No detectado",
+    "scraped_at": "2026-06-23T23:57:25.128840"
+  },
+  {
+    "author": "Andrea Núñez",
+    "profile_url": "https://www.linkedin.com/in/andrean%C3%BA%C3%B1ezarquitecto/",
+    "text": "Cosas que pasan en Colegios Pioneros porque tenemos a los mejores profesores. Felicitaciones Javiera Andueza y a todo nuestro equipo",
+    "time_posted": "2026-06-23 21:57",
+    "scraped_at": "2026-06-23T23:57:24.540348"
+  },
+  {
+    "author": "Camila Contreras Aguilar",
+    "profile_url": "https://www.linkedin.com/in/camila-contreras-aguilar-748192120/",
+    "text": "Aquí hay algo que me genera dudas.\n\nLa imagen afirma que estos son los \"trabajos más infelices\" según Harvard.\n\nPero creo que la verdadera pregunta no es cuál es el puesto más infeliz.\n\nLa verdadera pregunta es:\n\n¿Puede una persona ser feliz o infeliz haciendo exactamente el mismo trabajo dependiendo del entorno donde lo realiza?\n\nHe conocido maestros apasionados por enseñar.\n\nIngenieros de proyectos que disfrutan resolver problemas complejos.\n\nAnalistas de datos fascinados con los números.\n\nAsistentes administrativos que son el corazón de una organización.\n\nY también he conocido personas agotadas, frustradas y desmotivadas en esos mismos cargos.\n\nPor eso no estoy convencido de que la infelicidad esté en la profesión.\n\nMuchas veces está en la cultura de trabajo.\n\nEn los liderazgos tóxicos.\n\nEn la falta de reconocimiento.\n\nEn los horarios imposibles.\n\nEn la ausencia de crecimiento.\n\nEn sentir que tu esfuerzo no tiene impacto.\n\nQuizá el problema no sea el trabajo.\n\nQuizá sea el lugar donde lo haces.\n\nY eso es algo que muchas personas descubren cuando buscan nuevas oportunidades laborales, incluso en otros países como Canadá, donde factores como el equilibrio vida-trabajo, la cultura organizacional y el bienestar suelen tener un peso importante en la decisión de construir una carrera.\n\nTengo curiosidad:\n\n📌 ¿Cuál es el trabajo más feliz que has tenido?\n\n📌 ¿Crees que la felicidad depende más de la profesión o del jefe y la empresa donde trabajas?\n\n📌 ¿Hay alguna profesión que jamás ejercerías aunque te pagaran muy bien?\n\nSoy Luis Garnica y ayudo a vivir en #Canadá\n\nSaludos 🇨🇦\n\n… más",
+    "time_posted": "2026-06-23 11:57",
+    "scraped_at": "2026-06-23T23:57:23.476257"
+  },
+  {
+    "author": "Hugo Alberto Cañete León",
+    "profile_url": "https://www.linkedin.com/in/hugocanete/",
+    "text": "Un orgullo Loreto Isabel Marin Bley, todo esto reconocimiento muy bien merecido a tu trayectoria como ingeniera, sobre todo en tu rol gremial.\n\n\n\n… más",
+    "time_posted": "2026-06-23 22:57",
+    "scraped_at": "2026-06-23T23:57:13.215676"
   }
 ]

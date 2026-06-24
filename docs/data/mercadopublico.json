@@ -1,6 +1,149 @@
 {
   "compras_agiles": [
     {
+      "codigo": "4164-283-COT26",
+      "nombre": "Mejoramiento del Edificio Municipal",
+      "organismo": "I MUNICIPALIDAD DE DONIHUE",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "monto": 3600000,
+      "fecha_cierre": "2026-06-24 21:38",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4164-283-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4164-283-COT26"
+    },
+    {
+      "codigo": "3507-394-COT26",
+      "nombre": "MANTENCION LANCHA E. ISLEÑA III",
+      "organismo": "Departamento de Salud",
+      "region": "Región de los Lagos ",
+      "monto": 1600000,
+      "fecha_cierre": "2026-06-24 21:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3507-394-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3507-394-COT26"
+    },
+    {
+      "codigo": "1316747-84-COT26",
+      "nombre": "Servicio de Traslado de Pasajeros para Obra \"Pedro y el Lobo\" – Ballet Municipal de Los Ángeles en Teatro Biobío.",
+      "organismo": "CORPORACION CULTURAL MUNICIPAL DE LOS ANGELES",
+      "region": "Región del Biobío ",
+      "monto": 350000,
+      "fecha_cierre": "2026-06-24 20:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1316747-84-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1316747-84-COT26"
+    },
+    {
+      "codigo": "1316747-83-COT26",
+      "nombre": " La Corporación Cultural Municipal de Los Ángeles requiere Suministro de Alimentación para Elenco y Staff Obra \"Pedro y el Lobo\" – en Teatro Biobío, Concepción,  el dia 27 de junio 2026.",
+      "organismo": "CORPORACION CULTURAL MUNICIPAL DE LOS ANGELES",
+      "region": "Región del Biobío ",
+      "monto": 500000,
+      "fecha_cierre": "2026-06-24 20:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1316747-83-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1316747-83-COT26"
+    },
+    {
+      "codigo": "696212-68-COT26",
+      "nombre": "REPARACION Y MANTENCION DE MOBILIARIO FISCALIA SAN MIGUEL",
+      "organismo": "MINISTERIO PUBLICO",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 700000,
+      "fecha_cierre": "2026-06-25 11:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=696212-68-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=696212-68-COT26"
+    },
+    {
+      "codigo": "4077-80-COT26",
+      "nombre": "Conos de tránsito y seguridad vial",
+      "organismo": "V ZONA CARABINEROS VALPARAISO",
+      "region": "Región de Valparaíso ",
+      "monto": 450000,
+      "fecha_cierre": "2026-06-25 10:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4077-80-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4077-80-COT26"
+    },
+    {
+      "codigo": "3495-97-COT26",
+      "nombre": "SERVICIO DE MANTENCIONES Y REPARACIONES EN POSTAS DE SALUD RURAL DEL DSM DE VILCÚN",
+      "organismo": "I MUNICIPALIDAD DE VILCUN",
+      "region": "Región de la Araucanía ",
+      "monto": 3810000,
+      "fecha_cierre": "2026-06-26 11:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3495-97-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3495-97-COT26"
+    },
+    {
+      "codigo": "5668-15-COT26",
+      "nombre": "MANTENCIÓN DE MARQUESINA Y OTRAS REPARACIONES",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región de Los Ríos",
+      "monto": 2500000,
+      "fecha_cierre": "2026-06-24 18:35",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5668-15-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5668-15-COT26"
+    },
+    {
+      "codigo": "2546-766-COT26",
+      "nombre": "SERVICIO DE REPARACIÓN DE NEUMATICOS, PROG SEGURIDAD CIUDADANA PATRULLAJE",
+      "organismo": "I MUNICIPALIDAD DE PADRE LAS CASAS",
+      "region": "Región de la Araucanía ",
+      "monto": 360000,
+      "fecha_cierre": "2026-06-25 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2546-766-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2546-766-COT26"
+    },
+    {
+      "codigo": "3495-96-COT26",
+      "nombre": "MANTENCIÓN CORRECTIVA A VEHÍCULOS DEL DEPARTAMENTO DE SALUD MUNICIPAL DE VILCÚN.",
+      "organismo": "I MUNICIPALIDAD DE VILCUN",
+      "region": "Región de la Araucanía ",
+      "monto": 864000,
+      "fecha_cierre": "2026-06-26 10:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3495-96-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3495-96-COT26"
+    },
+    {
+      "codigo": "4784-18-COT26",
+      "nombre": "Obras Menores de Reparación del Museo Arqueológico de La Serena",
+      "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+      "region": "Región de Coquimbo ",
+      "monto": 2841056,
+      "fecha_cierre": "2026-07-02 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4784-18-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4784-18-COT26"
+    },
+    {
+      "codigo": "1907-27-COT26",
+      "nombre": "Servicios de reparación de filtraciones de aguas servidas en el Edificio Talca",
+      "organismo": "Servicio de Registro Civil e Identificación",
+      "region": "Región del Maule ",
+      "monto": 4038414,
+      "fecha_cierre": "2026-06-25 12:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1907-27-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1907-27-COT26"
+    },
+    {
+      "codigo": "5434-204-COT26",
+      "nombre": "Servicio de Catering para Edificio Quimica Nuevo ",
+      "organismo": "UNIVERSIDAD DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 1050000,
+      "fecha_cierre": "2026-06-24 18:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5434-204-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5434-204-COT26"
+    },
+    {
       "codigo": "5178-3428-COT26",
       "nombre": "MANTENCION CORRECTIVA MICROSCOPIO / SP 1055429 / CJ ",
       "organismo": "UNIVERSIDAD DE CHILE",
@@ -296,153 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5538-23-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5538-23-COT26"
-    },
-    {
-      "codigo": "5148-109-COT26",
-      "nombre": "ADQUISICIÓN DE DISPENSADORES DE PAPEL PARA LA FISCALÍA NACIONAL DEL MINISTERIO PÚBLICO  ",
-      "organismo": "MINISTERIO PUBLICO",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 3400000,
-      "fecha_cierre": "2026-06-26 13:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5148-109-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5148-109-COT26"
-    },
-    {
-      "codigo": "1079576-47-COT26",
-      "nombre": "ADQUISICION DE MATERIALES DE CONSTRUCCION, DESTINADOS A LAS UNIDADES ESPECIALIZADAS DE LA ZONA BIOBIO",
-      "organismo": "SECCIÓN COMPRAS VIII ZONA",
-      "region": "Región del Biobío ",
-      "monto": 6898318,
-      "fecha_cierre": "2026-06-25 14:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079576-47-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079576-47-COT26"
-    },
-    {
-      "codigo": "2460-613-COT26",
-      "nombre": "PROVISION E INSTALACION DE TERMOPANEL EDIFICIO LADISLAO",
-      "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 583000,
-      "fecha_cierre": "2026-06-26 13:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2460-613-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2460-613-COT26"
-    },
-    {
-      "codigo": "4314-171-COT26",
-      "nombre": "COMPRA DE MATERIAL DE CONSTRUCCION PARA PROGRAMA TRANSFORMANDO BARRIOS",
-      "organismo": "ILUSTRE MUNICIPALIDAD DE CUREPTO",
-      "region": "Región del Maule ",
-      "monto": 2280000,
-      "fecha_cierre": "2026-06-25 09:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4314-171-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4314-171-COT26"
-    },
-    {
-      "codigo": "996-28-COT26",
-      "nombre": "SERVICIO DE DESRATIZACIÓN, POR PREDEMOLICIÓN CASAS ILLAPEL",
-      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-      "region": "Región de Coquimbo ",
-      "monto": 535500,
-      "fecha_cierre": "2026-06-26 09:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=996-28-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=996-28-COT26"
-    },
-    {
-      "codigo": "3533-237-COT26",
-      "nombre": "Contratación de servicio de reparación de la red de alcantarillado",
-      "organismo": "Ejercito de Chile",
-      "region": "Región de la Araucanía ",
-      "monto": 68300,
-      "fecha_cierre": "2026-06-26 12:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3533-237-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3533-237-COT26"
-    },
-    {
-      "codigo": "1079967-445-COT26",
-      "nombre": "SERVICIO DE MANTENIMIENTO Y REPARACIÓN PARA EL VEHÍCULO POLICIAL AP-2617 DE CARGO DE LA PREFECTURA IQUIQUE.",
-      "organismo": "SECCIÓN COMPRAS I ZONA",
-      "region": "Región de Tarapacá  ",
-      "monto": 2891700,
-      "fecha_cierre": "2026-06-25 11:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079967-445-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079967-445-COT26"
-    },
-    {
-      "codigo": "778992-139-COT26",
-      "nombre": "Servicio de mantención y reparación de los equipos de la comisión alimentación de la Brimot N.°1 \"Calama\" ",
-      "organismo": "Regimiento Reforzado N° 1 \"Calama\"",
-      "region": "Región de Antofagasta ",
-      "monto": 7000000,
-      "fecha_cierre": "2026-06-26 08:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=778992-139-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=778992-139-COT26"
-    },
-    {
-      "codigo": "5683-36-COT26",
-      "nombre": "01- ADQUISICIÓN SUSCRIPCIÓN DIARIO AUSTRAL FORMATO DIGITAL Y PAPEL",
-      "organismo": "Ministerio de Vivienda y Urbanismo",
-      "region": "Región de Los Ríos",
-      "monto": 172800,
-      "fecha_cierre": "2026-06-25 13:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5683-36-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5683-36-COT26"
-    },
-    {
-      "codigo": "2778-321-COT26",
-      "nombre": "MATERIALES DE FERRETERIA PARA REPARACIONES EN DIFERENTES ESTABLECIMIENTOS EDUCACIONALES MUNICIPALES DE LA COMUNA DE RENGO",
-      "organismo": "I MUNICIPALIDAD DE RENGO",
-      "region": "Región del Libertador General Bernardo O´Higgins",
-      "monto": 2700000,
-      "fecha_cierre": "2026-06-24 17:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2778-321-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2778-321-COT26"
-    },
-    {
-      "codigo": "885-532-COT26",
-      "nombre": "Retiro, suministro y ejecución de cambio de vidrios termopanel y ventanas según términos de referencia adjuntos",
-      "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
-      "region": "Región de los Lagos ",
-      "monto": 5400000,
-      "fecha_cierre": "2026-06-26 09:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=885-532-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=885-532-COT26"
-    },
-    {
-      "codigo": "1059240-22-COT26",
-      "nombre": "PROVISIÓN MATERIAL DE OFICINA E INSUMOS INFORMÁTICOS PARA LA FISCALÍA REGIONAL DE ÑUBLE",
-      "organismo": "MINISTERIO PUBLICO",
-      "region": "Región del Ñuble",
-      "monto": 1600000,
-      "fecha_cierre": "2026-06-25 13:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1059240-22-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1059240-22-COT26"
-    },
-    {
-      "codigo": "1049-1176-COT26",
-      "nombre": " MANTENCION Y REPUESTOS CAMIONETA INSTITUCIONAL - TALCAHUANO",
-      "organismo": "INSTITUTO DE FOMENTO PESQUERO",
-      "region": "Región del Biobío ",
-      "monto": 1120000,
-      "fecha_cierre": "2026-06-24 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1049-1176-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1049-1176-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 8009,
+  "total_compras": 8024,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
