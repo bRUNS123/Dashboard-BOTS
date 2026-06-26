@@ -1,6 +1,116 @@
 {
   "compras_agiles": [
     {
+      "codigo": "2081-53-COT26",
+      "nombre": "MATERIALES DE CONSTRUCCION PARA AYUDAS SOCIALES DPP COLCHAGUA CASO 203",
+      "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE COLCHAGUA",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "monto": 190000,
+      "fecha_cierre": "2026-06-27 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2081-53-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2081-53-COT26"
+    },
+    {
+      "codigo": "980-22-COT26",
+      "nombre": "CURSO GESTIÓN DOCUMENTAL Y ARCHIVOS",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 300000,
+      "fecha_cierre": "2026-07-03 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=980-22-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=980-22-COT26"
+    },
+    {
+      "codigo": "980-21-COT26",
+      "nombre": "100 BIDONES DE AGUA PURIFICADA 20 LITROS",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 300000,
+      "fecha_cierre": "2026-06-30 14:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=980-21-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=980-21-COT26"
+    },
+    {
+      "codigo": "3568-275-COT26",
+      "nombre": "SERVICIO DE CONSTRUCCIÓN DE OBRA CENTRO CULTURAL",
+      "organismo": "I MUNICIPALIDAD DE PANGUIPULLI",
+      "region": "Región de Los Ríos",
+      "monto": 5500000,
+      "fecha_cierre": "2026-06-30 09:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3568-275-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3568-275-COT26"
+    },
+    {
+      "codigo": "1251954-79-COT26",
+      "nombre": "COMPRA DE MATERIALES PARA CONSTRUCCION DE BODEGA, PODIUM Y SEÑALETICA MTB PARA CORPORACION DE DEPORTE Y RECREACION",
+      "organismo": "CORPORACIÓN MUNICIPAL DE DEPORTE Y RECREACIÓN ",
+      "region": "Región de Valparaíso ",
+      "monto": 830400,
+      "fecha_cierre": "2026-06-27 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1251954-79-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1251954-79-COT26"
+    },
+    {
+      "codigo": "2270-177-COT26",
+      "nombre": "Exp N°19318 - Compra de Calzado para Fiscalziadores - Zoonosis.",
+      "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+      "region": "Región de Tarapacá  ",
+      "monto": 2730008,
+      "fecha_cierre": "2026-06-29 15:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2270-177-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2270-177-COT26"
+    },
+    {
+      "codigo": "2759-312-COT26",
+      "nombre": "Servicio de desmontaje, instalación, mantención preventiva y puesta en marcha de equipos de airte acondicionados para el JPL",
+      "organismo": "I MUNICIPALIDAD DE CORONEL",
+      "region": "Región del Biobío ",
+      "monto": 1500000,
+      "fecha_cierre": "2026-06-30 16:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2759-312-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2759-312-COT26"
+    },
+    {
+      "codigo": "4030-92-COT26",
+      "nombre": "LAVAMANOS QUIRURGICO PARA EL BOX DE LA MATRONA CONSULTORIO DE CAMIÑA",
+      "organismo": "ILUSTRE MUNICIPALIDAD DE CAMINA",
+      "region": "Región de Tarapacá  ",
+      "monto": 300000,
+      "fecha_cierre": "2026-06-30 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4030-92-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4030-92-COT26"
+    },
+    {
+      "codigo": "2306-494-COT26",
+      "nombre": "DEMOLICIÓN Y CONSTRUCCIÓN RAMPA DE ACCESIBILIDAD UNIVERSAL E IMPLEMENTACIÓN DE BARANDA PARA LICEO RAHUE, FONDOS DAEM ",
+      "organismo": "I MUNICIPALIDAD DE OSORNO",
+      "region": "Región de los Lagos ",
+      "monto": 1709000,
+      "fecha_cierre": "2026-06-30 08:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2306-494-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2306-494-COT26"
+    },
+    {
+      "codigo": "4030-76-COT26",
+      "nombre": "INSUMOS PARA BOX DE ENFERMERA DEL CONSULTORIO DE CAMIÑA",
+      "organismo": "ILUSTRE MUNICIPALIDAD DE CAMINA",
+      "region": "Región de Tarapacá  ",
+      "monto": 300000,
+      "fecha_cierre": "2026-06-30 08:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4030-76-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4030-76-COT26"
+    },
+    {
       "codigo": "4030-90-COT26",
       "nombre": "CAMILLA PARA EL BOX MEDICO DEL CONSULTORIO DE CAMIÑA",
       "organismo": "ILUSTRE MUNICIPALIDAD DE CAMINA",
@@ -329,120 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079454-420-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079454-420-COT26"
-    },
-    {
-      "codigo": "1069417-568-COT26",
-      "nombre": "MANTENCIÓN PREVENTIVA Y REPARATIVA DE AUTOCLAVES Y CERTIFICACIÓN DE PRUEBAS HIDRÁULICAS PARA ESTABLECIMIENTOS DE LA DIRECCIÓN DE SALUD MUNICIPAL DE CHILLÁN.",
-      "organismo": "Dirección  de Salud Municipal Chillán",
-      "region": "Región del Ñuble",
-      "monto": 6000000,
-      "fecha_cierre": "2026-06-26 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1069417-568-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1069417-568-COT26"
-    },
-    {
-      "codigo": "1692-363-COT26",
-      "nombre": "MANTENCION PREVENTIVA DE 5 ESPIROMETROS PERTENECIENTES AL HOSPITAL DE COCHRANE",
-      "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE COCHRANE",
-      "region": "Región Aysén del General Carlos Ibáñez del Campo",
-      "monto": 1100750,
-      "fecha_cierre": "2026-06-30 13:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1692-363-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1692-363-COT26"
-    },
-    {
-      "codigo": "1058339-353-COT26",
-      "nombre": "Servicio de mano de obra vendida para mejoramiento y mantención de condiciones del internado de Tarapacá",
-      "organismo": "ILUSTRE MUNICIPALIDAD DE HUARA",
-      "region": "Región de Tarapacá  ",
-      "monto": 7140000,
-      "fecha_cierre": "2026-07-02 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1058339-353-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1058339-353-COT26"
-    },
-    {
-      "codigo": "1335445-53-COT26",
-      "nombre": "OBRAS DE REPARACIÓN DE REVESTIMIENTO INTERIOR AFECTADO POR TERMITAS, INTERVENCIÓN ELÉCTRICA EN OFICINAS Y MEJORAS EN PUERTA ACCESO PRINCIPAL DEL EDIFICIO DIRECCIÓN REGIONAL BIOBÍO DEL SERVICIO NACION",
-      "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
-      "region": "Región del Biobío ",
-      "monto": 700000,
-      "fecha_cierre": "2026-07-01 12:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1335445-53-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1335445-53-COT26"
-    },
-    {
-      "codigo": "911-26-COT26",
-      "nombre": "DIARIO LOCAL ANUAL DIGITAL Y FISICO PARA LA SEREMI MOP TARAPACÁ.",
-      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-      "region": "Región de Tarapacá  ",
-      "monto": 180000,
-      "fecha_cierre": "2026-06-26 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=911-26-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=911-26-COT26"
-    },
-    {
-      "codigo": "2305-22-COT26",
-      "nombre": "Provisión e instalación de quicios, bisagras hidráulicas para recambio en mamparas  y reparación del herraje superior de puerta de acceso.",
-      "organismo": "UNIDAD DE ANALISIS FINANCIERO",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 2000000,
-      "fecha_cierre": "2026-07-02 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2305-22-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2305-22-COT26"
-    },
-    {
-      "codigo": "3232-200-COT26",
-      "nombre": "ADQUISICIÓN MATERIALES DE CONSTRUCCION SC 84562 GESTION DE RIESGOS ",
-      "organismo": "I MUNICIPALIDAD DE SANTO DOMINGO",
-      "region": "Región de Valparaíso ",
-      "monto": 1500000,
-      "fecha_cierre": "2026-06-26 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3232-200-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3232-200-COT26"
-    },
-    {
-      "codigo": "5512-40-COT26",
-      "nombre": "SERVICIO DE MANTENCIÓN Y MEJORAS DE EQUIPO COMPACTO DE AIRE ACONDICIONADO, UTA23991",
-      "organismo": "UNIVERSIDAD DE TARAPACA",
-      "region": "Región de Arica y Parinacota",
-      "monto": 1500000,
-      "fecha_cierre": "2026-06-26 16:35",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5512-40-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5512-40-COT26"
-    },
-    {
-      "codigo": "995118-27-COT26",
-      "nombre": "ADQUISICIÓN DE WALL PANEL E INSUMOS COMPLEMENTARIOS PARA MANTENCIÓN DEL CASINO DE LA ESCUELA DE SUBOFICIALES GRUPO CONCEPCIÓN",
-      "organismo": "VIII Zona de Carabineros Bio Bío",
-      "region": "Región del Biobío ",
-      "monto": 1200000,
-      "fecha_cierre": "2026-06-26 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=995118-27-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=995118-27-COT26"
-    },
-    {
-      "codigo": "3876-145-COT26",
-      "nombre": "material de construccion ",
-      "organismo": "I MUNICIPALIDAD DE RAUCO",
-      "region": "Región del Maule ",
-      "monto": 1865000,
-      "fecha_cierre": "2026-06-26 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3876-145-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3876-145-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 7914,
+  "total_compras": 7849,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
