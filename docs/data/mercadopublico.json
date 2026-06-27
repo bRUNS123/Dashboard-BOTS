@@ -1,6 +1,61 @@
 {
   "compras_agiles": [
     {
+      "codigo": "896-7-COT26",
+      "nombre": "TINTA Y TAMBOR PARA IMPRESORA MARCA BROTHER MODELO HL3170CDW",
+      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "region": "Región de Antofagasta ",
+      "monto": 1300000,
+      "fecha_cierre": "2026-07-01 15:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=896-7-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=896-7-COT26"
+    },
+    {
+      "codigo": "1658-889-COT26",
+      "nombre": "S256-26/ADMINISTRACIÓN Y FINANZAS/GESTION INTERNA/ MANTENCIÓN 14 EQUIPOS AIRE ACONDICIONADO, SEGÚN ESPECIFICACIONES TÉCNICAS ADJUNTAS",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 2500000,
+      "fecha_cierre": "2026-07-01 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1658-889-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-889-COT26"
+    },
+    {
+      "codigo": "1658-888-COT26",
+      "nombre": "S292-26/ADM. Y FINANZAS/ GESTIÓN INTERNA/ADQUISICIÓN EXTINTORES EDIFICIO PRAT 650, SEGÚN ESPECIFICACIONES TÉCNICAS ADJUNTAS",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 390000,
+      "fecha_cierre": "2026-07-01 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1658-888-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-888-COT26"
+    },
+    {
+      "codigo": "2281-1216-COT26",
+      "nombre": "SERVICIO INTEGRAL DE DIAGNÓSTICO, GESTIÓN TÉCNICA, MANTENCIÓN Y REPARACIÓN DE VEHÍCULOS MUNICIPALES",
+      "organismo": "I MUNICIPALIDAD VALDIVIA",
+      "region": "Región de Los Ríos",
+      "monto": 7150000,
+      "fecha_cierre": "2026-07-02 15:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2281-1216-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2281-1216-COT26"
+    },
+    {
+      "codigo": "2862-82-COT26",
+      "nombre": "MATERIALES DE CONSTRUCCIÓN.",
+      "organismo": "I MUNICIPALIDAD PUERTO OCTAY",
+      "region": "Región de los Lagos ",
+      "monto": 2700000,
+      "fecha_cierre": "2026-07-02 08:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2862-82-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2862-82-COT26"
+    },
+    {
       "codigo": "2942-216-COT26",
       "nombre": "ADQUISCION DE INTERNET DEDICADO PARA EDIFICIO CAI CESFA",
       "organismo": "I.Municipalidad de San Pablo -Salud",
@@ -384,65 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079967-463-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079967-463-COT26"
-    },
-    {
-      "codigo": "1035685-173-COT26",
-      "nombre": "MANTENCIÓN AIRES ACONDICIONADOS",
-      "organismo": "CENTRO DE FORMACION TECNICA ESTATAL DE LA REGION DE LOS RIOS",
-      "region": "Región de Los Ríos",
-      "monto": 3350000,
-      "fecha_cierre": "2026-07-03 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1035685-173-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1035685-173-COT26"
-    },
-    {
-      "codigo": "1340-43-COT26",
-      "nombre": "AGUA EMBOTELLADA GASIFICADA - 1.6 LT",
-      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-      "region": "Región de Los Ríos",
-      "monto": 2000000,
-      "fecha_cierre": "2026-07-03 16:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1340-43-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1340-43-COT26"
-    },
-    {
-      "codigo": "3692-181-COT26",
-      "nombre": "MANTENCIÓN SM3 DE AMBULANCIA MERCEDES BENZ SPRINTER 314 CDI, PPU: RDPS-36",
-      "organismo": "I MUNICIPALIDAD DE EL QUISCO",
-      "region": "Región de Valparaíso ",
-      "monto": 1000000,
-      "fecha_cierre": "2026-06-30 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3692-181-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3692-181-COT26"
-    },
-    {
-      "codigo": "1116005-48-COT26",
-      "nombre": "Adquisición de baliza para vehículo fiscal de la Zona Aeroportuaria Sur.",
-      "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-      "region": "Región de los Lagos ",
-      "monto": 100000,
-      "fecha_cierre": "2026-07-01 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1116005-48-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1116005-48-COT26"
-    },
-    {
-      "codigo": "3820-597-COT26",
-      "nombre": "compra vestuario de trabajo para funcionarios del departamento de operación y mantención.",
-      "organismo": "I MUNICIPALIDAD DE SANTA MARIA",
-      "region": "Región de Valparaíso ",
-      "monto": 3000000,
-      "fecha_cierre": "2026-06-27 16:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3820-597-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3820-597-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 6366,
+  "total_compras": 5934,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
