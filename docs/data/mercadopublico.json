@@ -1,6 +1,50 @@
 {
   "compras_agiles": [
     {
+      "codigo": "2942-216-COT26",
+      "nombre": "ADQUISCION DE INTERNET DEDICADO PARA EDIFICIO CAI CESFA",
+      "organismo": "I.Municipalidad de San Pablo -Salud",
+      "region": "Región de los Lagos ",
+      "monto": 7150000,
+      "fecha_cierre": "2026-06-27 20:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2942-216-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2942-216-COT26"
+    },
+    {
+      "codigo": "1283719-132-COT26",
+      "nombre": "Servicio de mantención de vehículo de la Casa Prochelle 1.",
+      "organismo": "CORPORACION CULTURAL DE LA ILUSTRE MUNICIPALIDAD DE VALDIVIA",
+      "region": "Región de Los Ríos",
+      "monto": 400000,
+      "fecha_cierre": "2026-06-28 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1283719-132-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1283719-132-COT26"
+    },
+    {
+      "codigo": "2756-104-COT26",
+      "nombre": "SERVICIO DE MANTENCION Y REPARACION INTEGRAL EN JARDINES INFANTILES PECECITOS DE COLORES Y ESTRELLITA DE MAR VTF SAN ANTONIO",
+      "organismo": "I MUNICIPALIDAD DE SAN ANTONIO",
+      "region": "Región de Valparaíso ",
+      "monto": 4000000,
+      "fecha_cierre": "2026-06-28 13:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2756-104-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2756-104-COT26"
+    },
+    {
+      "codigo": "4062-547-COT26",
+      "nombre": "ADQUISICIÓN DE TUBERIAS Y OTROS PARA PROYECTO AMPLIACIÓN DE ALCANTARILLADO",
+      "organismo": "I MUNICIPALIDAD DE MARIQUINA",
+      "region": "Región de Los Ríos",
+      "monto": 5489289,
+      "fecha_cierre": "2026-07-02 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4062-547-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4062-547-COT26"
+    },
+    {
       "codigo": "2790-92-COT26",
       "nombre": "Adquisición, suministro e instalación de repuestos para reparación correctiva de sillón dental Zurik mod. Zero del Cesfam Dr. Miguel Solar SEGÚN SC 163/2026",
       "organismo": "I MUNICIPALIDAD DE PAINE",
@@ -32,17 +76,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1173447-59-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1173447-59-COT26"
-    },
-    {
-      "codigo": "4355-691-COT26",
-      "nombre": "requerimiento de reparacion camion de residuos",
-      "organismo": "I MUNICIPALIDAD DE FREIRINA",
-      "region": "Región de Atacama ",
-      "monto": 3000000,
-      "fecha_cierre": "2026-06-30 12:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4355-691-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4355-691-COT26"
     },
     {
       "codigo": "4555-75-COT26",
@@ -406,43 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3820-597-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3820-597-COT26"
-    },
-    {
-      "codigo": "2216-103-COT26",
-      "nombre": "Servicio Para Realizar: Servicio de instalación de 1 punto de red y 1 punto de energía eléctrica. Con material Incluido",
-      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 200000,
-      "fecha_cierre": "2026-06-30 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2216-103-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2216-103-COT26"
-    },
-    {
-      "codigo": "1605-19-COT26",
-      "nombre": "CA-4961 Adquisición de materiales de construcción para mantención de las dependencias del SII",
-      "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 7000000,
-      "fecha_cierre": "2026-07-02 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1605-19-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1605-19-COT26"
-    },
-    {
-      "codigo": "2093-26-COT26",
-      "nombre": " Reparación Pilar Pontón de acceso",
-      "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 300000,
-      "fecha_cierre": "2026-06-30 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2093-26-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2093-26-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 6711,
+  "total_compras": 6641,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
