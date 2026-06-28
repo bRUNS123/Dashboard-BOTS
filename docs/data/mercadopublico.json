@@ -1,6 +1,50 @@
 {
   "compras_agiles": [
     {
+      "codigo": "5178-3521-COT26",
+      "nombre": "340214/B5/SP 1055222/IZ  (REPUESTO DE MOPA PARA ENCERADORA SINDELEN EA5000)",
+      "organismo": "UNIVERSIDAD DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 140000,
+      "fecha_cierre": "2026-06-30 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=5178-3521-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5178-3521-COT26"
+    },
+    {
+      "codigo": "3145-483-COT26",
+      "nombre": "G-24 MATERIALES DE CONSTRUCCION",
+      "organismo": "Iª Brigada Aérea",
+      "region": "Región de Tarapacá  ",
+      "monto": 416000,
+      "fecha_cierre": "2026-06-30 08:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3145-483-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3145-483-COT26"
+    },
+    {
+      "codigo": "4848-148-COT26",
+      "nombre": "MANTENCIÓN PREVENTIVA Y CORRECTIVA DE EQUIPAMIENTO CRÍTICO CESFAM EL TABO Y CECOSF LAS CRUCES.",
+      "organismo": "I MUNICIPALIDAD DE EL TABO",
+      "region": "Región de Valparaíso ",
+      "monto": 7150600,
+      "fecha_cierre": "2026-06-30 09:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4848-148-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4848-148-COT26"
+    },
+    {
+      "codigo": "3217-78-COT26",
+      "nombre": " ADQUIRIR MATERIALES DE CONSTRUCCION",
+      "organismo": "COMANDANCIA EN JEFE DE LA PRIMERA ZONA NAVAL",
+      "region": "Región de Valparaíso ",
+      "monto": 5000000,
+      "fecha_cierre": "2026-06-29 07:15",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3217-78-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3217-78-COT26"
+    },
+    {
       "codigo": "896-7-COT26",
       "nombre": "TINTA Y TAMBOR PARA IMPRESORA MARCA BROTHER MODELO HL3170CDW",
       "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -61,7 +105,7 @@
       "organismo": "I.Municipalidad de San Pablo -Salud",
       "region": "Región de los Lagos ",
       "monto": 7150000,
-      "fecha_cierre": "2026-06-27 20:00",
+      "fecha_cierre": "2026-06-30 12:30",
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2942-216-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2942-216-COT26"
@@ -76,17 +120,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1283719-132-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1283719-132-COT26"
-    },
-    {
-      "codigo": "2756-104-COT26",
-      "nombre": "SERVICIO DE MANTENCION Y REPARACION INTEGRAL EN JARDINES INFANTILES PECECITOS DE COLORES Y ESTRELLITA DE MAR VTF SAN ANTONIO",
-      "organismo": "I MUNICIPALIDAD DE SAN ANTONIO",
-      "region": "Región de Valparaíso ",
-      "monto": 4000000,
-      "fecha_cierre": "2026-06-28 13:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2756-104-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2756-104-COT26"
     },
     {
       "codigo": "4062-547-COT26",
@@ -131,17 +164,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1173447-59-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1173447-59-COT26"
-    },
-    {
-      "codigo": "4555-75-COT26",
-      "nombre": "DE SUMINISTRO, LA MANTENCIÓN PREVENTIVA Y CORRECTIVA DE EQUIPOS DENTALES PARA LA COMUNA DE ZAPALLAR.",
-      "organismo": "I MUNICIPALIDAD DE ZAPALLAR",
-      "region": "Región de Valparaíso ",
-      "monto": 7100000,
-      "fecha_cierre": "2026-06-27 18:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4555-75-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4555-75-COT26"
     },
     {
       "codigo": "4291-655-COT26",
@@ -210,17 +232,6 @@
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2173-96-COT26"
     },
     {
-      "codigo": "2268-110-COT26",
-      "nombre": "Servicio de mantención preventiva para seis (6) cortinas metálicas eléctricas y una plataforma elevadora marca HIGHTLANDER",
-      "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 1400000,
-      "fecha_cierre": "2026-06-27 20:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=2268-110-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2268-110-COT26"
-    },
-    {
       "codigo": "587-119-COT26",
       "nombre": "Adquisición de Materiales de Cocina (SELICO N°298/2026). ",
       "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
@@ -241,17 +252,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1558-198-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1558-198-COT26"
-    },
-    {
-      "codigo": "1383-118-COT26",
-      "nombre": "REPARACION DE VEHICULO INSTITUCIONAL",
-      "organismo": "HOSPITAL VILCUN",
-      "region": "Región de la Araucanía ",
-      "monto": 1650000,
-      "fecha_cierre": "2026-06-27 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1383-118-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1383-118-COT26"
     },
     {
       "codigo": "1604-58-COT26",
@@ -285,17 +285,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=4594-105-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4594-105-COT26"
-    },
-    {
-      "codigo": "3807-306-COT26",
-      "nombre": "ARRIENDO CAMIÓN LIMPIAFOSAS DIRECCIÓN DE OBRAS",
-      "organismo": "I MUNICIPALIDAD DE EMPEDRADO",
-      "region": "Región del Maule ",
-      "monto": 2500000,
-      "fecha_cierre": "2026-06-27 18:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=3807-306-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3807-306-COT26"
     },
     {
       "codigo": "3577-96-COT26",
@@ -439,10 +428,21 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1079967-463-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079967-463-COT26"
+    },
+    {
+      "codigo": "1035685-173-COT26",
+      "nombre": "MANTENCIÓN AIRES ACONDICIONADOS",
+      "organismo": "CENTRO DE FORMACION TECNICA ESTATAL DE LA REGION DE LOS RIOS",
+      "region": "Región de Los Ríos",
+      "monto": 3350000,
+      "fecha_cierre": "2026-07-03 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar=1035685-173-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1035685-173-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 5934,
+  "total_compras": 5202,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
