@@ -7,10 +7,10 @@
   "bot_accuracy": 21.7,
   "keywords_efectivas": [
     {
-      "kw": "buscamos",
-      "precision": 100.0,
+      "kw": "profesional",
+      "precision": 75.0,
       "ofertas": 3,
-      "ruido": 0
+      "ruido": 1
     },
     {
       "kw": "ingeniero",
@@ -19,16 +19,10 @@
       "ruido": 1
     },
     {
-      "kw": "profesional",
-      "precision": 75.0,
+      "kw": "buscamos",
+      "precision": 100.0,
       "ofertas": 3,
-      "ruido": 1
-    },
-    {
-      "kw": "civil",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
+      "ruido": 0
     },
     {
       "kw": "profesionales",
@@ -37,10 +31,10 @@
       "ruido": 0
     },
     {
-      "kw": "postula",
-      "precision": 100.0,
-      "ofertas": 2,
-      "ruido": 0
+      "kw": "civil",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
     },
     {
       "kw": "técnico",
@@ -52,6 +46,18 @@
       "kw": "años de experiencia",
       "precision": 100.0,
       "ofertas": 2,
+      "ruido": 0
+    },
+    {
+      "kw": "postula",
+      "precision": 100.0,
+      "ofertas": 2,
+      "ruido": 0
+    },
+    {
+      "kw": "inspección técnica",
+      "precision": 100.0,
+      "ofertas": 1,
       "ruido": 0
     },
     {
@@ -67,13 +73,7 @@
       "ruido": 0
     },
     {
-      "kw": "ingeniero civil",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "inspección técnica",
+      "kw": "envía tu cv",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -85,13 +85,13 @@
       "ruido": 0
     },
     {
-      "kw": "fundaciones",
+      "kw": "ingeniero civil",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "ms project",
+      "kw": "fundaciones",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -99,13 +99,7 @@
   ],
   "keywords_problematicas": [
     {
-      "kw": "control de costos",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "ingeniería civil",
+      "kw": "nuevo puesto",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -117,7 +111,13 @@
       "ruido": 1
     },
     {
-      "kw": "nuevo puesto",
+      "kw": "ingeniería civil",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "control de costos",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -135,13 +135,13 @@
       "ruido": 1
     },
     {
-      "kw": "edificación",
+      "kw": "diseñador",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
-      "kw": "diseñador",
+      "kw": "edificación",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
