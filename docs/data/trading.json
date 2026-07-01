@@ -37,15 +37,15 @@
       "trade_type": "SWING"
     },
     {
-      "symbol": "TAOUSDT",
-      "buy_price": 263.69999999999993,
-      "invested": 14.62,
-      "buy_time": "2026-06-15T17:49",
-      "trade_type": "SWING"
+      "symbol": "HYPERUSDT",
+      "buy_price": 0.077,
+      "invested": 13.27,
+      "buy_time": "2026-06-30T21:41",
+      "trade_type": "SCALP"
     }
   ],
-  "total_profit": -7.5025,
-  "total_trades": 129,
+  "total_profit": -11.1778,
+  "total_trades": 130,
   "winning_trades": 77,
-  "win_rate": 59.7
+  "win_rate": 59.2
 }
