@@ -7,19 +7,19 @@
   "bot_accuracy": 21.7,
   "keywords_efectivas": [
     {
+      "kw": "civil",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
       "kw": "profesionales",
       "precision": 100.0,
       "ofertas": 3,
       "ruido": 0
     },
     {
-      "kw": "buscamos",
-      "precision": 100.0,
-      "ofertas": 3,
-      "ruido": 0
-    },
-    {
-      "kw": "civil",
+      "kw": "profesional",
       "precision": 75.0,
       "ofertas": 3,
       "ruido": 1
@@ -31,10 +31,10 @@
       "ruido": 1
     },
     {
-      "kw": "profesional",
-      "precision": 75.0,
+      "kw": "buscamos",
+      "precision": 100.0,
       "ofertas": 3,
-      "ruido": 1
+      "ruido": 0
     },
     {
       "kw": "postula",
@@ -55,13 +55,25 @@
       "ruido": 0
     },
     {
+      "kw": "ingeniero civil",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
       "kw": "inspección técnica",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "ingeniero civil",
+      "kw": "montaje industrial",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "estamos buscando",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -73,25 +85,13 @@
       "ruido": 0
     },
     {
-      "kw": "constructora",
+      "kw": "primavera p6",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "envía tu cv",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "cydingenieria",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "arquitecto",
+      "kw": "fundaciones",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -105,7 +105,7 @@
       "ruido": 1
     },
     {
-      "kw": "diseñador",
+      "kw": "control de calidad",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -117,7 +117,13 @@
       "ruido": 1
     },
     {
-      "kw": "control de calidad",
+      "kw": "diseñador",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "control de costos",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -130,12 +136,6 @@
     },
     {
       "kw": "edificación",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "control de costos",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
