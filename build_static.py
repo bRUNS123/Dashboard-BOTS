@@ -232,7 +232,8 @@ def build_mercadopublico():
                 # Filtrar relevancia: construcción, ingeniería, obras
                 keywords = ["construc", "obra", "ingenier", "estructural", "edific", "reparac",
                            "mantencion", "mantención", "vial", "paviment", "consultor", "inspecc",
-                           "fiscal", "mop", "serviu", "vivienda", "sanitaria", "alcantarillado"]
+                           "fiscal", "mop", "serviu", "vivienda", "sanitaria", "alcantarillado",
+                           "tasacion", "tasación", "avaluo", "avalúo", "perito"]
                 if any(kw in nombre or kw in organismo for kw in keywords):
                     codigo = item.get("codigo")
                     relevant_ca.append({
@@ -243,7 +244,7 @@ def build_mercadopublico():
                         "monto": item.get("montos", {}).get("monto_disponible_clp"),
                         "fecha_cierre": item.get("fechas", {}).get("fecha_cierre"),
                         "estado": item.get("estado", {}).get("glosa"),
-                        "url": f"https://www.mercadopublico.cl/BuscarLicitacion?txtBuscar={codigo}",
+                        "url": f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs={codigo}",
                         "url_directa": f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs={codigo}",
                     })
             result["compras_agiles"] = relevant_ca[:40]
