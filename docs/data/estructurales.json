@@ -83,7 +83,7 @@
   {
     "autor": "Luis Antonio Leiva olea",
     "correos": "",
-    "region": "Los Lagos, Metropolitana de Santiago",
+    "region": "Metropolitana de Santiago, Los Lagos",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -182,7 +182,7 @@
   {
     "autor": "Diego Andrés Osorio Bravo",
     "correos": "",
-    "region": "Metropolitana de Santiago, Magallanes y de la Antártica Chilena",
+    "region": "Magallanes y de la Antártica Chilena, Metropolitana de Santiago",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -199,8 +199,8 @@
   },
   {
     "autor": "Domingo Boscan - Sup. Estructuras - Ing. Civil Mecanico - Universidad de Chile",
-    "correos": "mcabanas@cydingenieria.com, gvilches@cydingenieria.com, apaillal@cydingenieria.com, reclutamiento.gin5@cydingenieria.com",
-    "region": "Maule, Metropolitana de Santiago, Libertador Gral. Bernardo O’Higgins",
+    "correos": "reclutamiento.gin5@cydingenieria.com, apaillal@cydingenieria.com, gvilches@cydingenieria.com, mcabanas@cydingenieria.com",
+    "region": "Metropolitana de Santiago, Libertador Gral. Bernardo O’Higgins, Maule",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -280,7 +280,7 @@
   },
   {
     "autor": "Angela Sanzana Parra",
-    "correos": "seleccion@rfa.cl, asanzana@rfa.cl",
+    "correos": "asanzana@rfa.cl, seleccion@rfa.cl",
     "region": "Libertador Gral. Bernardo O’Higgins, Araucanía",
     "rol": "",
     "empresa": "",
@@ -308,7 +308,7 @@
   {
     "autor": "JORGE MURRAY",
     "correos": "",
-    "region": "Atacama, Coquimbo, Metropolitana de Santiago",
+    "region": "Metropolitana de Santiago, Coquimbo, Atacama",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -343,8 +343,8 @@
   },
   {
     "autor": "Bárbara Quezada Gajardo",
-    "correos": "mcabanas@cydingenieria.com, gvilches@cydingenieria.com, apaillal@cydingenieria.com, reclutamiento.gin5@cydingenieria.com",
-    "region": "Maule, Metropolitana de Santiago, Libertador Gral. Bernardo O’Higgins",
+    "correos": "reclutamiento.gin5@cydingenieria.com, apaillal@cydingenieria.com, gvilches@cydingenieria.com, mcabanas@cydingenieria.com",
+    "region": "Metropolitana de Santiago, Libertador Gral. Bernardo O’Higgins, Maule",
     "rol": "",
     "empresa": "",
     "score": 1.0,
@@ -407,7 +407,7 @@
   {
     "autor": "Carlos Peña López",
     "correos": "mvd@icuatro.cl",
-    "region": "Valparaíso, Metropolitana de Santiago",
+    "region": "Metropolitana de Santiago, Valparaíso",
     "rol": "",
     "empresa": "",
     "score": 1.0,

@@ -13,16 +13,10 @@
       "ruido": 1
     },
     {
-      "kw": "profesionales",
+      "kw": "buscamos",
       "precision": 100.0,
       "ofertas": 3,
       "ruido": 0
-    },
-    {
-      "kw": "ingeniero",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
     },
     {
       "kw": "civil",
@@ -31,19 +25,25 @@
       "ruido": 1
     },
     {
-      "kw": "buscamos",
+      "kw": "ingeniero",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
+      "kw": "profesionales",
       "precision": 100.0,
       "ofertas": 3,
       "ruido": 0
     },
     {
-      "kw": "técnico",
+      "kw": "postula",
       "precision": 100.0,
       "ofertas": 2,
       "ruido": 0
     },
     {
-      "kw": "postula",
+      "kw": "técnico",
       "precision": 100.0,
       "ofertas": 2,
       "ruido": 0
@@ -55,31 +55,7 @@
       "ruido": 0
     },
     {
-      "kw": "constructora",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "bess",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "ingeniero civil",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "envía tu cv",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "primavera p6",
+      "kw": "montaje industrial",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -91,7 +67,31 @@
       "ruido": 0
     },
     {
+      "kw": "oferta laboral",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
       "kw": "inspección técnica",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "ms project",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "constructora",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "fundaciones",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -99,19 +99,19 @@
   ],
   "keywords_problematicas": [
     {
+      "kw": "ingeniería civil",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "edificación",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
       "kw": "control de calidad",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "diseñador",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -123,7 +123,7 @@
       "ruido": 1
     },
     {
-      "kw": "nuevo puesto",
+      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -135,13 +135,13 @@
       "ruido": 1
     },
     {
-      "kw": "ingeniería civil",
+      "kw": "nuevo puesto",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
-      "kw": "edificación",
+      "kw": "diseñador",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
