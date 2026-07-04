@@ -1,5 +1,5 @@
 {
-  "open_positions": 7,
+  "open_positions": 8,
   "positions": [
     {
       "symbol": "NEARUSDT",
@@ -48,6 +48,13 @@
       "buy_price": 0.08793,
       "invested": 13.01,
       "buy_time": "2026-07-01T15:22",
+      "trade_type": "SCALP"
+    },
+    {
+      "symbol": "DYDXUSDT",
+      "buy_price": 0.12594605908419498,
+      "invested": 12.8,
+      "buy_time": "2026-07-04T06:26",
       "trade_type": "SCALP"
     }
   ],
