@@ -44,22 +44,22 @@
       "trade_type": "SCALP"
     },
     {
-      "symbol": "XPLUSDT",
-      "buy_price": 0.08793,
-      "invested": 13.01,
-      "buy_time": "2026-07-01T15:22",
-      "trade_type": "SCALP"
-    },
-    {
       "symbol": "DYDXUSDT",
       "buy_price": 0.12594605908419498,
       "invested": 12.8,
       "buy_time": "2026-07-04T06:26",
       "trade_type": "SCALP"
+    },
+    {
+      "symbol": "XLMUSDT",
+      "buy_price": 0.2024,
+      "invested": 13.17,
+      "buy_time": "2026-07-04T22:59",
+      "trade_type": "SCALP"
     }
   ],
-  "total_profit": -11.1778,
-  "total_trades": 130,
-  "winning_trades": 77,
-  "win_rate": 59.2
+  "total_profit": -8.6792,
+  "total_trades": 131,
+  "winning_trades": 78,
+  "win_rate": 59.5
 }

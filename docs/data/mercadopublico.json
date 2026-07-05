@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "1134432-506-COT26",
+      "nombre": "Contratación del servicio de reparación del sistema adblue y cambio de bomba de 2 camiones municipales",
+      "organismo": "I MUNICIPALIDAD DE PUCHUNCAVI",
+      "region": "Región de Valparaíso ",
+      "monto": 3500000,
+      "fecha_cierre": "2026-07-06 15:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1134432-506-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1134432-506-COT26"
+    },
+    {
       "codigo": "526039-4-COT26",
       "nombre": "Mantención Vehículo Fiscal 190.000 Km.",
       "organismo": "TESORERIA PROVINCIAL VIÑA DEL MAR",
@@ -428,21 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1447930-192-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1447930-192-COT26"
-    },
-    {
-      "codigo": "1340-48-COT26",
-      "nombre": "ADQUISICIÓN DE ABONADOR 400 KILOS  SUBDEPTO. CAD REGIONAL, REGIÓN DE LOS RÍOS",
-      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-      "region": "Región de Los Ríos",
-      "monto": 3000000,
-      "fecha_cierre": "2026-07-08 12:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1340-48-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1340-48-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 5305,
+  "total_compras": 5296,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
