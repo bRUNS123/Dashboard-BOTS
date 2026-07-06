@@ -7,6 +7,12 @@
   "bot_accuracy": 21.7,
   "keywords_efectivas": [
     {
+      "kw": "buscamos",
+      "precision": 100.0,
+      "ofertas": 3,
+      "ruido": 0
+    },
+    {
       "kw": "civil",
       "precision": 75.0,
       "ofertas": 3,
@@ -19,28 +25,16 @@
       "ruido": 0
     },
     {
-      "kw": "profesional",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
-    },
-    {
-      "kw": "buscamos",
-      "precision": 100.0,
-      "ofertas": 3,
-      "ruido": 0
-    },
-    {
       "kw": "ingeniero",
       "precision": 75.0,
       "ofertas": 3,
       "ruido": 1
     },
     {
-      "kw": "años de experiencia",
-      "precision": 100.0,
-      "ofertas": 2,
-      "ruido": 0
+      "kw": "profesional",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
     },
     {
       "kw": "técnico",
@@ -55,25 +49,13 @@
       "ruido": 0
     },
     {
-      "kw": "inspección técnica",
+      "kw": "años de experiencia",
       "precision": 100.0,
-      "ofertas": 1,
+      "ofertas": 2,
       "ruido": 0
     },
     {
-      "kw": "cydingenieria",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "primavera p6",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "oferta laboral",
+      "kw": "obras civiles",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -85,13 +67,31 @@
       "ruido": 0
     },
     {
-      "kw": "obras civiles",
+      "kw": "primavera p6",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "envía tu cv",
+      "kw": "arquitecto",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "constructora",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "ms project",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "estamos buscando",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -99,31 +99,13 @@
   ],
   "keywords_problematicas": [
     {
-      "kw": "ingeniería civil",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "edificación",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
-      "kw": "estructuras",
-      "precision": 0.0,
-      "ofertas": 0,
-      "ruido": 1
-    },
-    {
       "kw": "control de calidad",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
-      "kw": "vacante",
+      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -142,6 +124,24 @@
     },
     {
       "kw": "nuevo puesto",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "edificación",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "vacante",
+      "precision": 0.0,
+      "ofertas": 0,
+      "ruido": 1
+    },
+    {
+      "kw": "ingeniería civil",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
