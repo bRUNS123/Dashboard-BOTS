@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "3193-298-COT26",
+      "nombre": "MANTENCIÓN EQUIPO DE RESPIRACIÓN AUTÓNOMO DE LA CAPITANÍA DE PUERTO DE CORONEL. ",
+      "organismo": "GOBERNACION MARITIMA DE TALCAHUANO",
+      "region": "Región del Biobío ",
+      "monto": 250000,
+      "fecha_cierre": "2026-07-08 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3193-298-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3193-298-COT26"
+    },
+    {
       "codigo": "1134432-506-COT26",
       "nombre": "Contratación del servicio de reparación del sistema adblue y cambio de bomba de 2 camiones municipales",
       "organismo": "I MUNICIPALIDAD DE PUCHUNCAVI",
@@ -428,21 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1447930-193-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1447930-193-COT26"
-    },
-    {
-      "codigo": "1447930-192-COT26",
-      "nombre": "SSP – Adquisición del servicio de mantención por pauta de kilometraje para vehículo de la Seremi de Seguridad Pública Tarapacá",
-      "organismo": "SUBSECRETARIA DE SEGURIDAD PUBLICA",
-      "region": "Región de Tarapacá  ",
-      "monto": 300000,
-      "fecha_cierre": "2026-07-07 17:15",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1447930-192-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1447930-192-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 4904,
+  "total_compras": 4854,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
