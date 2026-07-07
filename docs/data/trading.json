@@ -37,13 +37,6 @@
       "trade_type": "SWING"
     },
     {
-      "symbol": "HYPERUSDT",
-      "buy_price": 0.077,
-      "invested": 13.27,
-      "buy_time": "2026-06-30T21:41",
-      "trade_type": "SCALP"
-    },
-    {
       "symbol": "DYDXUSDT",
       "buy_price": 0.12594605908419498,
       "invested": 12.8,
@@ -56,10 +49,17 @@
       "invested": 13.17,
       "buy_time": "2026-07-04T22:59",
       "trade_type": "SCALP"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "buy_price": 0.387,
+      "invested": 13.25,
+      "buy_time": "2026-07-07T15:01",
+      "trade_type": "SCALP"
     }
   ],
-  "total_profit": -8.6792,
-  "total_trades": 131,
+  "total_profit": -9.771,
+  "total_trades": 132,
   "winning_trades": 78,
-  "win_rate": 59.5
+  "win_rate": 59.1
 }
