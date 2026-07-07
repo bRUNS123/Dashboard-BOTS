@@ -442,7 +442,7 @@
     }
   ],
   "licitaciones": [],
-  "total_compras": 6541,
+  "total_compras": 6449,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
