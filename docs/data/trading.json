@@ -1,5 +1,5 @@
 {
-  "open_positions": 7,
+  "open_positions": 8,
   "positions": [
     {
       "symbol": "NEARUSDT",
@@ -48,6 +48,13 @@
       "buy_price": 0.387,
       "invested": 13.25,
       "buy_time": "2026-07-07T15:01",
+      "trade_type": "SCALP"
+    },
+    {
+      "symbol": "SPCXBUSDT",
+      "buy_price": 146.16,
+      "invested": 13.02,
+      "buy_time": "2026-07-11T09:31",
       "trade_type": "SCALP"
     }
   ],
