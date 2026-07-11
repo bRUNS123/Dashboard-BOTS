@@ -1,6 +1,28 @@
 {
   "compras_agiles": [
     {
+      "codigo": "1079566-136-COT26",
+      "nombre": "SERVICIO DE REPARACION Y REMODELACION DE BAÑO DEL PERSONAL DE O.S.7. TALCA",
+      "organismo": "SECCIÓN COMPRAS VII ZONA",
+      "region": "Región del Maule ",
+      "monto": 3853785,
+      "fecha_cierre": "2026-07-15 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079566-136-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079566-136-COT26"
+    },
+    {
+      "codigo": "2862-87-COT26",
+      "nombre": "MATERIE CONSTRUCCIÓN.",
+      "organismo": "I MUNICIPALIDAD PUERTO OCTAY",
+      "region": "Región de los Lagos ",
+      "monto": 1330000,
+      "fecha_cierre": "2026-07-15 08:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2862-87-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2862-87-COT26"
+    },
+    {
       "codigo": "5658-17-COT26",
       "nombre": "Servicio de Instalación de Equipos de aires Acondicionados en dependencias de Inspección Comunal del Trabajo de Panguipulli y Dirección Regional del Trabajo Los Ríos.",
       "organismo": "DIRECCION DEL TRABAJO",
@@ -417,32 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1943-87-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1943-87-COT26"
-    },
-    {
-      "codigo": "1079563-224-COT26",
-      "nombre": "ADQUISICIÓN MATERIALES DE CONSTRUCCIÓN PARA SIPOLCAR, DEPENDIENTE DE LA PREFECTURA DE CARABINEROS COLCHAGUA N° 12.",
-      "organismo": "SECCIÓN COMPRAS VI ZONA",
-      "region": "Región del Libertador General Bernardo O´Higgins",
-      "monto": 460000,
-      "fecha_cierre": "2026-07-13 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079563-224-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079563-224-COT26"
-    },
-    {
-      "codigo": "1001-23-COT26",
-      "nombre": "ADQUISICION E INSTALACION DE CORTINAS ROLLER TIPO DIA Y NOCHE (DUO)",
-      "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-      "region": "Región de la Araucanía ",
-      "monto": 800000,
-      "fecha_cierre": "2026-07-13 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1001-23-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1001-23-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 6792,
+  "total_compras": 6572,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
