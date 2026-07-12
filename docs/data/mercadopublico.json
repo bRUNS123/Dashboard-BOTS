@@ -1,6 +1,28 @@
 {
   "compras_agiles": [
     {
+      "codigo": "1315764-37-COT26",
+      "nombre": "ADQUISICIÓN DE MATERIALES PARA REPARACIÓN DE FUNDAS, CORTINAS Y TAPICERÍA DE LA UNIDAD",
+      "organismo": "ATF-60 \"LIENTUR\"",
+      "region": "Región de Magallanes y de la Antártica",
+      "monto": 400000,
+      "fecha_cierre": "2026-07-13 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1315764-37-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1315764-37-COT26"
+    },
+    {
+      "codigo": "1108660-31-COT26",
+      "nombre": "Contratación de servicios para transcripción de obras del Concurso Historias de Nuestra Tierra 2026",
+      "organismo": "FUND DE COMUNICACIONES CAPACITACION Y CULTURA DEL AGRO",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 357000,
+      "fecha_cierre": "2026-07-14 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1108660-31-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1108660-31-COT26"
+    },
+    {
       "codigo": "1134432-528-COT26",
       "nombre": "Adquisición de tintas para plotter asignado a Secplan y la Dirección de Obras Municipales",
       "organismo": "I MUNICIPALIDAD DE PUCHUNCAVI",
@@ -417,32 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5722-6-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5722-6-COT26"
-    },
-    {
-      "codigo": "623339-48-COT26",
-      "nombre": " ADQ DE REPUESTOS PARA MANTENCIÓN DE RANA CORTADORA DE TRACTOR DE CORTE DE PASTO",
-      "organismo": "Ejercito de Chile",
-      "region": "Región de Valparaíso ",
-      "monto": 788087,
-      "fecha_cierre": "2026-07-13 09:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=623339-48-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=623339-48-COT26"
-    },
-    {
-      "codigo": "1079969-95-COT26",
-      "nombre": "RENOVACIÓN E INSTALACIÓN DE PORTONES ACCESO DEL EDIFICIO DE LA PREFECTURA SEGURIDAD PRIVADA OS.10",
-      "organismo": "SECCIÓN COMPRAS ZONA SEG PRIV CONTROL ARMAS Y EXPL",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 7050036,
-      "fecha_cierre": "2026-07-15 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079969-95-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079969-95-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 5912,
+  "total_compras": 5906,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
