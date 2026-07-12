@@ -111,17 +111,6 @@
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1028-COT26"
     },
     {
-      "codigo": "2591-1434-COT26",
-      "nombre": "OBRA VENDIDA DE REMPLAZO DE POSTE MT QUEBRADO Y CAMBIO DE  ESTRUCTURA PORTANTE. CAMPING DE POZO ALMONTE",
-      "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
-      "region": "Región de Tarapacá  ",
-      "monto": 1800000,
-      "fecha_cierre": "2026-07-12 12:15",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2591-1434-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2591-1434-COT26"
-    },
-    {
       "codigo": "1079566-136-COT26",
       "nombre": "SERVICIO DE REPARACION Y REMODELACION DE BAÑO DEL PERSONAL DE O.S.7. TALCA",
       "organismo": "SECCIÓN COMPRAS VII ZONA",
@@ -439,10 +428,21 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5722-6-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5722-6-COT26"
+    },
+    {
+      "codigo": "623339-48-COT26",
+      "nombre": " ADQ DE REPUESTOS PARA MANTENCIÓN DE RANA CORTADORA DE TRACTOR DE CORTE DE PASTO",
+      "organismo": "Ejercito de Chile",
+      "region": "Región de Valparaíso ",
+      "monto": 788087,
+      "fecha_cierre": "2026-07-13 09:30",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=623339-48-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=623339-48-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 5776,
+  "total_compras": 5666,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
