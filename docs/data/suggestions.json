@@ -7,13 +7,7 @@
   "bot_accuracy": 21.7,
   "keywords_efectivas": [
     {
-      "kw": "civil",
-      "precision": 75.0,
-      "ofertas": 3,
-      "ruido": 1
-    },
-    {
-      "kw": "profesionales",
+      "kw": "buscamos",
       "precision": 100.0,
       "ofertas": 3,
       "ruido": 0
@@ -25,16 +19,22 @@
       "ruido": 1
     },
     {
-      "kw": "buscamos",
-      "precision": 100.0,
-      "ofertas": 3,
-      "ruido": 0
-    },
-    {
       "kw": "ingeniero",
       "precision": 75.0,
       "ofertas": 3,
       "ruido": 1
+    },
+    {
+      "kw": "civil",
+      "precision": 75.0,
+      "ofertas": 3,
+      "ruido": 1
+    },
+    {
+      "kw": "profesionales",
+      "precision": 100.0,
+      "ofertas": 3,
+      "ruido": 0
     },
     {
       "kw": "postula",
@@ -55,31 +55,19 @@
       "ruido": 0
     },
     {
+      "kw": "oferta laboral",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
       "kw": "arquitecto",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
     },
     {
-      "kw": "estamos buscando",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "inspección técnica",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "ms project",
-      "precision": 100.0,
-      "ofertas": 1,
-      "ruido": 0
-    },
-    {
-      "kw": "obras civiles",
+      "kw": "ingeniero civil",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -91,7 +79,19 @@
       "ruido": 0
     },
     {
-      "kw": "oferta laboral",
+      "kw": "inspección técnica",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "envía tu cv",
+      "precision": 100.0,
+      "ofertas": 1,
+      "ruido": 0
+    },
+    {
+      "kw": "constructora",
       "precision": 100.0,
       "ofertas": 1,
       "ruido": 0
@@ -105,7 +105,7 @@
       "ruido": 1
     },
     {
-      "kw": "diseñador",
+      "kw": "control de calidad",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -117,13 +117,13 @@
       "ruido": 1
     },
     {
-      "kw": "control de costos",
+      "kw": "estructuras",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
     },
     {
-      "kw": "estructuras",
+      "kw": "diseñador",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
@@ -135,7 +135,7 @@
       "ruido": 1
     },
     {
-      "kw": "control de calidad",
+      "kw": "control de costos",
       "precision": 0.0,
       "ofertas": 0,
       "ruido": 1
