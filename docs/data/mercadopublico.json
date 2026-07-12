@@ -1,6 +1,94 @@
 {
   "compras_agiles": [
     {
+      "codigo": "1658-1035-COT26",
+      "nombre": "S375-25/ADMINISTRACION Y FINANZAS/GESTION INTERNA/PROVISION E INSTALACION DE CORTINAS ROLLER SUN SCREEN PARA EDIFICIO BELLO 510.",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 1150000,
+      "fecha_cierre": "2026-07-14 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1035-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1035-COT26"
+    },
+    {
+      "codigo": "1658-1032-COT26",
+      "nombre": "S482-26/DIDECO/DEPTO DESARROLLO ECONOMICO/SERVICIO DE MANTENCION AGUA LLUVIAS, CANALETAS Y ARREGLOS VARIOS FERIA LABRANZA.",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 1200000,
+      "fecha_cierre": "2026-07-14 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1032-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1032-COT26"
+    },
+    {
+      "codigo": "1658-1030-COT26",
+      "nombre": "S97-26/TURISMO PATRIMONIO Y CULTURA/SERVICIO DE REPARACION DE TECHUMBRE  SALA CENTRO CULTURAL.",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 2000000,
+      "fecha_cierre": "2026-07-14 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1030-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1030-COT26"
+    },
+    {
+      "codigo": "1658-1031-COT26",
+      "nombre": "S328-26/ADM. Y FINANZAS/GESTIÓN INTERNA/SERVICIO DE 3 MANTENCIONES PREVENTIVAS PARA 16 EQUIPOS AIRE ACONDICIONADO BULNES 875, SEGÚN ESPECIFICACIONES TÉCNICAS ADJUNTAS",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 2200000,
+      "fecha_cierre": "2026-07-15 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1031-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1031-COT26"
+    },
+    {
+      "codigo": "3086-618-COT26",
+      "nombre": "VALPABAS - MANTENCION EQUIPOS LABORATORIO QUIMICO",
+      "organismo": "CENTRO DE ABASTECIMIENTO (V)",
+      "region": "Región de Valparaíso ",
+      "monto": 1820700,
+      "fecha_cierre": "2026-07-15 09:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3086-618-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=3086-618-COT26"
+    },
+    {
+      "codigo": "1658-1029-COT26",
+      "nombre": "S429-26/ADM. Y FINANZAS/ GESTIÓN IINTERNA/PROVISIÓN Y REPARACIONES VARIAS EDIFICIO PRAT 650, SEGÚN ESPECIFICACIONES TÉCNICAS ADJUNTAS",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 1800000,
+      "fecha_cierre": "2026-07-14 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1029-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1029-COT26"
+    },
+    {
+      "codigo": "1658-1028-COT26",
+      "nombre": "S452-26/ADMINISTRACION Y FINANZAS/GESTION INTERNA/REPARACION Y MANTENCION COMEDOR RECINTO LOS CONFINES 1296 RED VIAL.",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "monto": 1800000,
+      "fecha_cierre": "2026-07-14 17:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1028-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1658-1028-COT26"
+    },
+    {
+      "codigo": "2591-1434-COT26",
+      "nombre": "OBRA VENDIDA DE REMPLAZO DE POSTE MT QUEBRADO Y CAMBIO DE  ESTRUCTURA PORTANTE. CAMPING DE POZO ALMONTE",
+      "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
+      "region": "Región de Tarapacá  ",
+      "monto": 1800000,
+      "fecha_cierre": "2026-07-12 12:15",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2591-1434-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2591-1434-COT26"
+    },
+    {
       "codigo": "1079566-136-COT26",
       "nombre": "SERVICIO DE REPARACION Y REMODELACION DE BAÑO DEL PERSONAL DE O.S.7. TALCA",
       "organismo": "SECCIÓN COMPRAS VII ZONA",
@@ -232,17 +320,6 @@
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1173446-25-COT26"
     },
     {
-      "codigo": "2674-573-COT26",
-      "nombre": "MATERIALES DE CONSTRUCCION ",
-      "organismo": "ILUSTRE MUNICIPALIDAD DE MELIPILLA",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 4000000,
-      "fecha_cierre": "2026-07-11 17:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2674-573-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2674-573-COT26"
-    },
-    {
       "codigo": "354-41-COT26",
       "nombre": "Mantención preventiva de los 20.000 km – Vehículo Institucional Mitsubishi VHTX-99",
       "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE CHACABUCO",
@@ -285,17 +362,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-435-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-435-COT26"
-    },
-    {
-      "codigo": "2288-504-COT26",
-      "nombre": "ADQ. DE MATERIALES PARA REPARACIÓN PLANTA DE ÓSMOSIS SECTOR PUERTO OSCURO.",
-      "organismo": "I MUNICIPALIDAD DE CANELA",
-      "region": "Región de Coquimbo ",
-      "monto": 700000,
-      "fecha_cierre": "2026-07-11 17:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2288-504-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2288-504-COT26"
     },
     {
       "codigo": "3962-236-COT26",
@@ -373,76 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2467-456-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2467-456-COT26"
-    },
-    {
-      "codigo": "1079445-434-COT26",
-      "nombre": "ADQ. SERVICIO REPARACION VEHICULO FISCAL RP-5887",
-      "organismo": "SECCIÓN COMPRAS XII ZONA",
-      "region": "Región de Magallanes y de la Antártica",
-      "monto": 4430000,
-      "fecha_cierre": "2026-07-13 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-434-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-434-COT26"
-    },
-    {
-      "codigo": "6-52-COT26",
-      "nombre": "CAPACITACIÓN AVANZADA EN EL USO DEL DRONE EVO II PRO RTK V3",
-      "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION I REGION",
-      "region": "Región de Tarapacá  ",
-      "monto": 2500000,
-      "fecha_cierre": "2026-07-15 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=6-52-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=6-52-COT26"
-    },
-    {
-      "codigo": "707412-31-COT26",
-      "nombre": "MANTENCION CORRECTIVA DE HIDROPACK EN 8 JI DE FUNDACION INTEGRA, REGION DE TARAPACA",
-      "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
-      "region": "Región de Tarapacá  ",
-      "monto": 4000000,
-      "fecha_cierre": "2026-07-14 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=707412-31-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=707412-31-COT26"
-    },
-    {
-      "codigo": "1493-381-COT26",
-      "nombre": "MANTENCION COMPLETA TRACTOR CORTA CESPED HUSQVARNA",
-      "organismo": "I MUNICIPALIDAD DE SAN NICOLAS",
-      "region": "Región del Ñuble",
-      "monto": 838600,
-      "fecha_cierre": "2026-07-13 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1493-381-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1493-381-COT26"
-    },
-    {
-      "codigo": "2859-706-COT26",
-      "nombre": "Adquisición de servicio de mantención y reparación de equipo de espectroscopia",
-      "organismo": "UNIVERSIDAD DE ATACAMA",
-      "region": "Región de Atacama ",
-      "monto": 7000000,
-      "fecha_cierre": "2026-07-13 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2859-706-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2859-706-COT26"
-    },
-    {
-      "codigo": "1943-87-COT26",
-      "nombre": "Servicio de reparación de techumbre en guardería del sector Palmas de Ocoa, comuna de Hijuelas",
-      "organismo": "CORP NACIONAL FORESTAL",
-      "region": "Región de Valparaíso ",
-      "monto": 6343082,
-      "fecha_cierre": "2026-07-14 11:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1943-87-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1943-87-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 6572,
+  "total_compras": 6010,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
