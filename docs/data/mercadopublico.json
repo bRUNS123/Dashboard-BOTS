@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "2013-1098-COT26",
+      "nombre": "Adquisición de Notebooks de Alto Rendimiento para Ingeniería y Equipos Académicos",
+      "organismo": "UNIVERSIDAD ARTURO PRAT",
+      "region": "Región de Tarapacá  ",
+      "monto": 7000000,
+      "fecha_cierre": "2026-07-13 14:45",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2013-1098-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2013-1098-COT26"
+    },
+    {
       "codigo": "1315764-37-COT26",
       "nombre": "ADQUISICIÓN DE MATERIALES PARA REPARACIÓN DE FUNDAS, CORTINAS Y TAPICERÍA DE LA UNIDAD",
       "organismo": "ATF-60 \"LIENTUR\"",
@@ -153,17 +164,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=620279-107-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=620279-107-COT26"
-    },
-    {
-      "codigo": "1079969-96-COT26",
-      "nombre": "MANTENCIÓN Y REPARACIÓN DE UN EQUIPO DE PRECISIÓN Y UN EQUIPO DE AIRE ACONDCIONADO SPLIT MURO PARA LA PREFECTURA OS.11",
-      "organismo": "SECCIÓN COMPRAS ZONA SEG PRIV CONTROL ARMAS Y EXPL",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 1757630,
-      "fecha_cierre": "2026-07-14 08:30",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079969-96-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079969-96-COT26"
     },
     {
       "codigo": "1079694-235-COT26",
@@ -442,7 +442,7 @@
     }
   ],
   "licitaciones": [],
-  "total_compras": 5666,
+  "total_compras": 5566,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
