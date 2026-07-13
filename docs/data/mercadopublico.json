@@ -1,6 +1,17 @@
 {
   "compras_agiles": [
     {
+      "codigo": "4218-6-COT26",
+      "nombre": " Servicio de normalización, reposición y certificación de la red de gas de vivienda fiscal ubicada en la comuna de Cochrane.",
+      "organismo": "Dirección General de Aeronáutica Civil",
+      "region": "Región Aysén del General Carlos Ibáñez del Campo",
+      "monto": 1000000,
+      "fecha_cierre": "2026-07-17 15:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4218-6-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4218-6-COT26"
+    },
+    {
       "codigo": "746483-19-COT26",
       "nombre": "KIT DE MANTENCION IMPRESORA  LEXMARK 711",
       "organismo": "Juzgado de Garantia de San Bernardo",
@@ -428,21 +439,10 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=551029-56-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=551029-56-COT26"
-    },
-    {
-      "codigo": "1079445-435-COT26",
-      "nombre": "ADQ. SERVICIO REPARACION VEHICULO FICAL B-521",
-      "organismo": "SECCIÓN COMPRAS XII ZONA",
-      "region": "Región de Magallanes y de la Antártica",
-      "monto": 2286667,
-      "fecha_cierre": "2026-07-13 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-435-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-435-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 5514,
+  "total_compras": 5167,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
