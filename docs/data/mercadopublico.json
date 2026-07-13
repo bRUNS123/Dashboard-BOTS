@@ -1,6 +1,50 @@
 {
   "compras_agiles": [
     {
+      "codigo": "746483-19-COT26",
+      "nombre": "KIT DE MANTENCION IMPRESORA  LEXMARK 711",
+      "organismo": "Juzgado de Garantia de San Bernardo",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 1,
+      "fecha_cierre": "2026-07-14 16:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=746483-19-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=746483-19-COT26"
+    },
+    {
+      "codigo": "685103-54-COT26",
+      "nombre": "ADQUISICION DE MATERIALES PARA REPARACION",
+      "organismo": "LSDH 91 SARGENTO ALDEA",
+      "region": "Región del Biobío ",
+      "monto": 300000,
+      "fecha_cierre": "2026-07-14 14:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=685103-54-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=685103-54-COT26"
+    },
+    {
+      "codigo": "746483-18-COT26",
+      "nombre": "TONER IMPRESORA  KYOCERA ECOSYS M3550 (TK-3122) y  KIT MANTENCION MK-3132",
+      "organismo": "Juzgado de Garantia de San Bernardo",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 1,
+      "fecha_cierre": "2026-07-14 16:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=746483-18-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=746483-18-COT26"
+    },
+    {
+      "codigo": "2288-508-COT26",
+      "nombre": "ADQ. DE MATERIALES DE OPERACION Y MANTENCION PLANTA DE TRATAMIENTO",
+      "organismo": "I MUNICIPALIDAD DE CANELA",
+      "region": "Región de Coquimbo ",
+      "monto": 1000000,
+      "fecha_cierre": "2026-07-13 18:45",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2288-508-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2288-508-COT26"
+    },
+    {
       "codigo": "2013-1098-COT26",
       "nombre": "Adquisición de Notebooks de Alto Rendimiento para Ingeniería y Equipos Académicos",
       "organismo": "UNIVERSIDAD ARTURO PRAT",
@@ -164,94 +208,6 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=620279-107-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=620279-107-COT26"
-    },
-    {
-      "codigo": "1079694-235-COT26",
-      "nombre": "Adquisición e instalación de canaletas para la reparación del sistema de evacuación de aguas lluvias de la 2da. Comisaría Los Lagos dependiente de la Prefectura Valdivia N°23.",
-      "organismo": "SECCIÓN COMPRAS XIV ZONA",
-      "region": "Región de Los Ríos",
-      "monto": 7164900,
-      "fecha_cierre": "2026-07-13 09:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079694-235-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079694-235-COT26"
-    },
-    {
-      "codigo": "5153-1373-COT26",
-      "nombre": "RAP_SERVICIO DE REPARACION DOS BOMBAS SILAK MMN 531",
-      "organismo": "UNIVERSIDAD DE CHILE",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 4746100,
-      "fecha_cierre": "2026-07-14 10:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5153-1373-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=5153-1373-COT26"
-    },
-    {
-      "codigo": "551029-63-COT26",
-      "nombre": "Se requiere cotizar materiales de construcción, para PROGRAMA ORASM. Ver antecedentes en archivo adjunto y se requiere completar todos los datos solicitados sin perjuicio de que cada proveedor podrá s",
-      "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DEL MAULE",
-      "region": "Región del Maule ",
-      "monto": 350000,
-      "fecha_cierre": "2026-07-13 11:45",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=551029-63-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=551029-63-COT26"
-    },
-    {
-      "codigo": "4201-358-COT26",
-      "nombre": "CONSULTORIA ATRAVIESO LOS CANELOS",
-      "organismo": "I MUNICIPALIDAD DE CURACAVI",
-      "region": "Región Metropolitana de Santiago",
-      "monto": 7164000,
-      "fecha_cierre": "2026-07-13 12:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4201-358-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4201-358-COT26"
-    },
-    {
-      "codigo": "656-54-COT26",
-      "nombre": "SERVIU Región de los lagos requiere la adquisición de materiales de oficina para abastecimiento institucional",
-      "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION X REGION",
-      "region": "Región de los Lagos ",
-      "monto": 1245000,
-      "fecha_cierre": "2026-07-13 12:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=656-54-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=656-54-COT26"
-    },
-    {
-      "codigo": "551029-62-COT26",
-      "nombre": "Se requiere cotizar materiales de construcción, para PROGRAMA ORASM. Ver antecedentes en archivo adjunto y se requiere completar todos los datos solicitados sin perjuicio de que cada proveedor podrá s",
-      "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DEL MAULE",
-      "region": "Región del Maule ",
-      "monto": 450000,
-      "fecha_cierre": "2026-07-13 11:40",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=551029-62-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=551029-62-COT26"
-    },
-    {
-      "codigo": "4117-132-COT26",
-      "nombre": "Adquisición de calefón para edificio consistorial",
-      "organismo": "I MUNICIPALIDAD DE CURACAUTIN",
-      "region": "Región de la Araucanía ",
-      "monto": 250000,
-      "fecha_cierre": "2026-07-13 15:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4117-132-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=4117-132-COT26"
-    },
-    {
-      "codigo": "2759-365-COT26",
-      "nombre": "CONSTRUCCION E INSTALACIÓN TABIQUERIA EN ESTRUTURA ALUMINIO JUZGADO POLICIA LOCAL CORONEL, SOL. 164",
-      "organismo": "I MUNICIPALIDAD DE CORONEL",
-      "region": "Región del Biobío ",
-      "monto": 3700000,
-      "fecha_cierre": "2026-07-15 13:00",
-      "estado": "Publicada",
-      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2759-365-COT26",
-      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2759-365-COT26"
     },
     {
       "codigo": "1431291-78-COT26",
@@ -439,10 +395,54 @@
       "estado": "Publicada",
       "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=623339-48-COT26",
       "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=623339-48-COT26"
+    },
+    {
+      "codigo": "1079969-95-COT26",
+      "nombre": "RENOVACIÓN E INSTALACIÓN DE PORTONES ACCESO DEL EDIFICIO DE LA PREFECTURA SEGURIDAD PRIVADA OS.10",
+      "organismo": "SECCIÓN COMPRAS ZONA SEG PRIV CONTROL ARMAS Y EXPL",
+      "region": "Región Metropolitana de Santiago",
+      "monto": 7050036,
+      "fecha_cierre": "2026-07-15 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079969-95-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079969-95-COT26"
+    },
+    {
+      "codigo": "2467-456-COT26",
+      "nombre": "ADQUISICIÓN DE MADERAS PARA LA CONSTRUCCIÓN DE UN MURO BOCA EN EL SECTOR DE BRISAS DEL ITATA COMUNA DE CHILLÁN",
+      "organismo": "I MUNICIPALIDAD DE CHILLAN",
+      "region": "Región del Ñuble",
+      "monto": 484580,
+      "fecha_cierre": "2026-07-14 12:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2467-456-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=2467-456-COT26"
+    },
+    {
+      "codigo": "1079445-434-COT26",
+      "nombre": "ADQ. SERVICIO REPARACION VEHICULO FISCAL RP-5887",
+      "organismo": "SECCIÓN COMPRAS XII ZONA",
+      "region": "Región de Magallanes y de la Antártica",
+      "monto": 4430000,
+      "fecha_cierre": "2026-07-13 15:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-434-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=1079445-434-COT26"
+    },
+    {
+      "codigo": "6-52-COT26",
+      "nombre": "CAPACITACIÓN AVANZADA EN EL USO DEL DRONE EVO II PRO RTK V3",
+      "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION I REGION",
+      "region": "Región de Tarapacá  ",
+      "monto": 2500000,
+      "fecha_cierre": "2026-07-15 10:00",
+      "estado": "Publicada",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=6-52-COT26",
+      "url_directa": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=6-52-COT26"
     }
   ],
   "licitaciones": [],
-  "total_compras": 5566,
+  "total_compras": 5493,
   "total_licitaciones": 0,
   "error_lic": "no such table: licitaciones"
 }
